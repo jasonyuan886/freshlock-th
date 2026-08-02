@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import CalculatorClient from './CalculatorClient';
 
 export const metadata: Metadata = {
-  title: 'Food Waste Calculator — Stop Wasting $1,866/Year',
+  title: 'เครื่องคำนวณการสูญเสียอาหาร — หยุดทิ้งเงินปีละ $1,866',
   description:
-    'USDA-backed calculator: see how much money you throw away on spoiled food and how fast FreshLock pays for itself. Vacuum sealing keeps food fresh up to 5× longer.',
+    'เครื่องคำนวณจาก USDA: ดูว่าคุณทิ้งเงินไปกับอาหารที่เสียไปเท่าไร และ FreshLockคุ้มทุนเร็วแค่ไหน การสูญญากาศทำให้อาหารสดนานขึ้นถึง 5 เท่า',
   alternates: {
     canonical: '/food-waste-calculator',
   },
