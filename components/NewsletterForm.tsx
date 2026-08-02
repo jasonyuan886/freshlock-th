@@ -24,11 +24,11 @@ export default function NewsletterForm() {
       } else {
         const data = await res.json();
         setStatus('error');
-        setErrorMsg(data.error || 'Something went wrong');
+        setErrorMsg(data.error || 'เกิดข้อผิดพลาด กรุณาลองอีกครั้ง');
       }
     } catch {
       setStatus('error');
-      setErrorMsg('Network error. Please try again.');
+      setErrorMsg('เกิดข้อผิดพลาดเครือข่าย กรุณาลองอีกครั้ง');
     }
   };
 
@@ -36,7 +36,7 @@ export default function NewsletterForm() {
     return (
       <div className="mt-4">
         <p className="text-sm text-green-300 font-medium">
-          ✓ Subscribed! Check your inbox for a welcome email.
+          ✓ สมัครสำเร็จ! กรุณาตรวจสอบอีเมลของคุณ
         </p>
       </div>
     );
@@ -45,10 +45,10 @@ export default function NewsletterForm() {
   return (
     <div className="mt-4">
       <p className="text-sm text-gray-300 mb-1">
-        Stop wasting food. Start saving money.
+        หยุดทิ้งอาหาร เริ่มประหยัดเงิน
       </p>
       <p className="text-xs text-green-300/80 mb-2">
-        Join 500+ smart households · Tips, hacks & exclusive deals
+        เข้าร่วม 500+ ครัวเรือนอัจฉริยะ · เคล็ดลับ และข้อเสนอพิเศษ
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
         <input
@@ -65,7 +65,7 @@ export default function NewsletterForm() {
           disabled={status === 'loading'}
           className="px-4 py-2 rounded text-sm font-medium bg-green-600 text-white hover:bg-green-700 transition disabled:opacity-50 whitespace-nowrap"
         >
-          {status === 'loading' ? 'Subscribing...' : 'สมัครรับข่าว'}
+          {status === 'loading' ? 'กำลังสมัคร...' : 'สมัครรับข่าว'}
         </button>
       </form>
       {status === 'error' && (
