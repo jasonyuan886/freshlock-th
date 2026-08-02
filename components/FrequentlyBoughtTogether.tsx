@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { useCart } from '@/lib/cart-context';
 import Link from 'next/link';
-import type { Product } from '@/lib/types';
+import type { สินค้า } from '@/lib/types';
 
 type BundleItem = {
   product: Product;
@@ -118,7 +118,7 @@ export default function FrequentlyBoughtTogether({
             ))}
           </div>
 
-          {/* Price + CTA column */}
+          {/* ราคา + CTA column */}
           <div className="sm:w-56 flex flex-col justify-between gap-3 pt-3 sm:pt-0 sm:border-l sm:pl-4">
             <div>
               {savings > 0 ? (
