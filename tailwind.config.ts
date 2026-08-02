@@ -8,22 +8,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Australian natural palette: eucalyptus green, coral, sand
+        // Thai-inspired palette: bamboo green, Thai gold, warm cream
         primary: {
-          DEFAULT: '#2D6A4F', // Forest/Eucalyptus green
-          50: '#EDF5F0',
-          100: '#D1E7DB',
-          200: '#A7D1BA',
-          300: '#74B693',
-          400: '#4D9A72',
-          500: '#2D6A4F',
-          600: '#245540',
-          700: '#1B4030',
-          800: '#122B20',
-          900: '#091610',
+          DEFAULT: '#3A7D44', // Bamboo green
+          50: '#EDF7EE',
+          100: '#D1ECD4',
+          200: '#A8D9AE',
+          300: '#7BC585',
+          400: '#52B25F',
+          500: '#3A7D44',
+          600: '#2E6638',
+          700: '#234E2B',
+          800: '#17361D',
+          900: '#0B1E0F',
         },
         secondary: {
-          DEFAULT: '#F4A261', // Warm sand/gold
+          DEFAULT: '#F4A261', // Warm sand/gold (kept)
           50: '#FEF6EC',
           100: '#FDE8C8',
           200: '#FBD19A',
@@ -36,17 +36,17 @@ const config: Config = {
           900: '#31200C',
         },
         accent: {
-          DEFAULT: '#E76F51', // Coral/Terracotta
-          50: '#FDEFEB',
-          100: '#FCDDD3',
-          200: '#F9BBA9',
-          300: '#F5987F',
-          400: '#E76F51',
-          500: '#D45A3C',
-          600: '#B34830',
-          700: '#863624',
-          800: '#5A2418',
-          900: '#2D120C',
+          DEFAULT: '#D4A017', // Thai gold (royal/Buddhist)
+          50: '#FDF8E8',
+          100: '#FAEDC4',
+          200: '#F5DB8A',
+          300: '#F0C950',
+          400: '#D4A017',
+          500: '#B88810',
+          600: '#946D0C',
+          700: '#6E5209',
+          800: '#483706',
+          900: '#221C03',
         },
         earth: {
           DEFAULT: '#8E6E53',
@@ -55,7 +55,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Noto Sans Thai', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
     },
   },
