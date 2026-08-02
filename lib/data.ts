@@ -1,34 +1,26 @@
 import { Product, Review } from './types';
 
-// Free shipping threshold (USD)
-export const FREE_SHIPPING_THRESHOLD = 69;
-export const SHIPPING_FEE_UNDER = 5.99;
+// Free shipping threshold (THB)
+export const FREE_SHIPPING_THRESHOLD = 2450;
+export const SHIPPING_FEE_UNDER = 210;
 export const FREE_SHIPPING_REGIONS: Record<string, number> = {
-  US: 89,
-  CA: 89,
-  GB: 89,
-  JP: 89,
-  AU: 69,
-  NZ: 69,
-  MY: 69,
-  TH: 69,
+  US: 3150,
+  CA: 3150,
+  GB: 3150,
+  JP: 3150,
+  AU: 2450,
+  NZ: 2450,
+  MY: 2450,
+  TH: 2450,
 };
 export const STARTER_KIT_SHIPS_FREE = true;
-
-// THB reference prices (approximate, for display only)
-export const THB_REFERENCE: Record<string, number> = {
-  'freshlock-pro': 2450,
-  'freshlock-starter-kit': 3150,
-  'vacuum-seal-bags-30-pack': 890,
-  'vacuum-seal-bags-50-pack': 1250,
-};
 
 export const products: Product[] = [
   {
     slug: 'freshlock-pro',
     name: 'FreshLock Pro เครื่องซีลสูญญากาศแบบพกพา',
-    price: 69.99,
-    compareAtPrice: 89.99,
+    price: 2450,
+    compareAtPrice: 3150,
     discountBadge: 'ลด 22%',
     description:
       'FreshLock Pro คือเครื่องซีลสูญญากาศแบบไร้สายที่ออกแบบมาเพื่อยืดอายุอาหาร ป้องกันการเกิดน้ำแข็งจับบนอาหารแช่แข็ง เพียงนำหัวดูดไปแตะที่วาล์วของถุงสุญญากาศ กดปุ่มเดียว พัดลมจะดูดอากาศออกในไม่กี่วินาที สร้างสุญญากาศที่รักษาความสดของอาหารได้นานขึ้น 5 เท่า มีถาดรองน้ำแบบถอดได้เพื่อกักเก็บของเหลว ทำให้ซีลซุป น้ำจิ้ม และเนื้อสัตว์ที่มีน้ำได้โดยไม่ทำลายมอเตอร์ ไม่มีแถบความร้อน ไม่ต้องตั้งค่าซับซ้อน ชาร์จผ่าน USB-C พกพาได้ทุกที่ ทั้งในครัว ตู้เย็น หรือไปตั้งแคมป์',
@@ -77,9 +69,9 @@ export const products: Product[] = [
   {
     slug: 'freshlock-starter-kit',
     name: 'FreshLock Starter Kit ชุดเริ่มต้น',
-    price: 89.99,
-    compareAtPrice: 104.97,
-    discountBadge: 'ประหยัด $14.98 · จัดส่งฟรี',
+    price: 3150,
+    compareAtPrice: 3680,
+    discountBadge: 'ประหยัด ฿530 · จัดส่งฟรี',
     description:
       'ทุกอย่างที่คุณต้องการเพื่อเริ่มซีลอาหารวันนี้ — เครื่อง FreshLock Pro บวกถุงสุญญากาศ BPA-free จำนวน 30 ใบใน 3 ขนาด (เล็ก 10 ใบ กลาง 10 ใบ ใหญ่ 10 ใบ) ในกล่องขายปลีก ป้องกันน้ำแข็งจับบนอาหารแช่แข็ง สำหรับอาหารทำล่วงหน้า ของเหลือ เนื้อดอง และซูวีดี เครื่องซีลใช้ได้กับถุงสุญญากาศส่วนใหญ่ ไม่ต้องซื้อถุงยี่ห้อเดียว',
     shortDescription:
@@ -122,7 +114,7 @@ export const products: Product[] = [
   {
     slug: 'vacuum-seal-bags-30-pack',
     name: 'ถุงสุญญากาศ 30 ใบ (ขนาดกลาง)',
-    price: 24.99,
+    price: 890,
     description:
       'ถุงสุญญากาศคุณภาพสูง 90 ไมโครเมตร มีวาล์วอากาศทางเดียวสีขาวและซิปสีเขียว ใช้กับเครื่องซีลสุญญากาศแบบพกพาทุกยี่ห้อ (รวม FreshLock Pro) ดูดอากาศออกแล้วถุงจะสร้างกำแพงกันออกซิเจนและความชื้น ป้องกันน้ำแข็งจับบนเนื้อสัตว์ ชีส ผัก และของแห้ง BPA-free ปลอดภัยกับอาหาร ใช้ในตู้เย็น ไมโครเวฟ (เปิดซิปก่อน) และใช้ซ้ำได้',
     shortDescription:
@@ -156,7 +148,7 @@ export const products: Product[] = [
   {
     slug: 'vacuum-seal-bags-50-pack',
     name: 'ถุงสุญญากาศ 50 ใบ (ขนาดใหญ่)',
-    price: 34.99,
+    price: 1250,
     description:
       'แพ็คถุงสุญญากาศขนาดใหญ่ คุ้มค่าที่สุด ขนาด 26×34 ซม. 90 ไมโครเมตร สำหรับอาหารสำหรับครอบครัว เนื้อสัตว์ชิ้นใหญ่ ผักจำนวนมาก และทำซูวีดี วัสดุหลายชั้นคุณภาพเดียวกับถุงขนาดกลาง BPA-free ใช้ซ้ำได้ และใช้ได้กับเครื่องซีลสุญญากาศส่วนใหญ่',
     shortDescription:
@@ -294,7 +286,7 @@ export const faqs = [
   {
     question: 'นโยบายการจัดส่งเป็นอย่างไร?',
     answer:
-      'จัดส่งฟรีสำหรับคำสั่งซื้อในไทยที่มียอดเกิน $69 (ประมาณ ฿2,450) ส่งผ่าน DHL Express 2-3 วันทำการ พร้อมเลขพัสดุสำหรับติดตาม ประมวลผลภายใน 1-2 วันทำการ',
+      'จัดส่งฟรีสำหรับคำสั่งซื้อในไทยที่มียอดเกิน ฿2,450 ส่งผ่าน DHL Express 2-3 วันทำการ พร้อมเลขพัสดุสำหรับติดตาม ประมวลผลภายใน 1-2 วันทำการ',
   },
   {
     question: 'นโยบายการคืนสินค้าเป็นอย่างไร?',
