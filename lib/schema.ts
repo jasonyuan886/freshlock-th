@@ -1,6 +1,6 @@
 import { Product, Review } from '@/lib/types';
 
-const SITE_URL = 'https://www.freshlocksealer.com';
+const SITE_URL = 'https://th.freshlocksealer.com';
 
 function absoluteUrl(path: string) {
   return path.startsWith('http') ? path : `${SITE_URL}${path.startsWith('/') ? '' : '/'}${path}`;
