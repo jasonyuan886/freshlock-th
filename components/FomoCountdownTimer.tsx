@@ -53,7 +53,7 @@ export default function FomoCountdownTimer({ variant = 'homepage' }: { variant?:
       <div className="mb-4 rounded-lg bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 px-4 py-2.5 flex items-center justify-between gap-3">
         <div className="text-sm">
           <span className="font-bold text-red-600">⚡ Launch Special</span>
-          <span className="text-gray-600 ml-1">15% OFF ends in</span>
+          <span className="text-gray-600 ml-1">ลด 15% สิ้นสุดใน</span>
         </div>
         <div className="flex items-center gap-1 font-mono font-bold text-red-600 text-lg tabular-nums">
           <span className="bg-white px-2 py-0.5 rounded">{pad(timeLeft.hours)}h</span>
@@ -67,7 +67,7 @@ export default function FomoCountdownTimer({ variant = 'homepage' }: { variant?:
   return (
     <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white text-center py-3 px-4">
       <div className="max-w-7xl mx-auto flex items-center justify-center gap-4 flex-wrap">
-        <span className="font-bold text-sm md:text-base">⚡ Launch Special — 15% OFF Everything!</span>
+        <span className="font-bold text-sm md:text-base">⚡ โปรโมชั่นเปิดตัว — 15% OFF Everything!</span>
         <div className="flex items-center gap-1.5 font-mono font-bold text-lg tabular-nums">
           <span className="bg-white/20 px-2 py-0.5 rounded">{pad(timeLeft.hours)}h</span>
           <span className="bg-white/20 px-2 py-0.5 rounded">{pad(timeLeft.minutes)}m</span>
