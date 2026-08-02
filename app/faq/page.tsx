@@ -4,9 +4,9 @@ import { faqs } from '@/lib/data';
 import { generateFAQSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'FAQ — Battery, Bags, Freezer Burn, Drip Tray & Warranty',
+  title: 'คำถามที่พบบ่อย — แบตเตอรี่ ถุง ฟรีเซอร์เบิร์น ถาดรองน้ำและการรับประกัน',
   description:
-    'Answers about the FreshLock Pro handheld vacuum sealer: battery life, USB-C charging, BPA-free bags, drip tray for liquids, warranty, 60-day returns and shipping.',
+    'คำตอบเกี่ยวกับเครื่องสูญญากาศแบบพกพา FreshLock Pro: อายุแบตเตอรี่ การชาร์จ USB-C ถุงปลอด BPA ถาดรองน้ำสำหรับของเหลว การรับประกัน การคืนสินค้า 7 วันและการจัดส่ง',
   alternates: {
     canonical: '/faq',
     languages: {
@@ -28,9 +28,9 @@ export default function FaqPage() {
       />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <header className="text-center mb-12">
-          <h1 className="section-title">Frequently Asked Questions</h1>
+          <h1 className="section-title">คำถามที่พบบ่อย</h1>
           <p className="section-subtitle">
-            Everything you need to know about FreshLock products, shipping, and more.
+            ทุกสิ่งที่คุณต้องรู้เกี่ยวกับผลิตภัณฑ์ FreshLock การจัดส่ง และอื่นๆ
           </p>
         </header>
 
@@ -49,12 +49,12 @@ export default function FaqPage() {
         </div>
 
         <div className="mt-12 bg-primary text-white rounded-xl p-8 text-center">
-          <h2 className="text-2xl font-bold mb-3">Still have questions?</h2>
+          <h2 className="text-2xl font-bold mb-3">ยังมีคำถามอีกไหม?</h2>
           <p className="text-gray-300 mb-6">
-            Our friendly team is here to help. Get in touch and we will get back to you within 24 hours.
+            ทีมของเราพร้อมช่วยเหลือ ติดต่อเราแล้วเราจะตอบกลับภายใน 24 ชั่วโมง
           </p>
           <Link href="/contact" className="btn-primary">
-            Contact Us
+            ติดต่อเรา
           </Link>
         </div>
       </div>
