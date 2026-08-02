@@ -3,9 +3,9 @@ import { products } from '@/lib/data';
 import ProductsClient from './ProductsClient';
 
 export const metadata: Metadata = {
-  title: 'Shop Handheld Vacuum Sealers & BPA-Free Vacuum Bags',
+  title: 'ซื้อเครื่องสูญญากาศแบบพกพาและถุงปลอด BPA',
   description:
-    'Shop FreshLock Pro handheld vacuum sealers, starter kits and BPA-free embossed vacuum bags. -60 kPa suction, USB-C rechargeable, drip tray, compatible with most valve bags. Free shipping over $89, Starter Kits ship free.',
+    'ซื้อเครื่องสูญญากาศแบบพกพา FreshLock Pro คิทเริ่มต้น และถุงซีลสูญญากาศลายนูนปลอด BPA -60 kPa, ชาร์จ USB-C, ถาดรองน้ำ, ใช้ได้กับถุงวาล์วส่วนใหญ่ จัดส่งฟรีเมื่อสั่งเกิน $69',
   alternates: {
     canonical: '/products',
     languages: {
