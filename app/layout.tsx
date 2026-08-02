@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     languages: {
       'en-US': 'https://www.freshlocksealer.com',
       'ja-JP': 'https://jp.freshlocksealer.com',
+      'th-TH': 'https://th.freshlocksealer.com',
       'x-default': 'https://www.freshlocksealer.com',
     },
   },
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     siteName,
     title,
     description,
-    locale: 'en_US',
+    locale: 'th_TH',
     images: [
       {
         url: '/images/products/sealer-main.jpg',
@@ -76,10 +77,11 @@ const websiteSchema = generateWebsiteSchema();
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-US">
+    <html lang="th">
       <head>
         <link rel="alternate" hrefLang="en-US" href="https://www.freshlocksealer.com" />
         <link rel="alternate" hrefLang="ja-JP" href="https://jp.freshlocksealer.com" />
+        <link rel="alternate" hrefLang="th-TH" href="https://th.freshlocksealer.com" />
         <link rel="alternate" hrefLang="x-default" href="https://www.freshlocksealer.com" />
         <meta name="p:domain_verify" content="35f8877a03378002c70a19e5750a86c4" />
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-N16R0F2B1Y" strategy="afterInteractive" />
