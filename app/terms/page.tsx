@@ -1,160 +1,160 @@
 export default function TermsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h1 className="section-title mb-8">Terms of Service</h1>
+      <h1 className="section-title mb-8">ข้อกำหนดการให้บริการ</h1>
 
       <div className="prose prose-lg max-w-none">
         <div className="bg-white rounded-xl p-8 shadow-sm space-y-6">
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">1. Acceptance of Terms</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">1. การยอมรับข้อกำหนด</h2>
             <p className="text-gray-600 leading-relaxed">
-              Welcome to FreshLock. These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use of the FreshLock website at www.freshlocksealer.com (the &ldquo;Site&rdquo;) and any purchases you make through the Site. By accessing, browsing, or placing an order on the Site, you agree to be bound by these Terms and all applicable laws and regulations. If you do not agree with any part of these Terms, please do not use our Site.
+              ยินดีต้อนรับสู่ FreshLock ข้อกำหนดการให้บริการเหล่านี้ (&ldquo;ข้อกำหนด&rdquo;) ควบคุมการเข้าถึงและการใช้เว็บไซต์ FreshLock ที่ www.freshlocksealer.com (&ldquo;เว็บไซต์&rdquo;) และการซื้อใดๆ ที่คุณทำผ่านเว็บไซต์ การเข้าถึง การเรียกดู หรือการสั่งซื้อบนเว็บไซต์ ถือว่าคุณตกลงที่จะผูกพันกับข้อกำหนดเหล่านี้และกฎหมายและข้อบังคับที่บังคับใช้ทั้งหมด หากคุณไม่เห็นด้วยกับส่วนใดของข้อกำหนดเหล่านี้ โปรดอย่าใช้เว็บไซต์ของเรา
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">2. Who We Are</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">2. เราคือใคร</h2>
             <p className="text-gray-600 leading-relaxed">
-              FreshLock is an online retailer of handheld vacuum sealers and vacuum seal bags. Customer support can be reached at <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a>. We ship worldwide from this storefront.
+              FreshLock เป็นผู้ค้าปลีกออนไลน์ของเครื่องสูญญากาศแบบพกพาและถุงซีลสูญญากาศ ติดต่อฝ่ายสนับสนุนลูกค้าได้ที่ <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a> เราจัดส่งทั่วโลกจากร้านค้านี้
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">3. Eligibility</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">3. คุณสมบัติ</h2>
             <p className="text-gray-600 leading-relaxed">
-              You must be at least 18 years old, or have the consent of a parent or legal guardian, to make a purchase on the Site. By placing an order, you represent that you meet these requirements and have the legal capacity to enter into a binding contract.
+              คุณต้องมีอายุอย่างน้อย 18 ปี หรือได้รับความยินยอมจากผู้ปกครองหรือผู้ปกครองตามกฎหมาย เพื่อซื้อสินค้าบนเว็บไซต์ การสั่งซื้อถือว่าคุณแสดงว่าคุณมีคุณสมบัติตรงตามข้อกำหนดเหล่านี้และมีความสามารถทางกฎหมายในการทำสัญญาที่ผูกพัน
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">4. Products and Pricing</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">4. ผลิตภัณฑ์และราคา</h2>
             <p className="text-gray-600 leading-relaxed mb-3">
-              We take care to describe and display our products accurately. Please note:
+              เราตั้งใจอธิบายและแสดงผลิตภัณฑ์ของเราอย่างถูกต้อง โปรดทราบ:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li>All prices are shown in US Dollars (USD). Applicable taxes, duties and import fees are the responsibility of the customer in accordance with local regulations.</li>
-              <li>We reserve the right to correct pricing errors, even after an order has been placed, and will notify you before charging a different price.</li>
-              <li>Product images are for illustrative purposes. Colours and finishes may vary slightly depending on your screen.</li>
-              <li>We reserve the right to discontinue products, limit quantities, or change specifications without notice.</li>
-              <li>All FreshLock handheld vacuum sealers are air-pump (suction) devices and are used with our valve-equipped vacuum seal bags; they are not heat-seal appliances.</li>
+              <li>ราคาทั้งหมดแสดงเป็นดอลลาร์สหรัฐ (USD) ภาษี อากร และค่าธรรมเนียมนำเข้าที่เกี่ยวข้องเป็นความรับผิดชอบของลูกค้าตามกฎระเบียบในพื้นที่</li>
+              <li>เราขอสงวนสิทธิ์ในการแก้ไขข้อผิดพลาดด้านราคา แม้หลังจากสั่งซื้อแล้ว และจะแจ้งให้คุณทราบก่อนเรียกเก็บเงินในราคาอื่น</li>
+              <li>ภาพผลิตภัณฑ์เป็นเพื่อการแสดง สีและพื้นผิวอาจแตกต่างกันเล็กน้อยขึ้นอยู่กับหน้าจอของคุณ</li>
+              <li>เราขอสงวนสิทธิ์ในการยกเลิกผลิตภัณฑ์ จำกัดปริมาณ หรือเปลี่ยนข้อกำหนดโดยไม่ต้องแจ้งให้ทราบล่วงหน้า</li>
+              <li>เครื่องสูญญากาศแบบพกพา FreshLock ทุกรุ่นเป็นอุปกรณ์ปั๊มลม (ดูด) และใช้กับถุงซีลสูญญากาศที่มีวาล์วของเรา ไม่ใช่เครื่องซีลความร้อน</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">5. Orders and Payment</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">5. คำสั่งซื้อและการชำระเงิน</h2>
             <p className="text-gray-600 leading-relaxed mb-3">
-              When you place an order on the Site:
+              เมื่อคุณสั่งซื้อบนเว็บไซต์:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li>You agree to provide accurate, current, and complete billing and shipping information.</li>
-              <li>You will receive an automated order confirmation email acknowledging receipt of your order.</li>
-              <li>A binding contract is formed only when we dispatch the goods and send you a shipping confirmation.</li>
-              <li>Payment is processed securely through PayPal, our third-party payment provider, who handles your payment details in accordance with their own security and privacy standards.</li>
-              <li>We reserve the right to refuse or cancel any order at our discretion — for example, if a product is out of stock, if pricing is incorrect, or if we suspect fraudulent activity. In such cases we will issue a full refund.</li>
+              <li>คุณตกลงที่จะให้ข้อมูลการเรียกเก็บเงินและการจัดส่งที่ถูกต้อง ปัจจุบัน และสมบูรณ์</li>
+              <li>คุณจะได้รับอีเมลยืนยันคำสั่งซื้ออัตโนมัติเพื่อรับทราบคำสั่งซื้อของคุณ</li>
+              <li>สัญญาที่ผูกพันจะเกิดขึ้นเมื่อเราส่งมอบสินค้าและส่งอีเมลยืนยันการจัดส่งให้คุณ</li>
+              <li>การชำระเงินดำเนินการอย่างปลอดภัยผ่าน PayPal ผู้ให้บริการชำระเงินบุคคลที่สามของเรา ซึ่งจัดการรายละเอียดการชำระเงินของคุณตามมาตรฐานความปลอดภัยและความเป็นส่วนตัวของตนเอง</li>
+              <li>เราขอสงวนสิทธิ์ในการปฏิเสธหรือยกเลิกคำสั่งซื้อใดๆ ตามดุลยพินิจของเรา — ตัวอย่างเช่น หากสินค้าหมดสต็อก ราคาไม่ถูกต้อง หรือเราสงสัยว่ามีการฉ้อโกง ในกรณีดังกล่าวเราจะคืนเงินเต็มจำนวน</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">6. Shipping and Delivery</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">6. การจัดส่งและการส่งมอบ</h2>
             <p className="text-gray-600 leading-relaxed">
-              Shipping and delivery terms are set out in our <a href="/shipping" className="text-accent hover:underline">Shipping &amp; Delivery Policy</a>. Shipping times and costs are estimates and are not guaranteed. Risk of loss and title for items pass to you upon delivery to the carrier. We are not liable for delays caused by carriers, customs, or circumstances beyond our reasonable control.
+              ข้อกำหนดการจัดส่งและการส่งมอบระบุไว้ใน <a href="/shipping" className="text-accent hover:underline">นโยบายการจัดส่งและการส่งมอบ</a> ของเรา เวลาและค่าใช้จ่ายในการจัดส่งเป็นการประมาณการและไม่รับประกัน ความเสี่ยงการสูญเสียและกรรมสิทธิ์ของสินค้าจะโอนไปยังคุณเมื่อส่งมอบให้บริษัทขนส่ง เราไม่รับผิดชอบต่อความล่าช้าที่เกิดจากบริษัทขนส่ง ศุลกากร หรือสถานการณ์ที่อยู่นอกเหนือการควบคุมที่สมเหตุสมผลของเรา
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">7. Returns, Refunds and Consumer Guarantees</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">7. การคืนสินค้า การคืนเงินและการรับประกันผู้บริโภค</h2>
             <p className="text-gray-600 leading-relaxed">
-              Our <a href="/returns" className="text-accent hover:underline">Returns &amp; Refund Policy</a> sets out our 60-day return process for change-of-mind returns and how we handle defective or damaged items. Nothing in these Terms limits your non-excludable statutory consumer rights under applicable local law, including your entitlement to a replacement, repair, or refund for a major failure and compensation for any other reasonably foreseeable loss or damage.
+              <a href="/returns" className="text-accent hover:underline">นโยบายการคืนสินค้าและคืนเงิน</a> ของเราระบุกระบวนการคืนสินค้า 7 วันสำหรับการคืนกรณีเปลี่ยนใจและวิธีที่เราจัดการสินค้าที่ชำรุดหรือเสียหาย ไม่มีสิ่งใดในข้อกำหนดเหล่านี้จำกัดสิทธิผู้บริโภคตามกฎหมายที่ไม่อาจยกเว้นได้ของคุณภายใต้กฎหมายคุ้มครองผู้บริโภคที่บังคับใช้ในพื้นที่ รวมถึงสิทธิของคุณในการเปลี่ยน ซ่อม หรือคืนเงินสำหรับความล้มเหลวครั้งใหญ่และค่าชดเชยสำหรับความสูญเสียหรือความเสียหายอื่นๆ ที่สามารถคาดเดาได้อย่างสมเหตุสมผล
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">8. Product Use and Safety</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">8. การใช้ผลิตภัณฑ์และความปลอดภัย</h2>
             <p className="text-gray-600 leading-relaxed">
-              FreshLock products are designed for household food storage use only. Please read and follow the included instructions before use. Misuse of the vacuum sealer or its accessories (including attempting to vacuum seal liquids in a way not covered in the instructions, or using third-party bags that do not fit the valve) may damage the product or cause injury, and will void the warranty.
+              ผลิตภัณฑ์ FreshLock ออกแบบมาสำหรับการเก็บอาหารในครัวเรือนเท่านั้น โปรดอ่านและปฏิบัติตามคำแนะนำที่แนบมาก่อนใช้ การใช้เครื่องสูญญากาศหรืออุปกรณ์เสริมผิดวิธี (รวมถึงการพยายามสูญญากาศของเหลวในลักษณะที่ไม่ครอบคลุมในคำแนะนำ หรือการใช้ถุงของบุคคลที่สามที่ไม่พอดีกับวาล์ว) อาจทำให้ผลิตภัณฑ์เสียหายหรือก่อให้เกิดการบาดเจ็บ และจะทำให้การรับประกันเป็นโมฆะ
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">9. Warranties and Disclaimers</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">9. การรับประกันและข้อจำกัดความรับผิด</h2>
             <p className="text-gray-600 leading-relaxed mb-3">
-              FreshLock products come with a manufacturer's warranty against defects in materials and workmanship, as specified on the product page (2-year warranty on the main unit, 6-month warranty on accessories and consumables) from purchase. To the fullest extent permitted by law:
+              ผลิตภัณฑ์ FreshLock มาพร้อมการรับประกันจากผู้ผลิตต่อข้อบกพร่องในวัสดุและการผลิต ตามที่ระบุไว้ในหน้าผลิตภัณฑ์ (รับประกัน 1 ปีสำหรับตัวเครื่อง รับประกัน 6 เดือนสำหรับอุปกรณ์เสริมและวัสดุสิ้นเปลือง) นับจากวันซื้อ ในขอบเขตที่กฎหมายอนุญาต:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li>The Site and its content are provided &ldquo;as is&rdquo; without warranties of any kind, whether express or implied.</li>
-              <li>We do not warrant that the Site will be uninterrupted, error-free, secure, or free of viruses or other harmful components.</li>
-              <li>We do not warrant that product descriptions, images, or other content is accurate, complete, or current (we will, however, correct errors promptly once notified).</li>
+              <li>เว็บไซต์และเนื้อหาของเว็บไซต์ให้บริการ &ldquo;ตามสภาพ&rdquo; โดยไม่มีการรับประกันประเภทใดๆ ไม่ว่าจะโดยชัดแจ้งหรือโดยนัย</li>
+              <li>เราไม่รับประกันว่าเว็บไซต์จะไม่ถูกขัดจังหวะ ไม่มีข้อผิดพลาด ปลอดภัย หรือปราศจากไวรัสหรือส่วนประกอบที่เป็นอันตรายอื่นๆ</li>
+              <li>เราไม่รับประกันว่าคำอธิบายผลิตภัณฑ์ ภาพ หรือเนื้อหาอื่นๆ นั้นถูกต้อง สมบูรณ์ หรือเป็นปัจจุบัน (อย่างไรก็ตาม เราจะแก้ไขข้อผิดพลาดทันทีเมื่อได้รับแจ้ง)</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">10. Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">10. การจำกัดความรับผิด</h2>
             <p className="text-gray-600 leading-relaxed">
-              To the maximum extent permitted by law, FreshLock and its operators shall not be liable for any indirect, incidental, special, consequential, or punitive damages — including loss of profits, data, or goodwill — arising from your use of the Site or products, even if we have been advised of the possibility of such damages. Our total aggregate liability for any claim relating to a product you purchased shall not exceed the amount you actually paid for that product. Nothing in this clause limits your non-excludable statutory rights under applicable local consumer protection laws.
+              ในขอบเขตสูงสุดที่กฎหมายอนุญาต FreshLock และผู้ดำเนินการจะไม่รับผิดต่อความเสียหายทางอ้อม อุบัติเหตุ พิเศษ ตามผล หรือที่ลงโทษ — รวมถึงการสูญเสียกำไร ข้อมูล หรือความน่าเชื่อถือ — ที่เกิดจากการใช้เว็บไซต์หรือผลิตภัณฑ์ของคุณ แม้ว่าเราจะได้รับแจ้งถึงความเป็นไปได้ของความเสียหายดังกล่าว ความรับผิดรวมของเราสำหรับการเคลมใดๆ ที่เกี่ยวข้องกับผลิตภัณฑ์ที่คุณซื้อจะไม่เกินจำนวนเงินที่คุณจ่ายจริงสำหรับผลิตภัณฑ์นั้น ไม่มีสิ่งใดในข้อกำหนดนี้จำกัดสิทธิตามกฎหมายที่ไม่อาจยกเว้นได้ของคุณภายใต้กฎหมายคุ้มครองผู้บริโภคที่บังคับใช้ในพื้นที่
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">11. Intellectual Property</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">11. ทรัพย์สินทางปัญญา</h2>
             <p className="text-gray-600 leading-relaxed">
-              All content on the Site — including text, graphics, logos, product images, photographs, videos, and software — is the property of FreshLock or its licensors and is protected by international copyright, trade mark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any of this content without our prior written permission. The FreshLock name and logo are trade marks of FreshLock.
+              เนื้อหาทั้งหมดบนเว็บไซต์ — รวมถึงข้อความ กราฟิก โลโก้ ภาพผลิตภัณฑ์ ภาพถ่าย วิดีโอ และซอฟต์แวร์ — เป็นทรัพย์สินของ FreshLock หรือผู้ให้ใบอนุญาตและได้รับการคุ้มครองโดยกฎหมายลิขสิทธิ์ระหว่างประเทศ เครื่องหมายการค้า และกฎหมายทรัพย์สินทางปัญญาอื่นๆ คุณไม่สามารถทำซ้ำ แจกจ่าย แก้ไข หรือสร้างงานลอกเลียนจากเนื้อหาใดๆ นี้โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากเรา ชื่อและโลโก้ FreshLock เป็นเครื่องหมายการค้าของ FreshLock
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">12. User Conduct</h2>
-            <p className="text-gray-600 leading-relaxed mb-3">When using the Site, you agree not to:</p>
+            <h2 className="text-2xl font-bold text-primary mb-3">12. การประพฤติของผู้ใช้</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">เมื่อใช้เว็บไซต์ คุณตกลงที่จะไม่:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li>Use the Site for any unlawful purpose or in violation of any applicable laws.</li>
-              <li>Infringe the intellectual property rights of FreshLock or any third party.</li>
-              <li>Attempt to gain unauthorised access to our systems, user accounts, or data.</li>
-              <li>Transmit viruses, malware, or other harmful code.</li>
-              <li>Interfere with the operation, security, or integrity of the Site or its servers.</li>
-              <li>Submit false, misleading, or fraudulent information.</li>
+              <li>ใช้เว็บไซต์เพื่อวัตถุประสงค์ที่ผิดกฎหมายใดๆ หรือละเมิดกฎหมายที่บังคับใช้</li>
+              <li>ละเมิดสิทธิทรัพย์สินทางปัญญาของ FreshLock หรือบุคคลที่สามใดๆ</li>
+              <li>พยายามเข้าถึงระบบ บัญชีผู้ใช้ หรือข้อมูลของเราโดยไม่ได้รับอนุญาต</li>
+              <li>ส่งไวรัส มัลแวร์ หรือโค้ดที่เป็นอันตรายอื่นๆ</li>
+              <li>รบกวนการทำงาน ความปลอดภัย หรือความสมบูรณ์ของเว็บไซต์หรือเซิร์ฟเวอร์</li>
+              <li>ส่งข้อมูลเท็จ ที่ทำให้เข้าใจผิด หรือฉ้อโกง</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">13. Privacy</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">13. ความเป็นส่วนตัว</h2>
             <p className="text-gray-600 leading-relaxed">
-              Your personal information is handled in accordance with our <a href="/privacy" className="text-accent hover:underline">Privacy Policy</a>, which forms part of these Terms.
+              ข้อมูลส่วนบุคคลของคุณได้รับการจัดการตาม <a href="/privacy" className="text-accent hover:underline">นโยบายความเป็นส่วนตัว</a> ของเรา ซึ่งเป็นส่วนหนึ่งของข้อกำหนดเหล่านี้
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">14. External Links</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">14. ลิงก์ภายนอก</h2>
             <p className="text-gray-600 leading-relaxed">
-              The Site may contain links to third-party websites (for example, social media pages or payment providers). We are not responsible for the content, policies, or practices of those external sites, and you access them at your own risk.
+              เว็บไซต์อาจมีลิงก์ไปยังเว็บไซต์ของบุคคลที่สาม (เช่น หน้าโซเชียลมีเดียหรือผู้ให้บริการชำระเงิน) เราไม่รับผิดชอบต่อเนื้อหา นโยบาย หรือแนวปฏิบัติของเว็บไซต์ภายนอกเหล่านั้น และคุณเข้าถึงโดยยอมรับความเสี่ยงของคุณเอง
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">15. Governing Law and Jurisdiction</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">15. กฎหมายที่ใช้บังคับและเขตอำนาจศาล</h2>
             <p className="text-gray-600 leading-relaxed">
-              These Terms are governed by the laws of Hong Kong SAR. Any dispute arising from these Terms or your use of the Site will be subject to the non-exclusive jurisdiction of the courts of Hong Kong SAR, subject to any non-excludable rights you may have under consumer protection laws in your own jurisdiction.
+              ข้อกำหนดเหล่านี้อยู่ภายใต้กฎหมายของเขตปกครองพิเศษฮ่องกง ข้อพิพาทใดๆ ที่เกิดจากข้อกำหนดเหล่านี้หรือการใช้เว็บไซต์ของคุณจะอยู่ภายใต้เขตอำนาจศาลที่ไม่เฉพาะเจาะจงของศาลฮ่องกง โดยยึดตามสิทธิที่ไม่อาจยกเว้นได้ที่คุณอาจมีภายใต้กฎหมายคุ้มครองผู้บริโภคในเขตอำนาจศาลของคุณเอง
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">16. Changes to These Terms</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">16. การเปลี่ยนแปลงข้อกำหนดเหล่านี้</h2>
             <p className="text-gray-600 leading-relaxed">
-              We may update these Terms from time to time. The updated version will be posted on this page with a new &ldquo;Last updated&rdquo; date. Your continued use of the Site after changes are posted constitutes acceptance of the revised Terms.
+              เราอาจอัปเดตข้อกำหนดเหล่านี้เป็นครั้งคราว เวอร์ชันที่อัปเดตจะถูกโพสต์บนหน้านี้พร้อมวันที่ &ldquo;อัปเดตล่าสุด&rdquo; ใหม่ การใช้เว็บไซต์ต่อไปของคุณหลังจากมีการโพสต์การเปลี่ยนแปลงถือว่าคุณยอมรับข้อกำหนดที่แก้ไขแล้ว
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">17. Contact Information</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">17. ข้อมูลติดต่อ</h2>
             <p className="text-gray-600 leading-relaxed">
-              If you have any questions about these Terms, please contact us at:
+              หากคุณมีคำถามใดๆ เกี่ยวกับข้อกำหนดเหล่านี้ โปรดติดต่อเราที่:
             </p>
             <p className="text-gray-600 leading-relaxed mt-3">
-              <strong>Email:</strong> <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a><br />
-              <strong>Response time:</strong> Within 24 hours on business days (Mon–Fri, 9am–5pm EST)
+              <strong>อีเมล:</strong> <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a><br />
+              <strong>เวลาตอบกลับ:</strong> ภายใน 24 ชั่วโมงในวันทำการ (จันทร์–ศุกร์, 9โมง–5โมงเย็น ICT)
             </p>
           </section>
 
           <p className="text-sm text-gray-500 mt-8 pt-6 border-t">
-            Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            อัปเดตล่าสุด: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
           </p>
         </div>
       </div>
