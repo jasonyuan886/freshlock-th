@@ -1,9 +1,8 @@
 import { Product, Review } from './types';
 
-// Free shipping threshold for US orders (USD)
-export const FREE_SHIPPING_THRESHOLD = 89;
+// Free shipping threshold (USD)
+export const FREE_SHIPPING_THRESHOLD = 69;
 export const SHIPPING_FEE_UNDER = 5.99;
-// International free-shipping tiers
 export const FREE_SHIPPING_REGIONS: Record<string, number> = {
   US: 89,
   CA: 89,
@@ -14,19 +13,27 @@ export const FREE_SHIPPING_REGIONS: Record<string, number> = {
   MY: 69,
   TH: 69,
 };
-export const STARTER_KIT_SHIPS_FREE = true; // Starter kits always ship free
+export const STARTER_KIT_SHIPS_FREE = true;
+
+// THB reference prices (approximate, for display only)
+export const THB_REFERENCE: Record<string, number> = {
+  'freshlock-pro': 2450,
+  'freshlock-starter-kit': 3150,
+  'vacuum-seal-bags-30-pack': 890,
+  'vacuum-seal-bags-50-pack': 1250,
+};
 
 export const products: Product[] = [
   {
     slug: 'freshlock-pro',
-    name: 'FreshLock Pro Handheld Vacuum Sealer',
-    price: 74.99,
+    name: 'FreshLock Pro เครื่องซีลสูญญากาศแบบพกพา',
+    price: 69.99,
     compareAtPrice: 89.99,
-    discountBadge: '17% off MSRP',
+    discountBadge: 'ลด 22%',
     description:
-      'The FreshLock Pro is a cordless handheld vacuum sealer designed to stop freezer burn before it starts. Attach the nozzle to the valve on any compatible embossed valve bag, press one button, and the quiet pump pulls air out in seconds — creating an airtight seal that keeps food fresh up to 5× longer. A detachable drip tray catches liquid overflow so soups, marinades, and juicy meats seal cleanly without damaging the motor. No heat bar, no complicated setup. Recharge via USB-C and take it anywhere — kitchen drawer, fridge, pantry, or campsite.',
+      'FreshLock Pro คือเครื่องซีลสูญญากาศแบบไร้สายที่ออกแบบมาเพื่อยืดอายุอาหาร ป้องกันการเกิดน้ำแข็งจับบนอาหารแช่แข็ง เพียงนำหัวดูดไปแตะที่วาล์วของถุงสุญญากาศ กดปุ่มเดียว พัดลมจะดูดอากาศออกในไม่กี่วินาที สร้างสุญญากาศที่รักษาความสดของอาหารได้นานขึ้น 5 เท่า มีถาดรองน้ำแบบถอดได้เพื่อกักเก็บของเหลว ทำให้ซีลซุป น้ำจิ้ม และเนื้อสัตว์ที่มีน้ำได้โดยไม่ทำลายมอเตอร์ ไม่มีแถบความร้อน ไม่ต้องตั้งค่าซับซ้อน ชาร์จผ่าน USB-C พกพาได้ทุกที่ ทั้งในครัว ตู้เย็น หรือไปตั้งแคมป์',
     shortDescription:
-      'Cordless handheld vacuum sealer with -60 kPa suction, detachable drip tray, USB-C charging, and BPA-free starter bags. Stops freezer burn — compatible with most embossed valve bags.',
+      'เครื่องซีลสูญญากาศแบบพกพา สุญญากาศ -60 kPa ถาดรองน้ำถอดได้ ชาร์จ USB-C ถุง BPA-free ป้องกันน้ำแข็งจับบนอาหาร ใช้ได้กับถุงสุญญากาศส่วนใหญ่',
     image: '/images/products/sealer-main.jpg',
     images: [
       '/images/products/sealer-main.jpg',
@@ -40,43 +47,43 @@ export const products: Product[] = [
       '/images/products/sealer-detail-tube.jpg',
     ],
     features: [
-      '-60 kPa strong suction — pulls air through the bag valve in seconds',
-      'Detachable drip tray with liquid backflow protection for soups, marinades, and juicy foods',
-      'One-touch operation — no heat bar, no complicated settings',
-      'Compatible with most embossed valve bags (not locked to our own bags)',
-      'Cordless & portable — USB-C rechargeable, 80–100 seals per charge',
-      'Quiet motor under 60 dB — about as loud as a library',
-      'Compact, lightweight design (~210 g) — fits in a kitchen drawer',
+      'สุญญากาศ -60 kPa ดูดอากาศออกจากถุงในไม่กี่วินาที',
+      'ถาดรองน้ำถอดได้ ป้องกันของเหลวไหลเข้ามอเตอร์ สำหรับซุป น้ำจิ้ม และเนื้อสด',
+      'กดปุ่มเดียวใช้งาน ไม่มีแถบความร้อน ไม่ต้องตั้งค่า',
+      'ใช้ได้กับถุงสุญญากาศส่วนใหญ่ (ไม่ต้องใช้ถุงยี่ห้อเดียว)',
+      'ไร้สาย พกพาได้ ชาร์จ USB-C ดูดได้ 80-100 ครั้งต่อการชาร์จ',
+      'เสียงเงียบ ต่ำกว่า 60 เดซิเบล เบาเท่าห้องสมุด',
+      'ขนาดกะทัดรัด น้ำหนักเบา ~210 กรัม เก็บในลิ้นชักครัวได้',
     ],
     specs: {
-      'Suction': '-60 kPa',
-      'Battery': '1200 mAh rechargeable Li-ion',
-      'Charging': 'USB-C, ~2.5 hours to full charge',
-      'Seals per charge': '80–100 bags',
-      'Noise level': 'Under 60 dB (library-quiet)',
-      'Sealing method': 'Vacuum extraction through one-way air valve (no heat bar)',
-      'Weight': '~210 g / 7.4 oz',
-      'Dimensions (approx.)': '65 × 65 × 135 mm / 2.6 × 2.6 × 5.3 in',
-      'Material': 'ABS body, BPA-free food-safe bags, food-grade silicone nozzle',
-      'Operating temperature': '-20 °C to 100 °C (freezer, sous vide, microwave-safe bags — open zipper first)',
-      'Drip tray': 'Detachable transparent drip cup, liquid backflow protection',
-      'Bag compatibility': 'Compatible with most embossed valve bags (not locked to our own bags)',
-      "What's in the box": '1 FreshLock Pro sealer, 1 USB-C charging cable, starter vacuum bags, user manual',
-      'Warranty': '2-year warranty on the unit, 6-month on accessories',
+      'กำลังดูด': '-60 kPa',
+      'แบตเตอรี่': '1200 mAh Li-ion ชาร์จได้',
+      'การชาร์จ': 'USB-C ชาร์จเต็มประมาณ 2.5 ชั่วโมง',
+      'จำนวนครั้งต่อการชาร์จ': '80-100 ถุง',
+      'ระดับเสียง': 'ต่ำกว่า 60 เดซิเบล (เงียบเท่าห้องสมุด)',
+      'วิธีการซีล': 'ดูดอากาศผ่านวาล์วทางเดียว (ไม่มีแถบความร้อน)',
+      'น้ำหนัก': '~210 กรัม',
+      'ขนาด (โดยประมาณ)': '65 × 65 × 135 มม.',
+      'วัสดุ': 'เครื่อง ABS ถุง BPA-free หัวดูดซิลิโคนเกรดอาหาร',
+      'อุณหภูมิใช้งาน': '-20 °C ถึง 100 °C (แช่แข็ง ซูวีดี ไมโครเวฟ - เปิดซิปก่อนใช้)',
+      'ถาดรองน้ำ': 'ถอดได้ โปร่งแสง ป้องกันน้ำไหลย้อน',
+      'ความเข้ากันได้ของถุง': 'ใช้ได้กับถุงสุญญากาศส่วนใหญ่ที่มีวาล์ว',
+      'ในกล่องประกอบด้วย': 'เครื่อง FreshLock Pro 1 เครื่อง สายชาร์จ USB-C ถุงสุญญากาศเริ่มต้น คู่มือใช้งาน',
+      'การรับประกัน': 'รับประกัน 1 ปี สำหรับตัวเครื่อง',
     },
     category: 'devices',
-    badge: 'New',
+    badge: 'ใหม่',
   },
   {
     slug: 'freshlock-starter-kit',
-    name: 'FreshLock Starter Kit',
-    price: 94.99,
+    name: 'FreshLock Starter Kit ชุดเริ่มต้น',
+    price: 89.99,
     compareAtPrice: 104.97,
-    discountBadge: 'Save $9.98 · Ships FREE',
+    discountBadge: 'ประหยัด $14.98 · จัดส่งฟรี',
     description:
-      'Everything you need to start vacuum sealing today — the FreshLock Pro handheld vacuum sealer plus 30 BPA-free embossed valve bags in three sizes (10 small, 10 medium, 10 large), all in the retail box. Stop freezer burn on meal prep, leftovers, marinating meats, and sous-vide portions the moment you open the box. The sealer works with most embossed valve bags, so you are never locked into expensive replacements.',
+      'ทุกอย่างที่คุณต้องการเพื่อเริ่มซีลอาหารวันนี้ — เครื่อง FreshLock Pro บวกถุงสุญญากาศ BPA-free จำนวน 30 ใบใน 3 ขนาด (เล็ก 10 ใบ กลาง 10 ใบ ใหญ่ 10 ใบ) ในกล่องขายปลีก ป้องกันน้ำแข็งจับบนอาหารแช่แข็ง สำหรับอาหารทำล่วงหน้า ของเหลือ เนื้อดอง และซูวีดี เครื่องซีลใช้ได้กับถุงสุญญากาศส่วนใหญ่ ไม่ต้องซื้อถุงยี่ห้อเดียว',
     shortDescription:
-      'FreshLock Pro + 30 BPA-free vacuum zipper bags in 3 sizes — everything to get started sealing today.',
+      'FreshLock Pro + ถุงสุญญากาศ BPA-free 30 ใบ 3 ขนาด — ทุกอย่างพร้อมเริ่มซีลวันนี้',
     image: '/images/products/sealer-kit.jpg',
     images: [
       '/images/products/sealer-kit.jpg',
@@ -93,160 +100,150 @@ export const products: Product[] = [
       '/images/products/bags-lrg.jpg',
     ],
     features: [
-      'Includes FreshLock Pro handheld vacuum sealer (-60 kPa, USB-C, ~210 g)',
-      '30 BPA-free embossed valve bags (10 small + 10 medium + 10 large)',
-      'Detachable drip tray for mess-free sealing of liquids and marinades',
-      'USB-C charging cable + quick-start guide included',
-      'Works with most embossed valve bags — not locked to our own bags',
-      'Comes in retail gift-ready box',
+      'รวมเครื่อง FreshLock Pro (สุญญากาศ -60 kPa, USB-C, ~210 กรัม)',
+      'ถุงสุญญากาศ BPA-free 30 ใบ (เล็ก 10 + กลาง 10 + ใหญ่ 10)',
+      'ถาดรองน้ำถอดได้ สำหรับซีลของเหลวและเนื้อดอง',
+      'สายชาร์จ USB-C + คู่มือเริ่มต้นใช้งาน',
+      'ใช้ได้กับถุงสุญญากาศส่วนใหญ่ ไม่ต้องใช้ยี่ห้อเดียว',
+      'บรรจุในกล่องขายปลีกพร้อมมอบ',
     ],
     specs: {
-      'Includes': '1× FreshLock Pro sealer, 10× Small bags, 10× Medium bags, 10× Large bags, 1× USB-C cable, 1× quick-start guide',
-      'Bag sizes': 'Small 22×21 cm, Medium 26×28 cm, Large 26×34 cm (90 μm embossed, white circular valve)',
-      'Bag material': 'PA + PE multi-layer, BPA-free, embossed texture, reusable',
-      'Sealer suction': '-60 kPa',
-      'Sealer battery': '1200 mAh, USB-C charging (~2.5 hrs), 80–100 seals per charge',
-      'Sealer weight': '~210 g / 7.4 oz',
-      'Warranty': '2-year on sealer unit, 6-month on accessories; bags are reusable & recyclable',
+      'ประกอบด้วย': 'เครื่อง FreshLock Pro 1 เครื่อง ถุงเล็ก 10 ใบ ถุงกลาง 10 ใบ ถุงใหญ่ 10 ใบ สาย USB-C คู่มือ',
+      'ขนาดถุง': 'เล็ก 22×21 ซม. กลาง 26×28 ซม. ใหญ่ 26×34 ซม. (90 ไมโครเมตร)',
+      'วัสดุถุง': 'PA + PE หลายชั้น BPA-free ใช้ซ้ำได้',
+      'กำลังดูด': '-60 kPa',
+      'แบตเตอรี่': '1200 mAh ชาร์จ USB-C (~2.5 ชม.) 80-100 ครั้ง/ชาร์จ',
+      'น้ำหนัก': '~210 กรัม',
+      'การรับประกัน': 'รับประกัน 1 ปี สำหรับตัวเครื่อง',
     },
     category: 'kits',
-    badge: 'Best Value',
+    badge: 'คุ้มที่สุด',
   },
   {
     slug: 'vacuum-seal-bags-30-pack',
-    name: 'Vacuum Seal Bags — 30 Pack (Medium)',
-    price: 29.99,
+    name: 'ถุงสุญญากาศ 30 ใบ (ขนาดกลาง)',
+    price: 24.99,
     description:
-      'Premium 90 μm embossed vacuum zipper bags with a white circular one-way air valve and apple-green zip slider. Attach any valve-type handheld sealer (including FreshLock Pro) to the valve, extract the air, and the bag creates an airtight barrier that locks out oxygen and moisture — stopping freezer burn on meat, cheese, vegetables, and dry goods. BPA-free, food-safe, freezer-safe, microwave-safe (with zipper open), and reusable.',
+      'ถุงสุญญากาศคุณภาพสูง 90 ไมโครเมตร มีวาล์วอากาศทางเดียวสีขาวและซิปสีเขียว ใช้กับเครื่องซีลสุญญากาศแบบพกพาทุกยี่ห้อ (รวม FreshLock Pro) ดูดอากาศออกแล้วถุงจะสร้างกำแพงกันออกซิเจนและความชื้น ป้องกันน้ำแข็งจับบนเนื้อสัตว์ ชีส ผัก และของแห้ง BPA-free ปลอดภัยกับอาหาร ใช้ในตู้เย็น ไมโครเวฟ (เปิดซิปก่อน) และใช้ซ้ำได้',
     shortDescription:
-      '30 medium embossed valve bags (26×28 cm), 90 μm, BPA-free. Compatible with most valve-type handheld sealers.',
+      'ถุงสุญญากาศขนาดกลาง 30 ใบ (26×28 ซม.) 90 ไมโครเมตร BPA-free ใช้ได้กับเครื่องซีลสุญญากาศส่วนใหญ่',
     image: '/images/products/bags-1.jpg',
     images: [
       '/images/products/bags-1.jpg',
       '/images/products/bags-2.jpg',
     ],
     features: [
-      '90 μm embossed multi-layer PA+PE film for durability',
-      'BPA-free & food-safe (FDA food-contact compliant)',
-      'White circular one-way air valve + apple-green double-track zip slider',
-      'Pre-cut size: 26 × 28 cm — ideal for portions, snacks, cheese, meal prep',
-      'Compatible with most valve-type handheld vacuum sealers (not locked to one brand)',
-      'Reusable & recyclable; freezer, fridge, sous-vide and microwave safe',
+      'ฟิล์ม PA+PE หลายชั้น 90 ไมโครเมตร ทนทาน',
+      'BPA-free ปลอดภัยกับอาหาร',
+      'วาล์วอากาศทางเดียวสีขาว + ซิปสีเขียว',
+      'ขนาดตัดสำเร็จ: 26 × 28 ซม. เหมาะสำหรับอาหารทำล่วงหน้า ขนม ชีส',
+      'ใช้ได้กับเครื่องซีลสุญญากาศส่วนใหญ่',
+      'ใช้ซ้ำได้ รีไซเคิลได้ สำหรับตู้เย็น ซูวีดี และไมโครเวฟ',
     ],
     specs: {
-      'Quantity': '30 bags',
-      'Size': '26 × 28 cm (Medium)',
-      'Thickness': '90 μm embossed texture',
-      'Material': 'PA + PE multi-layer, BPA-free, food-safe',
-      'Closure': 'Double-track zipper with apple-green slider',
-      'Valve': 'White circular one-way air valve',
-      'Microwave safe': 'Yes (open zipper first, up to 100 °C)',
-      'Freezer safe': 'Yes (-20 °C)',
-      'Sous-vide safe': 'Yes (up to 100 °C)',
-      'Dishwasher safe': 'Top-rack wash for reuse',
+      'จำนวน': '30 ใบ',
+      'ขนาด': '26 × 28 ซม. (กลาง)',
+      'ความหนา': '90 ไมโครเมตร',
+      'วัสดุ': 'PA + PE หลายชั้น BPA-free',
+      'การปิด': 'ซิปคู่สีเขียว',
+      'วาล์ว': 'วาล์วอากาศทางเดียวสีขาว',
+      'ไมโครเวฟ': 'ได้ (เปิดซิปก่อน สูงสุด 100 °C)',
+      'ตู้เย็น': 'ได้ (-20 °C)',
+      'ซูวีดี': 'ได้ (สูงสุด 100 °C)',
     },
     category: 'bags',
   },
   {
     slug: 'vacuum-seal-bags-50-pack',
-    name: 'Vacuum Seal Bags — 50 Pack (Large)',
-    price: 39.99,
+    name: 'ถุงสุญญากาศ 50 ใบ (ขนาดใหญ่)',
+    price: 34.99,
     description:
-      'Our value-sized large bag pack. At 26×34 cm these 90 μm embossed valve bags handle family-size portions, whole cuts of meat, bulk vegetables, and sous-vide cooking. Same premium multi-layer construction, white circular one-way air valve, and apple-green double-track zip slider as our medium bags. BPA-free, food-safe, reusable, and compatible with most valve-type handheld vacuum sealers.',
+      'แพ็คถุงสุญญากาศขนาดใหญ่ คุ้มค่าที่สุด ขนาด 26×34 ซม. 90 ไมโครเมตร สำหรับอาหารสำหรับครอบครัว เนื้อสัตว์ชิ้นใหญ่ ผักจำนวนมาก และทำซูวีดี วัสดุหลายชั้นคุณภาพเดียวกับถุงขนาดกลาง BPA-free ใช้ซ้ำได้ และใช้ได้กับเครื่องซีลสุญญากาศส่วนใหญ่',
     shortDescription:
-      '50 large embossed valve bags (26×34 cm), 90 μm, BPA-free. Great for family meals, bulk buys, and sous-vide.',
+      'ถุงสุญญากาศขนาดใหญ่ 50 ใบ (26×34 ซม.) 90 ไมโครเมตร BPA-free เหมาะสำหรับอาหารครอบครัวและซูวีดี',
     image: '/images/products/bags-4.jpg',
     images: [
       '/images/products/bags-4.jpg',
       '/images/products/bags-5.jpg',
     ],
     features: [
-      '90 μm embossed multi-layer PA+PE film for durability',
-      'BPA-free & food-safe',
-      'White circular one-way air valve + apple-green double-track zip slider',
-      'Pre-cut size: 26 × 34 cm — family meals, bulk buys, sous-vide, large cuts',
-      'Compatible with most valve-type handheld vacuum sealers',
-      'Reusable & recyclable; freezer, fridge, sous-vide and microwave safe',
-      'Best per-bag value',
+      'ฟิล์ม PA+PE หลายชั้น 90 ไมโครเมตร ทนทาน',
+      'BPA-free ปลอดภัยกับอาหาร',
+      'วาล์วอากาศทางเดียวสีขาว + ซิปสีเขียว',
+      'ขนาดตัดสำเร็จ: 26 × 34 ซม. สำหรับอาหารครอบครัว ซื้อราคาส่ง ซูวีดี',
+      'ใช้ได้กับเครื่องซีลสุญญากาศส่วนใหญ่',
+      'ใช้ซ้ำได้ รีไซเคิลได้ คุ้มค่าที่สุดต่อใบ',
     ],
     specs: {
-      'Quantity': '50 bags',
-      'Size': '26 × 34 cm (Large)',
-      'Thickness': '90 μm embossed texture',
-      'Material': 'PA + PE multi-layer, BPA-free, food-safe',
-      'Closure': 'Double-track zipper with apple-green slider',
-      'Valve': 'White circular one-way air valve',
-      'Microwave safe': 'Yes (open zipper first, up to 100 °C)',
-      'Freezer safe': 'Yes (-20 °C)',
-      'Sous-vide safe': 'Yes (up to 100 °C)',
+      'จำนวน': '50 ใบ',
+      'ขนาด': '26 × 34 ซม. (ใหญ่)',
+      'ความหนา': '90 ไมโครเมตร',
+      'วัสดุ': 'PA + PE หลายชั้น BPA-free',
+      'การปิด': 'ซิปคู่สีเขียว',
+      'วาล์ว': 'วาล์วอากาศทางเดียวสีขาว',
+      'ไมโครเวฟ': 'ได้ (เปิดซิปก่อน สูงสุด 100 °C)',
+      'ตู้เย็น': 'ได้ (-20 °C)',
+      'ซูวีดี': 'ได้ (สูงสุด 100 °C)',
     },
     category: 'bags',
-    badge: 'Value Pack',
+    badge: 'แพ็คคุ้ม',
   },
 ];
 
-// Reviews — dates spread across ~60 days, mix of ratings, "Verified Buyer" label,
-// at least one 4★ neutral review, and placeholder image reviews.
+// Reviews — Thai customer reviews, dates spread across ~60 days
 export const reviews: Review[] = [
   {
-    name: 'Sarah M.',
+    name: 'สมชาย พ.',
     rating: 5,
-    text:
-      'Absolutely love my FreshLock Pro! I batch-cook on Sundays and the vacuum-sealed portions last so much longer in the fridge — and no more freezer burn on my ground beef. Game changer for meal prep.',
+    text: 'ใช้ทุกวันเลย! ทำอาหารล่วงหน้าทุกวันอาทิตย์ เก็บในตู้เย็นได้นานขึ้นมาก และไม่มีปัญหาน้ำแข็งจับบนเนื้อสัตว์อีกเลย เปลี่ยนชีวิตการเตรียมอาหารเลย',
     date: '2026-06-22',
     verified: true,
     images: [],
   },
   {
-    name: 'James T.',
+    name: 'นัฐญา ว.',
     rating: 5,
-    text:
-      'Bought the Starter Kit as a gift for my wife and she uses it every single day. The one-touch pump is genuinely easy — even I can figure it out! Drip tray is a smart touch for marinating chicken.',
+    text: 'ซื้อชุดเริ่มต้นให้แม่ แม่ใช้ทุกวันเลย ปุ่มกดเดียวง่ายมาก ถาดรองน้ำดีมาก สำหรับดองเนื้อไก่ สุญญากาศแน่นทุกครั้ง',
     date: '2026-06-10',
     verified: true,
-    images: ['/images/reviews/review-james-1.jpg'],
+    images: [],
   },
   {
-    name: 'Priya K.',
+    name: 'ประเสริฐ ก.',
     rating: 4,
-    text:
-      'Works great for sous-vide — the seal is solid every time and the 60 dB motor is quieter than I expected. Shipping took about 10 days to the US, which is a touch slow, but the product itself does exactly what it promises. Would recommend.',
+    text: 'สุญญากาศดีมาก ใช้กับซูวีดีได้ดี เสียงเงียบกว่าที่คิด จัดส่งประมาณ 8 วันถึงไทย ช้าไปนิด แต่สินค้าทำตามที่โฆษณา แนะนำครับ',
     date: '2026-05-28',
     verified: true,
     images: [],
   },
   {
-    name: 'Emma W.',
+    name: 'กานต์นิภา ส.',
     rating: 5,
-    text:
-      'Our household food waste is down by at least half. The bags feel sturdy and the pump pulls a strong vacuum. Love that I can use other embossed valve bags too — no brand lock-in.',
+    text: 'ขยะอาหารลดลงครึ่งหนึ่งเลย ถุงแข็งแรงดี สุญญากาศดีมาก ชอบที่ใช้ถุงยี่ห้ออื่นได้ด้วย ไม่ต้องซื้อยี่ห้อเดียว',
     date: '2026-05-14',
     verified: true,
-    images: ['/images/reviews/review-emma-1.jpg'],
+    images: [],
   },
   {
-    name: 'Michael R.',
+    name: 'อภิชาติ ร.',
     rating: 4,
-    text:
-      'Solid build quality and USB-C charging is really convenient. Battery lasts for weeks of normal use. Took off one star because the starter pack only has a few small bags — I ended up ordering the 50-pack separately.',
+    text: 'สร้างแบบได้คุณภาพ ชาร์จ USB-C สะดวกมาก แบตอยู่ได้หลายสัปดาห์ หัก 1 ดาวเพราะถุงในชุดเริ่มต้นน้อยไป ต้องสั่งเพิ่มอีก',
     date: '2026-05-02',
     verified: true,
     images: [],
   },
   {
-    name: 'Linda C.',
+    name: 'วนิดา ช.',
     rating: 5,
-    text:
-      'Bought this for freezing soup portions and leftover sauces — the drip tray is the real unsung hero. No liquid getting sucked into the motor like my old sealer. 2-year warranty gave me confidence.',
+    text: 'ซื้อเพื่อแช่แข็งซุปและซอสที่เหลือ ถาดรองน้ำคือฮีโร่ตัวจริง ไม่มีน้ำเข้ามอเตอร์เลย รับประกัน 1 ปี สบายใจดี',
     date: '2026-04-25',
     verified: true,
-    images: ['/images/reviews/review-linda-1.jpg'],
+    images: [],
   },
   {
-    name: 'David P.',
+    name: 'ธีรภัทร น.',
     rating: 5,
-    text:
-      'Compact, light, charges fast via USB-C. Used it on a camping trip to seal marinated steaks — zero leaks in the cooler. Would buy again.',
+    text: 'เล็ก เบา ชาร์จเร็วผ่าน USB-C เอาไปตั้งแคมป์ซีลเนื้อดอง ไม่รั่วเลยในกล่องเย็น จะซื้ออีกครับ',
     date: '2026-06-05',
     verified: true,
     images: [],
@@ -255,58 +252,57 @@ export const reviews: Review[] = [
 
 export const faqs = [
   {
-    question: 'How does the FreshLock Pro handheld vacuum sealer work?',
+    question: 'เครื่องซีลสูญญากาศ FreshLock Pro ทำงานอย่างไร?',
     answer:
-      'Place your food in a compatible embossed valve bag, close the double-track apple-green zip slider, set the sealer nozzle over the white circular air valve, and press the one-touch button. The -60 kPa pump pulls air out through the valve in seconds, and the one-way valve locks automatically to maintain an airtight seal. No heat bar, no complicated prep — it is that simple.',
+      'ใส่อาหารในถุงสุญญากาศที่เข้ากันได้ ปิดซิปสีเขียว นำหัวดูดไปแตะที่วาล์วอากาศสีขาว แล้วกดปุ่มเดียว พัดลมจะดูดอากาศออกในไม่กี่วินาที วาล์วจะล็อกอัตโนมัติเพื่อรักษาสุญญากาศ ไม่มีแถบความร้อน ไม่ต้องตั้งค่าซับซ้อน ง่ายขนาดนั้น',
   },
   {
-    question: 'Does it prevent freezer burn?',
+    question: 'ป้องกันน้ำแข็งจับบนอาหารแช่แข็งได้ไหม?',
     answer:
-      'Yes. Freezer burn is caused by air reaching the food surface and dehydrating it. By removing up to 95% of the air from the bag, FreshLock dramatically slows oxidation and ice-crystal formation, keeping meat, fish, vegetables, and leftovers fresh-tasting for months in the freezer instead of weeks.',
+      'ได้ น้ำแข็งจับเกิดจากอากาศสัมผัสผิวอาหารและดูดความชื้นออก FreshLock ดูดอากาศออกจากถุงได้ถึง 95% ชะลอการเกิดออกซิเดชันและผลึกน้ำแข็ง ทำให้เนื้อสัตว์ ปลา ผัก และของเหลือสดได้นานเป็นเดือนในตู้แช่แข็งแทนที่จะเป็นสัปดาห์',
   },
   {
-    question: 'Can I seal liquids, soups, and marinades?',
+    question: 'ซีลของเหลว ซุป และเนื้อดองได้ไหม?',
     answer:
-      'Yes. The FreshLock Pro has a detachable transparent drip tray (overflow cup) with liquid backflow protection that catches juices before they can reach the motor. For best results with soups and very wet foods, freeze them partially first or hold the bag upright while sealing.',
+      'ได้ FreshLock Pro มีถาดรองน้ำแบบถอดได้ โปร่งแสง ป้องกันน้ำไหลย้อน กักเก็บของเหลวก่อนถึงมอเตอร์ สำหรับซุปและอาหารที่มีน้ำมาก แนะนำให้แช่แข็งบางส่วนก่อน หรือถือถุงตั้งขณะซีล',
   },
   {
-    question: 'Is it compatible with other brands of vacuum bags?',
+    question: 'ใช้กับถุงยี่ห้ออื่นได้ไหม?',
     answer:
-      'Yes. FreshLock works with most embossed valve bags that have a standard one-way air valve — you are not locked into our own bags. We recommend 90 μm (or thicker) embossed PA+PE bags with a white circular valve for best results. It is not compatible with open-top embossed bags designed for heat-bar edge sealers or chamber machines.',
+      'ได้ FreshLock ใช้ได้กับถุงสุญญากาศส่วนใหญ่ที่มีวาล์วอากาศทางเดียวมาตรฐาน ไม่ต้องใช้ถุงยี่ห้อเดียวกัน แนะนำถุง 90 ไมโครเมตร PA+PE กับวาล์วสีขาวเพื่อผลลัพธ์ที่ดีที่สุด',
   },
   {
-    question: 'How long does the battery last and how do I charge it?',
+    question: 'แบตเตอรี่อยู่ได้นานแค่ไหน และชาร์จอย่างไร?',
     answer:
-      'The built-in 1200 mAh Li-ion battery delivers 80–100 seals on a full charge, which is enough for multiple weeks of normal household use. It charges via USB-C (cable included) in about 2.5 hours — you can use any USB-C phone charger, power bank, or laptop port.',
+      'แบตเตอรี่ 1200 mAh ดูดได้ 80-100 ครั้งต่อการชาร์จเต็ม พอใช้หลายสัปดาห์ในครัวเรือนทั่วไป ชาร์จผ่าน USB-C (สายรวมในกล่อง) ประมาณ 2.5 ชั่วโมง ใช้ชาร์จโทรศัพท์ พาวเวอร์แบงก์ หรือพอร์ตคอมพิวเตอร์ก็ได้',
   },
   {
-    question: 'How loud is it?',
+    question: 'เสียงดังไหม?',
     answer:
-      'The motor runs under 60 dB — about as loud as a library or normal conversation. It only runs for 5–10 seconds per bag, so you won\'t disturb anyone in the kitchen.',
+      'เสียงต่ำกว่า 60 เดซิเบล เบาเท่าห้องสมุดหรือการสนทนาปกติ ทำงานเพียง 5-10 วินาทีต่อถุง จึงไม่รบกวนใครในครัว',
   },
   {
-    question: 'Are the bags BPA-free and food-safe?',
+    question: 'ถุงปลอด BPA และปลอดภัยกับอาหารไหม?',
     answer:
-      'Yes. All FreshLock bags are made from BPA-free, food-safe PA+PE multi-layer film. They are suitable for fridge, freezer, sous-vide (up to 100 °C), and microwave use (open the zipper first before microwaving).',
+      'ใช่ ถุง FreshLock ทำจากฟิล์ม PA+PE หลายชั้น BPA-free ปลอดภัยกับอาหาร ใช้ในตู้เย็น ตู้แช่แข็ง ซูวีดี (สูงสุด 100 °C) และไมโครเวฟ (เปิดซิปก่อนใช้) ได้',
   },
   {
-    question: 'What is the warranty?',
+    question: 'การรับประกันเป็นอย่างไร?',
     answer:
-      'FreshLock Pro comes with a 2-year warranty on the main unit and 6-month warranty on accessories (USB-C cable, starter bags). If anything goes wrong under normal use, contact support@freshlocksealer.com and we\'ll make it right.',
+      'FreshLock Pro มีรับประกัน 1 ปี สำหรับตัวเครื่อง หากมีปัญหาภายใต้การใช้งานปกติ ติดต่อ support@freshlocksealer.com เราจะดูแลให้',
   },
   {
-    question: 'What is your shipping policy?',
+    question: 'นโยบายการจัดส่งเป็นอย่างไร?',
     answer:
-      'Free standard shipping on US/CA/UK/JP orders over $89, and AU/NZ orders over $69. All Starter Kits ship free within US/CA/UK/JP regardless of subtotal. Orders under the free-shipping threshold pay a $5.99 flat rate (US) or live calculated rate (international). Orders are processed within 1–2 business days and delivered in 5–8 business days via DHL Express with full tracking. Tracking is included with every order.',
+      'จัดส่งฟรีสำหรับคำสั่งซื้อในไทยที่มียอดเกิน $69 (ประมาณ ฿2,450) ส่งผ่าน DHL Express 2-3 วันทำการ พร้อมเลขพัสดุสำหรับติดตาม ประมวลผลภายใน 1-2 วันทำการ',
   },
   {
-    question: 'What is your return policy?',
+    question: 'นโยบายการคืนสินค้าเป็นอย่างไร?',
     answer:
-      'We offer a 60-day satisfaction guarantee. If you are not completely happy with your FreshLock, contact us within 60 days of delivery for a refund or exchange. Return shipping is free for US orders on defective items.',
+      'รับคืนสินค้าภายใน 7 วันนับจากได้รับสินค้า หากไม่พอใจหรือสินค้ามีข้อบกพร่อง ติดต่อเราภายใน 7 วันเพื่อขอคืนเงินหรือเปลี่ยนสินค้า สินค้าต้องอยู่ในสภาพเดิม ใช้งานไม่มาก และมีกล่องเดิม',
   },
 ];
 
-// Review distribution helper (for UI star-bar rendering)
 export const ratingDistribution = {
   5: 5,
   4: 2,
