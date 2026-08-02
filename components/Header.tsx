@@ -1,4 +1,4 @@
-'use client';
+use client';
 
 import Link from 'next/link';
 import { useCart } from '@/lib/cart-context';
@@ -15,28 +15,28 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="FreshLock — Handheld Vacuum Sealer with Mechanical Drip Drain" className="h-10 w-auto" width={240} height={60} priority />
+            <Image src="/logo.png" alt="FreshLock — เครื่องซีลสูญญากาศแบบพกพา" className="h-10 w-auto" width={240} height={60} priority />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/products" className="text-gray-700 hover:text-primary transition">
-              Products
+              สินค้า
             </Link>
             <Link href="/food-waste-calculator" className="text-accent hover:text-accent/80 font-semibold transition">
-              💰 Save $1,866
+              💰 ประหยัด $1,866
             </Link>
             <Link href="/blog" className="text-gray-700 hover:text-primary transition">
-              Blog
+              บล็อก
             </Link>
             <Link href="/about" className="text-gray-700 hover:text-primary transition">
-              About
+              เกี่ยวกับเรา
             </Link>
             <Link href="/faq" className="text-gray-700 hover:text-primary transition">
-              FAQ
+              คำถามที่พบบ่อย
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-primary transition">
-              Contact
+              ติดต่อเรา
             </Link>
             <Link href="/cart" className="relative">
               <svg
@@ -105,42 +105,42 @@ export default function Header() {
               className="block py-2 text-gray-700 hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Products
+              สินค้า
             </Link>
             <Link
               href="/food-waste-calculator"
               className="block py-2 text-accent font-semibold hover:text-accent/80"
               onClick={() => setMobileMenuOpen(false)}
             >
-              💰 Save $1,866 / Year
+              💰 ประหยัด $1,866/ปี
             </Link>
             <Link
               href="/blog"
               className="block py-2 text-gray-700 hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Blog
+              บล็อก
             </Link>
             <Link
               href="/about"
               className="block py-2 text-gray-700 hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
-              About
+              เกี่ยวกับเรา
             </Link>
             <Link
               href="/faq"
               className="block py-2 text-gray-700 hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
-              FAQ
+              คำถามที่พบบ่อย
             </Link>
             <Link
               href="/contact"
               className="block py-2 text-gray-700 hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Contact
+              ติดต่อเรา
             </Link>
           </div>
         )}
