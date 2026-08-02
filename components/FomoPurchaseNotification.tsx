@@ -63,7 +63,7 @@ export default function FomoPurchaseNotification() {
             <strong className="text-primary">{current.product}</strong>
           </p>
           <p className="text-xs text-gray-400 mt-1">
-            {current.minutes} minute{current.minutes !== 1 ? 's' : ''} ago · Based on recent order patterns
+            {current.minutes} minute{current.minutes !== 1 ? 's' : ''} ที่แล้ว · Based on recent order patterns
           </p>
         </div>
         <button
