@@ -29,7 +29,7 @@ export default function CheckoutPage() {
     city: '',
     state: '',
     postcode: '',
-    country: 'US',
+    country: 'TH',
   });
 
   const COUNTRIES = [
@@ -132,7 +132,7 @@ export default function CheckoutPage() {
         setProcessing(false);
       }
     } catch (err: any) {
-      setError(err.message || 'Payment failed');
+      setError(err.message || 'การชำระเงินล้มเหลว');
       setProcessing(false);
     }
   };
@@ -140,20 +140,20 @@ export default function CheckoutPage() {
   if (items.length === 0) {
     return (
       <div className="max-w-3xl mx-auto px-4 py-20 text-center">
-        <h1 className="text-3xl font-bold text-primary mb-4">Nothing to Checkout</h1>
-        <p className="text-gray-500 mb-8">Your cart is empty.</p>
-        <Link href="/products" className="btn-primary">Browse Products</Link>
+        <h1 className="text-3xl font-bold text-primary mb-4">ไม่มีสินค้าให้ชำระเงิน</h1>
+        <p className="text-gray-500 mb-8">ตะกร้าสินค้าของคุณว่างเปล่า</p>
+        <Link href="/products" className="btn-primary">เลือกซื้อสินค้า</Link>
       </div>
     );
   }
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-3xl font-bold text-primary mb-8">Checkout</h1>
+      <h1 className="text-3xl font-bold text-primary mb-8">ชำระเงิน</h1>
 
       {error && (
         <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
-          <p className="font-medium">Error: {error}</p>
+          <p className="font-medium">ข้อผิดพลาด: {error}</p>
         </div>
       )}
 
@@ -163,10 +163,10 @@ export default function CheckoutPage() {
           <div className="lg:col-span-2 space-y-8">
             {/* Contact */}
             <div className="bg-white rounded-xl p-6 shadow">
-              <h2 className="font-bold text-primary text-lg mb-4">Contact Information</h2>
+              <h2 className="font-bold text-primary text-lg mb-4">ข้อมูลการติดต่อ</h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">ชื่อ</label>
                   <input
                     type="text"
                     name="firstName" autoComplete="given-name"
@@ -177,7 +177,7 @@ export default function CheckoutPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">นามสกุล</label>
                   <input
                     type="text"
                     name="lastName" autoComplete="family-name"
@@ -188,7 +188,7 @@ export default function CheckoutPage() {
                   />
                 </div>
                 <div className="sm:col-span-2">
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">อีเมล</label>
                   <input
                     type="email"
                     name="email" autoComplete="email"
@@ -200,7 +200,7 @@ export default function CheckoutPage() {
                   />
                 </div>
                 <div className="sm:col-span-2">
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">เบอร์โทรศัพท์</label>
                   <input
                     type="tel"
                     name="phone" autoComplete="tel"
@@ -214,22 +214,22 @@ export default function CheckoutPage() {
 
             {/* Shipping */}
             <div className="bg-white rounded-xl p-6 shadow">
-              <h2 className="font-bold text-primary text-lg mb-4">Shipping Address</h2>
+              <h2 className="font-bold text-primary text-lg mb-4">ที่อยู่จัดส่ง</h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="sm:col-span-2">
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Street Address</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">ที่อยู่</label>
                   <input
                     type="text"
                     name="address" autoComplete="street-address"
                     value={form.address}
                     onChange={handleChange}
                     required
-                    placeholder="123 Example Street"
+                    placeholder="123 ตัวอย่างถนน"
                     className="w-full border rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">City / Suburb</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">เขต / อำเภอ</label>
                   <input
                     type="text"
                     name="city" autoComplete="address-level2"
@@ -240,31 +240,31 @@ export default function CheckoutPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">State</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">จังหวัด</label>
                   <input
                     type="text"
                     name="state" autoComplete="address-level1"
                     value={form.state}
                     onChange={handleChange}
                     required
-                    placeholder="State / Province"
+                    placeholder="จังหวัด"
                     className="w-full border rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">ZIP Code</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">รหัสไปรษณีย์</label>
                   <input
                     type="text"
                     name="postcode" autoComplete="postal-code"
                     value={form.postcode}
                     onChange={handleChange}
                     required
-                    placeholder="90210"
+                    placeholder="10100"
                     className="w-full border rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Country</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">ประเทศ</label>
                   <select
                     name="country"
                     value={form.country}
@@ -281,16 +281,16 @@ export default function CheckoutPage() {
 
             {/* Trust badges */}
             <div className="bg-white rounded-xl p-4 shadow flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-600">
-              <span className="flex items-center gap-1.5 font-medium"><span className="text-green-600 text-base">🔒</span> SSL Encrypted</span>
-              <span className="flex items-center gap-1.5 font-medium"><span className="text-blue-600 text-base">🛡️</span> PayPal Protected</span>
-              <span className="flex items-center gap-1.5 font-medium"><span className="text-orange-500 text-base">↩️</span> 60-Day Returns</span>
-              <span className="flex items-center gap-1.5 font-medium"><span className="text-purple-600 text-base">✅</span> 2-Year Warranty</span>
-              <span className="flex items-center gap-1.5 font-medium"><span className="text-green-600 text-base">🚚</span> DHL Express 5–8 Days</span>
+              <span className="flex items-center gap-1.5 font-medium"><span className="text-green-600 text-base">🔒</span> เข้ารหัส SSL</span>
+              <span className="flex items-center gap-1.5 font-medium"><span className="text-blue-600 text-base">🛡️</span> ปกป้องโดย PayPal</span>
+              <span className="flex items-center gap-1.5 font-medium"><span className="text-orange-500 text-base">↩️</span> คืนสินค้า 7 วัน</span>
+              <span className="flex items-center gap-1.5 font-medium"><span className="text-purple-600 text-base">✅</span> รับประกัน 1 ปี</span>
+              <span className="flex items-center gap-1.5 font-medium"><span className="text-green-600 text-base">🚚</span> DHL Express 2–3 วัน</span>
             </div>
 
             {/* Payment */}
             <div className="bg-white rounded-xl p-6 shadow">
-              <h2 className="font-bold text-primary text-lg mb-4">Payment Method</h2>
+              <h2 className="font-bold text-primary text-lg mb-4">วิธีการชำระเงิน</h2>
               <div className="space-y-3">
                 {/* Credit/Debit Card via Stripe — disabled per Stripe ban 2026-07-30
                 <label className={`flex items-center gap-3 p-4 border rounded-lg cursor-pointer transition ${paymentMethod === 'stripe' ? 'border-primary bg-primary/5' : 'hover:bg-gray-50'}`}>
@@ -308,7 +308,7 @@ export default function CheckoutPage() {
                   </div>
                 </label>
                 */}
-                <label className={`flex items-start gap-3 p-4 border-2 rounded-lg cursor-pointer transition ${paymentMethod === 'paypal' ? 'border-[#003087] bg-[#003087]/5' : 'hover:bg-gray-50 border-gray-200'}`}>
+                <label className={`flex items-start gap-3 p-4 border-2 rounded-lg cursor-pointer transition ${paymentMethod === 'paypal' ? 'border-[#003087] bg-[#003087]/5' : 'hover:bg-[#FFF8F0] border-gray-200'}`}>
                   <input
                     type="radio"
                     name="payment"
@@ -320,9 +320,9 @@ export default function CheckoutPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className="inline-flex items-center font-bold text-[#003087] bg-[#ffc439] px-2 py-0.5 rounded text-sm tracking-wide">PayPal</span>
-                      <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full font-medium">🛡️ Buyer Protection</span>
+                      <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full font-medium">🛡️ การคุ้มครองผู้ซื้อ</span>
                     </div>
-                    <p className="text-xs text-gray-600 mt-1">Pay securely with your PayPal account, or check out as a guest using Visa, Mastercard, Amex, or Discover. <strong className="text-[#003087]">Eligible purchases are covered by PayPal Buyer Protection.</strong></p>
+                    <p className="text-xs text-gray-600 mt-1">ชำระเงินอย่างปลอดภัยด้วยบัญชี PayPal ของคุณ หรือชำระเงินในฐานะแขกโดยใช้ Visa, Mastercard, Amex หรือ Discover <strong className="text-[#003087]">การซื้อที่มีสิทธิ์ได้รับการคุ้มครองโดย PayPal Buyer Protection</strong></p>
                   </div>
                 </label>
                 {/* Afterpay — not integrated yet, hidden to avoid false promise
@@ -347,7 +347,7 @@ export default function CheckoutPage() {
               <div className="mt-4 p-3 bg-green-50 rounded-lg flex items-start gap-2">
                 <span className="text-green-600">🔒</span>
                 <p className="text-xs text-green-700">
-                  Your payment information is encrypted and secure. We never store your card details.
+                  ข้อมูลการชำระเงินของคุณถูกเข้ารหัสและปลอดภัย เราไม่เก็บรายละเอียดบัตรของคุณ
                 </p>
               </div>
             </div>
@@ -356,7 +356,7 @@ export default function CheckoutPage() {
           {/* Order summary sidebar */}
           <div>
             <div className="bg-white rounded-xl p-6 shadow sticky top-24">
-              <h2 className="font-bold text-primary text-lg mb-4">Order Summary</h2>
+              <h2 className="font-bold text-primary text-lg mb-4">สรุปคำสั่งซื้อ</h2>
               <div className="space-y-3 mb-4">
                 {items.map((item) => (
                   <div key={item.product.slug} className="flex gap-3">
@@ -365,7 +365,7 @@ export default function CheckoutPage() {
                       className="w-14 h-14 rounded-lg object-cover" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium text-gray-900 truncate">{item.product.name}</p>
-                      <p className="text-xs text-gray-500">Qty: {item.quantity}</p>
+                      <p className="text-xs text-gray-500">จำนวน: {item.quantity}</p>
                     </div>
                     <p className="text-sm font-semibold">
                       ${(item.product.price * item.quantity).toFixed(2)}
@@ -378,8 +378,8 @@ export default function CheckoutPage() {
                 {totalPrice < FREE_SHIPPING_THRESHOLD ? (
                   <div className="bg-amber-50 border border-amber-300 rounded-lg p-3 mb-2">
                     <p className="text-xs font-semibold text-amber-800 mb-1.5">
-                      🚚 Add ${(FREE_SHIPPING_THRESHOLD - totalPrice).toFixed(2)} more for FREE shipping
-                      <span className="text-amber-700 font-normal"> (save ${SHIPPING_FEE_UNDER.toFixed(2)})</span>
+                      🚚 เพิ่มอีก ${(FREE_SHIPPING_THRESHOLD - totalPrice).toFixed(2)} เพื่่อรับจัดส่งฟรี
+                      <span className="text-amber-700 font-normal"> (ประหยัด ${SHIPPING_FEE_UNDER.toFixed(2)})</span>
                     </p>
                     <div className="w-full bg-amber-200 rounded-full h-2 overflow-hidden">
                       <div
@@ -388,27 +388,27 @@ export default function CheckoutPage() {
                       />
                     </div>
                     <Link href="/cart" className="text-xs text-accent font-semibold hover:underline mt-1.5 inline-block">
-                      ← Return to cart to add items
+                      ← กลับไปตะกร้าเพื่อเพิ่มสินค้า
                     </Link>
                   </div>
                 ) : (
                   <div className="bg-green-50 border border-green-400 rounded-lg p-3 mb-2">
                     <p className="text-xs font-semibold text-green-700 text-center">
-                      🎉 You've unlocked FREE US shipping!
+                      🎉 คุณได้รับจัดส่งฟรีแล้ว!
                     </p>
                   </div>
                 )}
                 <div className="flex justify-between">
-                  <span className="text-gray-500">Subtotal</span>
+                  <span className="text-gray-500">ยอดรวมย่อย</span>
                   <span>${totalPrice.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-500">Shipping</span>
-                  <span>{shipping === 0 ? <span className="text-green-600 font-medium">FREE</span> : `$${shipping.toFixed(2)}`}</span>
+                  <span className="text-gray-500">ค่าจัดส่ง</span>
+                  <span>{shipping === 0 ? <span className="text-green-600 font-medium">ฟรี</span> : `$${shipping.toFixed(2)}`}</span>
                 </div>
               </div>
               <div className="border-t mt-4 pt-4 flex justify-between font-bold text-lg">
-                <span>Total</span>
+                <span>รวมทั้งหมด</span>
                 <span>${total.toFixed(2)} USD</span>
               </div>
               <button
@@ -422,19 +422,19 @@ export default function CheckoutPage() {
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
                     </svg>
-                    Processing...
+                    กำลังดำเนินการ...
                   </span>
                 ) : (
-                  `Pay $${total.toFixed(2)} USD`
+                  `ชำระเงิน $${total.toFixed(2)} USD`
                 )}
               </button>
               <div className="mt-3 flex flex-wrap gap-2 justify-center text-[10px] text-gray-400">
-                <span>🔒 SSL Secure Checkout</span>
+                <span>🔒 ชำระเงิน SSL ปลอดภัย</span>
                 <span>·</span>
                 <span>Visa / MC / Amex / Discover / PayPal</span>
               </div>
               <p className="text-xs text-gray-400 text-center mt-2">
-                Free shipping over $89 · Starter Kits ship free · 60-day returns · 2-year warranty
+                จัดส่งฟรีเมื่อสั่งเกิน $69 · คิทเริ่มต้นจัดส่งฟรี · คืนสินค้า 7 วัน · รับประกัน 1 ปี
               </p>
             </div>
           </div>
