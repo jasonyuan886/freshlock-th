@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { getAllPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
-  title: 'Blog — Food Storage & Vacuum Sealing Tips',
+  title: 'บล็อก — เคล็ดลับการเก็บอาหารและการสูญญากาศ',
   description:
-    'FreshLock Blog — Expert guides on vacuum sealing, food preservation, meal prep, reducing food waste and keeping food fresh longer with handheld vacuum sealers.',
+    'บล็อก FreshLock — คู่มือจากผู้เชี่ยวชาญเกี่ยวกับการสูญญากาศ การถนอมอาหาร การเตรียมอาหาร การลดการสูญเสียอาหาร และการรักษาอาหารให้สดนานขึ้นด้วยเครื่องสูญญากาศแบบพกพา',
   alternates: { canonical: '/blog' },
 };
 
@@ -17,11 +17,11 @@ export default function BlogIndex() {
       <section className="bg-primary-50 py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            FreshLock Blog
+            บล็อก FreshLock
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Practical guides on vacuum sealing, food preservation, meal prep and reducing food waste —
-            so you eat better, save money and waste less.
+            คู่มือปฏิบัติเกี่ยวกับการสูญญากาศ การถนอมอาหาร การเตรียมอาหาร และการลดการสูญเสียอาหาร —
+            เพื่อให้คุณทานดีขึ้น ประหยัดเงิน และทิ้งน้อยลง
           </p>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function BlogIndex() {
                   href={`/blog/${post.slug}`}
                   className="inline-flex items-center text-primary-600 font-medium hover:text-primary-800 transition"
                 >
-                  Read article →
+                  อ่านบทความ →
                 </Link>
               </article>
             ))}
