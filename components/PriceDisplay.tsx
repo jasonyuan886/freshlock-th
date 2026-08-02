@@ -4,7 +4,7 @@ type Props = {
   discountBadge?: string;
   size?: 'sm' | 'md' | 'lg';
   showCurrencyLabel?: boolean;
-  align?: 'ชิ้น' | 'center';
+  align?: 'left' | 'center';
 };
 
 export default function PriceDisplay({
@@ -13,7 +13,7 @@ export default function PriceDisplay({
   discountBadge,
   size = 'md',
   showCurrencyLabel = true,
-  align = 'ชิ้น',
+  align = 'left',
 }: Props) {
   const hasDiscount = typeof compareAtPrice === 'number' && compareAtPrice > price;
   const savings = hasDiscount ? compareAtPrice! - price : 0;
@@ -29,17 +29,17 @@ export default function PriceDisplay({
     : 'text-base text-gray-400 line-through mr-2';
 
   const badgeText =
-    discountBadge || (hasDiscount ? `Save $${savings.toFixed(2)}` : '');
+    discountBadge || (hasDiscount ? `ประหยัด ฿${savings.toLocaleString()}` : '');
 
   return (
     <div className={align === 'center' ? 'text-center' : 'text-left'}>
       <div className="flex items-baseline flex-wrap gap-2">
         {hasDiscount && (
-          <span className={strikeClass}>${compareAtPrice!.toFixed(2)}</span>
+          <span className={strikeClass}>฿{compareAtPrice!.toLocaleString()}</span>
         )}
-        <span className={priceClass}>${price.toFixed(2)}</span>
+        <span className={priceClass}>฿{price.toLocaleString()}</span>
         {showCurrencyLabel && (
-          <span className="text-sm text-gray-400 font-normal">USD</span>
+          <span className="text-sm text-gray-400 font-normal">THB</span>
         )}
       </div>
       {badgeText && (
