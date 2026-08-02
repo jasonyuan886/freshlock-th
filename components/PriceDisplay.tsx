@@ -4,7 +4,7 @@ type Props = {
   discountBadge?: string;
   size?: 'sm' | 'md' | 'lg';
   showCurrencyLabel?: boolean;
-  align?: 'left' | 'center';
+  align?: 'ชิ้น' | 'center';
 };
 
 export default function PriceDisplay({
@@ -13,7 +13,7 @@ export default function PriceDisplay({
   discountBadge,
   size = 'md',
   showCurrencyLabel = true,
-  align = 'left',
+  align = 'ชิ้น',
 }: Props) {
   const hasDiscount = typeof compareAtPrice === 'number' && compareAtPrice > price;
   const savings = hasDiscount ? compareAtPrice! - price : 0;
