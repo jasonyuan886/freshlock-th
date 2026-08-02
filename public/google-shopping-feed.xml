@@ -1,102 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
-  <channel>
-    <title>FreshLock Product Feed</title>
-    <link>https://www.freshlocksealer.com</link>
-    <description>FreshLock handheld vacuum sealer products</description>
+<channel>
+<title>FreshLock Thailand - Vacuum Sealer Products</title>
+<link>https://th.freshlocksealer.com</link>
+<description>FreshLock Pro handheld vacuum sealer and accessories</description>
 
-    <item>
-      <g:id>freshlock-pro</g:id>
-      <g:title>FreshLock Pro Handheld Vacuum Sealer — Cordless, USB-C, -60 kPa</g:title>
-      <g:description>Cordless handheld vacuum sealer with -60 kPa suction, detachable drip tray, USB-C charging, and BPA-free starter bags. Stops freezer burn and keeps food fresh up to 5x longer. Compatible with most embossed valve bags. 80-100 seals per charge, library-quiet, weighs only 210g.</g:description>
-      <g:link>https://www.freshlocksealer.com/products/freshlock-pro</g:link>
-      <g:image_link>https://www.freshlocksealer.com/images/products/sealer-main.jpg</g:image_link>
-      <g:additional_image_link>https://www.freshlocksealer.com/images/products/sealer-angled.jpg</g:additional_image_link>
-      <g:additional_image_link>https://www.freshlocksealer.com/images/products/sealer-kit.jpg</g:additional_image_link>
-      <g:additional_image_link>https://www.freshlocksealer.com/images/products/sealer-box-angle.jpg</g:additional_image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>74.99 USD</g:price>
-      <g:sale_price>74.99 USD</g:sale_price>
-      <g:brand>FreshLock</g:brand>
-      <g:condition>new</g:condition>
-      <g:mpn>FL-PRO-001</g:mpn>
-      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Appliances &gt; Vacuum Sealers</g:google_product_category>
-      <g:product_type>Vacuum Sealers</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>DHL Express</g:service>
-        <g:price>5.99 USD</g:price>
-      </g:shipping>
-      <g:shipping_weight>0.3 kg</g:shipping_weight>
-    </item>
+<item>
+<g:id>freshlock-pro-th</g:id>
+<g:title>FreshLock Pro เครื่องซีลสูญญากาศแบบพกพา USB-C</g:title>
+<g:description>เครื่องซีลสูญญากาศแบบพกพา สุญญากาศ -60 kPa ชาร์จ USB-C 80-100 ครั้งต่อการชาร์จ ถาดรองน้ำถอดได้ BPA-free รับประกัน 1 ปี จัดส่ง DHL 2-3 วัน</g:description>
+<g:link>https://th.freshlocksealer.com/products/freshlock-pro</g:link>
+<g:image_link>https://th.freshlocksealer.com/images/products/sealer-main.jpg</g:image_link>
+<g:condition>new</g:condition>
+<g:availability>in stock</g:availability>
+<g:price>69.99 USD</g:price>
+<g:sale_price>69.99 USD</g:price>
+<g:brand>FreshLock</g:brand>
+<g:gtin></g:gtin>
+<g:mpn>FL-PRO-001</g:mpn>
+<g:product_type>Home &amp; Kitchen &gt; Kitchen Appliances &gt; Vacuum Sealers</g:product_type>
+<g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Appliances &gt; Vacuum Sealers</g:google_product_category>
+<g:shipping>
+<g:country>TH</g:country>
+<g:service>DHL Express</g:service>
+<g:price>0 USD</g:price>
+</g:shipping>
+<g:shipping_weight>0.3 kg</g:shipping_weight>
+</item>
 
-    <item>
-      <g:id>freshlock-starter-kit</g:id>
-      <g:title>FreshLock Starter Kit — Pro Sealer + 30 BPA-Free Vacuum Bags, Ships Free</g:title>
-      <g:description>Everything you need to start vacuum sealing today: FreshLock Pro handheld vacuum sealer plus 30 BPA-free embossed valve bags in 3 sizes (10 small, 10 medium, 10 large). Cordless, USB-C rechargeable, -60 kPa suction. Works with most embossed valve bags. Ships free.</g:description>
-      <g:link>https://www.freshlocksealer.com/products/freshlock-starter-kit</g:link>
-      <g:image_link>https://www.freshlocksealer.com/images/products/sealer-kit.jpg</g:image_link>
-      <g:additional_image_link>https://www.freshlocksealer.com/images/products/sealer-main.jpg</g:additional_image_link>
-      <g:additional_image_link>https://www.freshlocksealer.com/images/products/sealer-box-angle.jpg</g:additional_image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>94.99 USD</g:price>
-      <g:sale_price>94.99 USD</g:sale_price>
-      <g:brand>FreshLock</g:brand>
-      <g:condition>new</g:condition>
-      <g:mpn>FL-KIT-001</g:mpn>
-      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Appliances &gt; Vacuum Sealers</g:google_product_category>
-      <g:product_type>Vacuum Sealers</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>DHL Express Free</g:service>
-        <g:price>0 USD</g:price>
-      </g:shipping>
-      <g:shipping_weight>0.5 kg</g:shipping_weight>
-    </item>
+<item>
+<g:id>freshlock-starter-kit-th</g:id>
+<g:title>FreshLock Starter Kit ชุดเริ่มต้น เครื่องซีลสุญญากาศ + ถุง 30 ใบ</g:title>
+<g:description>FreshLock Starter Kit รวมเครื่องซีลสุญญากาศ Pro + ถุงสุญญากาศ BPA-free 30 ใบ 3 ขนาด ราคา $89.99 จัดส่ง DHL 2-3 วัน รับประกัน 1 ปี</g:description>
+<g:link>https://th.freshlocksealer.com/products/freshlock-starter-kit</g:link>
+<g:image_link>https://th.freshlocksealer.com/images/products/sealer-kit.jpg</g:image_link>
+<g:condition>new</g:condition>
+<g:availability>in stock</g:availability>
+<g:price>89.99 USD</g:price>
+<g:brand>FreshLock</g:brand>
+<g:mpn>FL-KIT-001</g:mpn>
+<g:product_type>Home &amp; Kitchen &gt; Kitchen Appliances &gt; Vacuum Sealers</g:product_type>
+<g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Appliances &gt; Vacuum Sealers</g:google_product_category>
+<g:shipping>
+<g:country>TH</g:country>
+<g:service>DHL Express</g:service>
+<g:price>0 USD</g:price>
+</g:shipping>
+<g:shipping_weight>0.5 kg</g:shipping_weight>
+</item>
 
-    <item>
-      <g:id>vacuum-seal-bags-30-pack</g:id>
-      <g:title>Vacuum Seal Bags 30 Pack Medium (26x28cm) — BPA-Free, Reusable, 90um</g:title>
-      <g:description>30 medium embossed valve bags (26x28 cm), 90 um, BPA-free. Compatible with most valve-type handheld vacuum sealers. Reusable, freezer-safe, microwave-safe, sous-vide safe. Double-track zipper with slider.</g:description>
-      <g:link>https://www.freshlocksealer.com/products/vacuum-seal-bags-30-pack</g:link>
-      <g:image_link>https://www.freshlocksealer.com/images/products/bags-1.jpg</g:image_link>
-      <g:additional_image_link>https://www.freshlocksealer.com/images/products/bags-2.jpg</g:additional_image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>29.99 USD</g:price>
-      <g:brand>FreshLock</g:brand>
-      <g:condition>new</g:condition>
-      <g:mpn>FL-BAG-M30</g:mpn>
-      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Storage &gt; Food Storage Bags</g:google_product_category>
-      <g:product_type>Food Storage Bags</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>DHL Express</g:service>
-        <g:price>5.99 USD</g:price>
-      </g:shipping>
-      <g:shipping_weight>0.3 kg</g:shipping_weight>
-    </item>
+<item>
+<g:id>vacuum-bags-medium-th</g:id>
+<g:title>ถุงสุญญากาศ 30 ใบ (ขนาดกลาง 26x28cm) BPA-free</g:title>
+<g:description>ถุงสุญญากาศ 90 ไมโครเมตร 30 ใบ ขนาดกลาง 26x28 ซม. BPA-free ใช้ได้กับเครื่องซีลสุญญากาศส่วนใหญ่ ราคา $24.99</g:description>
+<g:link>https://th.freshlocksealer.com/products/vacuum-seal-bags-30-pack</g:link>
+<g:image_link>https://th.freshlocksealer.com/images/products/bags-1.jpg</g:image_link>
+<g:condition>new</g:condition>
+<g:availability>in stock</g:availability>
+<g:price>24.99 USD</g:price>
+<g:brand>FreshLock</g:brand>
+<g:mpn>FL-BAG-M30</g:mpn>
+<g:product_type>Home &amp; Kitchen &gt; Kitchen Storage &gt; Vacuum Storage Bags</g:product_type>
+<g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Storage</g:google_product_category>
+<g:shipping>
+<g:country>TH</g:country>
+<g:service>DHL Express</g:service>
+<g:price>0 USD</g:price>
+</g:shipping>
+<g:shipping_weight>0.2 kg</g:shipping_weight>
+</item>
 
-    <item>
-      <g:id>vacuum-seal-bags-50-pack</g:id>
-      <g:title>Vacuum Seal Bags 50 Pack Large (26x34cm) — BPA-Free, Reusable, 90um</g:title>
-      <g:description>50 large embossed valve bags (26x34 cm), 90 um, BPA-free. Compatible with most valve-type handheld vacuum sealers. Ideal for family meals, bulk buys, and sous-vide. Reusable, freezer-safe, microwave-safe.</g:description>
-      <g:link>https://www.freshlocksealer.com/products/vacuum-seal-bags-50-pack</g:link>
-      <g:image_link>https://www.freshlocksealer.com/images/products/bags-4.jpg</g:image_link>
-      <g:additional_image_link>https://www.freshlocksealer.com/images/products/bags-5.jpg</g:additional_image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>39.99 USD</g:price>
-      <g:brand>FreshLock</g:brand>
-      <g:condition>new</g:condition>
-      <g:mpn>FL-BAG-L50</g:mpn>
-      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Storage &gt; Food Storage Bags</g:google_product_category>
-      <g:product_type>Food Storage Bags</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>DHL Express</g:service>
-        <g:price>5.99 USD</g:price>
-      </g:shipping>
-      <g:shipping_weight>0.4 kg</g:shipping_weight>
-    </item>
+<item>
+<g:id>vacuum-bags-large-th</g:id>
+<g:title>ถุงสุญญากาศ 50 ใบ (ขนาดใหญ่ 26x34cm) BPA-free</g:title>
+<g:description>ถุงสุญญากาศ 90 ไมโครเมตร 50 ใบ ขนาดใหญ่ 26x34 ซม. BPA-free ใช้ได้กับเครื่องซีลสุญญากาศส่วนใหญ่ ราคา $34.99</g:description>
+<g:link>https://th.freshlocksealer.com/products/vacuum-seal-bags-50-pack</g:link>
+<g:image_link>https://th.freshlocksealer.com/images/products/bags-4.jpg</g:image_link>
+<g:condition>new</g:condition>
+<g:availability>in stock</g:availability>
+<g:price>34.99 USD</g:price>
+<g:brand>FreshLock</g:brand>
+<g:mpn>FL-BAG-L50</g:mpn>
+<g:product_type>Home &amp; Kitchen &gt; Kitchen Storage &gt; Vacuum Storage Bags</g:product_type>
+<g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Storage</g:google_product_category>
+<g:shipping>
+<g:country>TH</g:country>
+<g:service>DHL Express</g:service>
+<g:price>0 USD</g:price>
+</g:shipping>
+<g:shipping_weight>0.3 kg</g:shipping_weight>
+</item>
 
-  </channel>
+</channel>
 </rss>
