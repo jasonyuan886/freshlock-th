@@ -1,77 +1,83 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Shipping Policy — Delivery Times, Costs & Tracking',
+  title: 'นโยบายการจัดส่ง — เวลาจัดส่ง ค่าใช้จ่ายและการติดตามพัสดุ',
   description:
-    'FreshLock shipping policy: free US/CA/UK/JP shipping on orders over $89 (AU/NZ over $69), Starter Kits ship free worldwide, $5.99 flat rate under threshold, 5–8 day DHL Express delivery with tracking.',
+    'นโยบายการจัดส่ง FreshLock: จัดส่งฟรีสำหรับคำสั่งซื้อในไทยที่มียอดเกิน $69 คิทเริ่มต้นจัดส่งฟรีทั่วโลก จัดส่งผ่าน DHL Express 2–3 วันถึงประเทศไทย พร้อมการติดตามพัสดุ',
 };
 
 export default function ShippingPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-12">
-        <h1 className="section-title">Shipping Policy</h1>
+        <h1 className="section-title">นโยบายการจัดส่ง</h1>
         <p className="section-subtitle">
-          Transparent rates, real tracking, and 1–2 business day processing.
+          อัตราที่โปร่งใส การติดตามจริง และดำเนินการภายใน 1–2 วันทำการ
         </p>
       </div>
 
       <div className="prose prose-lg max-w-none">
-        <h2>Processing Time</h2>
+        <h2>เวลาดำเนินการ</h2>
         <p>
-          All orders are processed within <strong>1–2 business days</strong> (Monday–Friday, excluding major holidays). Orders placed after 2 PM ET on business days will begin processing the next business day. You will receive an order confirmation immediately, and a shipping confirmation with tracking number once your package leaves our fulfilment centre.
+          คำสั่งซื้อทั้งหมดดำเนินการภายใน <strong>1–2 วันทำการ</strong> (จันทร์–ศุกร์ ไม่รวมวันหยุดนักขัตฤกษ์) คำสั่งซื้อที่สั่งหลัง 14:00 น. ICT ในวันทำการจะเริ่มดำเนินการในวันทำการถัดไป คุณจะได้รับอีเมลยืนยันคำสั่งซื้อทันที และอีเมลยืนยันการจัดส่งพร้อมหมายเลขติดตามเมื่อพัสดุออกจากศูนย์จัดส่งของเรา
         </p>
 
-        <h2>Shipping Rates (United States & Canada)</h2>
+        <h2>อัตราการจัดส่ง (ประเทศไทย)</h2>
         <ul>
-          <li><strong>Free standard shipping</strong> on all US & CA orders over <strong>$89 USD</strong> (discount applied automatically at checkout).</li>
-          <li>US & CA orders under $89 ship for a <strong>flat rate of $5.99</strong>.</li>
-          <li>All <strong>Starter Kits ship free</strong> within US/CA/UK/JP regardless of subtotal.</li>
-          <li>Delivered via USPS First Class / Priority Mail or equivalent tracked postal service.</li>
-          <li><strong>Transit time:</strong> 5–8 business days via DHL Express after dispatch (continental US; Alaska, Hawaii, and US territories may take 7–14 days).</li>
+          <li><strong>จัดส่งฟรี</strong> สำหรับคำสั่งซื้อในไทยที่มียอดเกิน <strong>$69 USD</strong> (ส่วนลดจะถูกหักอัตโนมัติที่หน้าชำระเงิน)</li>
+          <li>คำสั่งซื้อในไทยที่มียอดต่ำกว่า $69 จัดส่งในอัตรา <strong>$5.99</strong></li>
+          <li>คิทเริ่มต้นทุกชุด <strong>จัดส่งฟรี</strong> ไม่ว่ายอดรวมเท่าใด</li>
+          <li>จัดส่งผ่าน DHL Express พร้อมการติดตามพัสดุ</li>
+          <li><strong>ระยะเวลาจัดส่ง:</strong> 2–3 วันผ่าน DHL Express หลังจากส่งมอบให้บริษัทขนส่ง</li>
         </ul>
 
-        <h2>UK, EU & Japan</h2>
+        <h2>ประเทศอื่นๆ ในเอเชีย</h2>
         <p>
-          Free standard shipping on UK & JP orders over <strong>$89</strong>. EU and other international orders under the threshold pay live rates calculated at checkout based on destination and package weight. Typical transit time is 7–18 business days depending on destination and customs clearance.
+          จัดส่งฟรีสำหรับคำสั่งซื้อในมาเลเซียที่มียอดเกิน <strong>$69</strong> ประเทศอื่นๆ ในเอเชียที่มียอดต่ำกว่าเกณฑ์จะจ่ายอัตราจริงที่คำนวณที่หน้าชำระเงินตามปลายทางและน้ำหนักพัสดุ ระยะเวลาจัดส่งโดยทั่วไปคือ 3–7 วันทำการขึ้นอยู่กับปลายทางและการผ่านศุลกากร
         </p>
 
-        <h2>Australia & New Zealand</h2>
+        <h2>สหรัฐอเมริกา แคนาดา สหราชอาณาจักร และญี่ปุ่น</h2>
         <p>
-          Free standard shipping on AU & NZ orders over <strong>$69</strong>. Orders under the threshold ship at live rates calculated at checkout.
+          จัดส่งฟรีสำหรับคำสั่งซื้อ US/CA/UK/JP ที่มียอดเกิน <strong>$89</strong> คำสั่งซื้อที่มียอดต่ำกว่าเกณฑ์จะจ่ายอัตราจริงที่คำนวณที่หน้าชำระเงิน ระยะเวลาจัดส่งโดยทั่วไปคือ 5–8 วันทำการขึ้นอยู่กับปลายทางและการผ่านศุลกากร
         </p>
 
-        <h2>Other Destinations</h2>
+        <h2>ออสเตรเลียและนิวซีแลนด์</h2>
         <p>
-          We also ship to the EU and most other countries worldwide. Shipping rates for international destinations are calculated live at checkout based on destination and package weight. Typical transit times are 7–18 business days depending on destination and customs clearance.
-        </p>
-        <p>
-          Japanese customers: please visit <a href="https://jp.freshlocksealer.com/shipping" className="text-accent hover:underline">FreshLock Japan</a> for JPY pricing and local Japanese support.
+          จัดส่งฟรีสำหรับคำสั่งซื้อ AU/NZ ที่มียอดเกิน <strong>$69</strong> คำสั่งซื้อที่มียอดต่ำกว่าเกณฑ์จะจ่ายอัตราจริงที่คำนวณที่หน้าชำระเงิน
         </p>
 
-        <h2>Customs, Duties & Taxes</h2>
+        <h2>ปลายทางอื่นๆ</h2>
         <p>
-          International orders may be subject to import duties, taxes, or customs fees levied by the destination country. These charges are the responsibility of the customer and are not included in our shipping charges. Please check with your local customs office for estimates before ordering.
+          เราจัดส่งไปยัง EU และประเทศอื่นๆ ทั่วโลก อัตราจัดส่งสำหรับปลายทางระหว่างประเทศจะคำนวณแบบเรียลไทม์ที่หน้าชำระเงินตามปลายทางและน้ำหนักพัสดุ ระยะเวลาจัดส่งโดยทั่วไปคือ 7–18 วันทำการขึ้นอยู่กับปลายทางและการผ่านศุลกากร
         </p>
 
-        <h2>Tracking</h2>
         <p>
-          Every order ships with a <strong>tracking number</strong>. You will receive an email with tracking information as soon as your order is dispatched. If you do not receive a tracking email within 3 business days of ordering, please contact us at <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a>.
+          ลูกค้าชาวญี่ปุ่น: โปรดเยี่ยมชม <a href="https://jp.freshlocksealer.com/shipping" className="text-accent hover:underline">FreshLock ญี่ปุ่น</a> สำหรับราคา JPY และการสนับสนุนภาษาญี่ปุ่น
         </p>
 
-        <h2>Lost or Damaged Packages</h2>
+        <h2>ศุลกากร ภาษีอากรและค่าธรรมเนียม</h2>
         <p>
-          If your package arrives damaged or appears to be lost in transit, please contact us within 7 days of the estimated delivery date at <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a>. We will work with the carrier to resolve the issue and, where applicable, ship a replacement at no extra cost.
+          คำสั่งซื้อระหว่างประเทศอาจมีภาษีนำเข้า ภาษี หรือค่าธรรมเนียมศุลกากรที่เรียกเก็บโดยประเทศปลายทาง ค่าใช้จ่ายเหล่านี้เป็นความรับผิดชอบของลูกค้าและไม่รวมอยู่ในค่าจัดส่งของเรา โปรดตรวจสอบกับสำนักงานศุลกากรในพื้นที่ของคุณสำหรับการประเมินก่อนสั่งซื้อ
         </p>
 
-        <h2>PO Boxes & APO/FPO</h2>
+        <h2>การติดตามพัสดุ</h2>
         <p>
-          We ship to PO boxes and APO/FPO addresses via USPS. Delivery to APO/FPO addresses may take longer due to military postal routing.
+          ทุกคำสั่งซื้อจัดส่งพร้อม <strong>หมายเลขติดตามพัสดุ</strong> คุณจะได้รับอีเมลพร้อมข้อมูลการติดตามทันทีที่ส่งคำสั่งซื้อของคุณ หากคุณไม่ได้รับอีเมลติดตามภายใน 3 วันทำการหลังจากสั่งซื้อ โปรดติดต่อเราที่ <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a>
         </p>
 
-        <h2>Contact Us</h2>
+        <h2>พัสดุสูญหายหรือเสียหาย</h2>
         <p>
-          For shipping questions, email <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a>. We respond within 24 hours on business days.
+          หากพัสดุของคุณมาถึงโดยเสียหายหรือดูเหมือนจะสูญหายระหว่างการขนส่ง โปรดติดต่อเราภายใน 7 วันหลังจากวันจัดส่งโดยประมาณที่ <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a> เราจะประสานงานกับบริษัทขนส่งเพื่อแก้ไขปัญหาและ หากเป็นไปได้ จัดส่งสินค้าทดแทนโดยไม่มีค่าใช้จ่ายเพิ่มเติม
+        </p>
+
+        <h2>กล่อง PO และที่อยู่ APO/FPO</h2>
+        <p>
+          เราจัดส่งไปยังกล่อง PO และที่อยู่ APO/FPO การจัดส่งไปยังที่อยู่ APO/FPO อาจใช้เวลานานกว่าเนื่องจากเส้นทางไปรษณีย์ทหาร
+        </p>
+
+        <h2>ติดต่อเรา</h2>
+        <p>
+          สำหรับคำถามเกี่ยวกับการจัดส่ง ส่งอีเมลถึง <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a> เราตอบกลับภายใน 24 ชั่วโมงในวันทำการ
         </p>
       </div>
     </div>
