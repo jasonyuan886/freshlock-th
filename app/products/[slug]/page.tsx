@@ -19,7 +19,7 @@ function First100ReviewersBlock({ compact = false }: { compact?: boolean }) {
   return (
     <div className={`bg-green-50 border-2 border-green-500/40 rounded-xl ${compact ? 'p-4 mt-4' : 'p-5 mt-5'}`}>
       <p className={`font-bold text-green-800 ${compact ? 'text-sm' : 'text-base'} mb-1`}>🎁 เป็นหนึ่งใน 100 รีวิวแรกของเรา — รับถุงฟรี!</p>
-      <p className={`text-green-900/80 ${compact ? 'text-xs' : 'text-sm'} mb-3`}>แสดงความคิดเห็นที่ซื่อสัตย์ภายใน 30 วันหลังจากซื้อ แล้วเราจะส่ง <strong>ถุงเติม 30 แพ็คฟรี</strong> (มูลค่า $29.99) หลังจากการตรวจสอบ</p>
+      <p className={`text-green-900/80 ${compact ? 'text-xs' : 'text-sm'} mb-3`}>แสดงความคิดเห็นที่ซื่อสัตย์ภายใน 30 วันหลังจากซื้อ แล้วเราจะส่ง <strong>ถุงเติม 30 แพ็คฟรี</strong> (มูลค่า ฿1,050) หลังจากการตรวจสอบ</p>
       <a
         href="mailto:freshlocksealer@gmail.com?subject=FreshLock%20Product%20Review%20%28First%20100%20Reviewers%29&body=Hi%20FreshLock%2C%0A%0AOrder%20%23%3A%20%28please%20include%20your%20order%20number%29%0A%0AI%27d%20like%20to%20leave%20a%20review%20of%20my%20FreshLock%20purchase%20and%20claim%20the%20First%20100%20Reviewers%20free%20bag%20set.%0A%0A--%20Paste%20your%20review%20below%20--%0A%0AStar%20rating%20%281-5%29%3A%0AReview%3A%0A"
         className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition"
@@ -338,7 +338,7 @@ export default async function ProductPage({ params }: { params: Params }) {
                 </div>
               </div>
               <p className="text-xs text-green-700 mt-3 font-medium border-t border-green-200 pt-2">
-                มูลค่ารวม: <span className="line-through text-green-500">$320+</span> — ของคุณในราคา <span className="font-bold">${product.price.toFixed(2)}</span>
+                มูลค่ารวม: <span className="line-through text-green-500">฿11,200+</span> — ของคุณในราคา <span className="font-bold">${product.price.toFixed(2)}</span>
               </p>
             </div>
 
