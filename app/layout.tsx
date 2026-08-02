@@ -8,9 +8,9 @@ import { CartProvider } from '@/lib/cart-context';
 import { generateOrganizationSchema, generateWebsiteSchema, SITE_URL } from '@/lib/schema';
 
 const siteName = 'FreshLock';
-const title = 'FreshLock Handheld Vacuum Sealer — Stop Freezer Burn, Stay Fresh 5× Longer';
+const title = 'FreshLock Pro เครื่องซีลสูญญากาศแบบพกพา — ยืดอายุอาหาร 5 เท่า';
 const description =
-  'FreshLock Pro cordless handheld vacuum sealer stops freezer burn with -60 kPa suction, detachable drip tray and USB-C charging. BPA-free bags, works with most embossed valve bags. Free shipping over $89, 60-day returns.';
+  'เครื่องซีลสูญญากาศแบบพกพา FreshLock Pro สุญญากาศ -60 kPa ชาร์จ USB-C 80-100 ครั้งต่อการชาร์จ ถุง BPA-free จัดส่ง DHL 2-3 วัน รับประกัน 1 ปี คืนสินค้า 7 วัน';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   description,
   keywords:
-    'handheld vacuum sealer, cordless vacuum sealer, portable vacuum sealer, food vacuum sealer, vacuum seal bags, reusable vacuum bags, BPA-free, USB-C, meal prep, freezer burn prevention, food storage, sous vide, FreshLock',
+    'เครื่องซีลสูญญากาศ, เครื่องซีลอาหาร, เครื่องซีลแบบพกพา, ถุงเก็บอาหาร, ยืดอายุอาหาร, สุญญากาศ, FreshLock, vacuum sealer, ซีลสูญญากาศ',
   applicationName: siteName,
   icons: {
     icon: '/favicon-32.png',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         url: '/images/products/sealer-main.jpg',
         width: 1200,
         height: 630,
-        alt: 'FreshLock Pro handheld vacuum sealer in pearl white with apple-green zip-slider bags',
+        alt: 'FreshLock Pro เครื่องซีลสูญญากาศแบบพกพา สีขาวกับถุงสุญญากาศสีเขียว',
       },
     ],
   },
@@ -79,6 +79,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="th">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="alternate" hrefLang="en-US" href="https://www.freshlocksealer.com" />
         <link rel="alternate" hrefLang="ja-JP" href="https://jp.freshlocksealer.com" />
         <link rel="alternate" hrefLang="th-TH" href="https://th.freshlocksealer.com" />
