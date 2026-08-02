@@ -1,152 +1,152 @@
 export default function PrivacyPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h1 className="section-title mb-8">Privacy Policy</h1>
+      <h1 className="section-title mb-8">นโยบายความเป็นส่วนตัว</h1>
 
       <div className="prose prose-lg max-w-none">
         <div className="bg-white rounded-xl p-8 shadow-sm space-y-6">
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">1. Introduction</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">1. บทนำ</h2>
             <p className="text-gray-600 leading-relaxed">
-              FreshLock (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) operates the website www.freshlocksealer.com and is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website, make a purchase, or interact with our services.
+              FreshLock (&ldquo;เรา&rdquo;) ดำเนินการเว็บไซต์ www.freshlocksealer.com และมุ่งมั่นที่จะปกป้องความเป็นส่วนตัวของคุณ นโยบายความเป็นส่วนตัวนี้อธิบายว่าเราเก็บ ใช้ เปิดเผย และปกป้องข้อมูลส่วนบุคคลของคุณอย่างไรเมื่อคุณเยี่ยมชมเว็บไซต์ของเรา ทำการซื้อ หรือโต้ตอบกับบริการของเรา
             </p>
             <p className="text-gray-600 leading-relaxed mt-3">
-              We comply with applicable data protection laws for our customers worldwide, including the General Data Protection Regulation (GDPR) for customers in the European Economic Area and other regional privacy requirements.
+              เราปฏิบัติตามกฎหมายคุ้มครองข้อมูลที่บังคับใช้สำหรับลูกค้าทั่วโลก รวมถึงกฎระเบียบการคุ้มครองข้อมูลทั่วไป (GDPR) สำหรับลูกค้าในเขตเศรษฐกิจยุโรปและข้อกำหนดความเป็นส่วนตัวระดับภูมิภาคอื่นๆ
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">2. Information We Collect</h2>
-            <p className="text-gray-600 leading-relaxed mb-3">We may collect the following categories of information:</p>
+            <h2 className="text-2xl font-bold text-primary mb-3">2. ข้อมูลที่เราเก็บ</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">เราอาจเก็บข้อมูลประเภทต่อไปนี้:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li><strong>Personal Information:</strong> Name, email address, phone number, shipping address, and billing address provided when you place an order, create an account, or contact us.</li>
-              <li><strong>Payment Information:</strong> PayPal account information and any card details entered during checkout. Payment is processed securely by PayPal; we do not store full card numbers on our servers.</li>
-              <li><strong>Order Information:</strong> Purchase history, order details, product preferences, and correspondence related to your orders.</li>
-              <li><strong>Technical Information:</strong> IP address, browser type and version, device type and operating system, referring URLs, pages visited, time spent on pages, and other diagnostic data collected automatically when you use the site.</li>
-              <li><strong>Communication Data:</strong> Emails, form submissions, chat messages, or other correspondence with our support team.</li>
-              <li><strong>Marketing Preferences:</strong> Whether you have opted in to receive marketing emails, and your interaction with those emails.</li>
+              <li><strong>ข้อมูลส่วนบุคคล:</strong> ชื่อ ที่อยู่อีเมล เบอร์โทรศัพท์ ที่อยู่จัดส่ง และที่อยู่เรียกเก็บเงินที่ให้เมื่อคุณสั่งซื้อ สร้างบัญชี หรือติดต่อเรา</li>
+              <li><strong>ข้อมูลการชำระเงิน:</strong> ข้อมูลบัญชี PayPal และรายละเอียดบัตรที่กรอกระหว่างการชำระเงิน การชำระเงินดำเนินการอย่างปลอดภัยโดย PayPal เราไม่เก็บหมายเลขบัตรเต็มบนเซิร์ฟเวอร์ของเรา</li>
+              <li><strong>ข้อมูลคำสั่งซื้อ:</strong> ประวัติการซื้อ รายละเอียดคำสั่งซื้อ ความชอบผลิตภัณฑ์ และการติดต่อที่เกี่ยวข้องกับคำสั่งซื้อของคุณ</li>
+              <li><strong>ข้อมูลทางเทคนิค:</strong> ที่อยู่ IP ประเภทและเวอร์ชันเบราว์เซอร์ ประเภทอุปกรณ์และระบบปฏิบัติการ URL อ้างอิง หน้าที่เยี่ยมชม เวลาที่ใช้บนหน้า และข้อมูลวินิจฉัยอื่นๆ ที่เก็บอัตโนมัติเมื่อคุณใช้เว็บไซต์</li>
+              <li><strong>ข้อมูลการสื่อสาร:</strong> อีเมล การส่งแบบฟอร์ม ข้อความแชท หรือการติดต่ออื่นๆ กับทีมสนับสนุนของเรา</li>
+              <li><strong>การตั้งค่าการตลาด:</strong> ว่าคุณได้เลือกรับอีเมลการตลาดหรือไม่ และการโต้ตอบของคุณกับอีเมลเหล่านั้น</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">3. How We Use Your Information</h2>
-            <p className="text-gray-600 leading-relaxed mb-3">We use your personal information for the following purposes:</p>
+            <h2 className="text-2xl font-bold text-primary mb-3">3. วิธีที่เราใช้ข้อมูลของคุณ</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">เราใช้ข้อมูลส่วนบุคคลของคุณเพื่อวัตถุประสงค์ต่อไปนี้:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li>To process, fulfil, and track your orders, including sending order confirmations and shipping notifications.</li>
-              <li>To provide customer support and respond to your enquiries.</li>
-              <li>To send marketing communications about our products, offers, and updates — <strong>only if you have opted in</strong>. You can unsubscribe at any time.</li>
-              <li>To improve our website, products, and user experience based on usage patterns and feedback.</li>
-              <li>To prevent fraud, enforce our Terms of Service, and comply with legal obligations.</li>
-              <li>To conduct analytics and measure site performance.</li>
+              <li>เพื่อดำเนินการ จัดส่ง และติดตามคำสั่งซื้อของคุณ รวมถึงการส่งอีเมลยืนยันคำสั่งซื้อและการแจ้งเตือนการจัดส่ง</li>
+              <li>เพื่อให้การสนับสนุนลูกค้าและตอบคำถามของคุณ</li>
+              <li>เพื่อส่งการสื่อสารทางการตลาดเกี่ยวกับผลิตภัณฑ์ ข้อเสนอ และอัปเดตของเรา — <strong>เฉพาะเมื่อคุณเลือกรับ</strong> คุณสามารถยกเลิกการรับได้ตลอดเวลา</li>
+              <li>เพื่อปรับปรุงเว็บไซต์ ผลิตภัณฑ์ และประสบการณ์ผู้ใช้ตามรูปแบบการใช้งานและความคิดเห็น</li>
+              <li>เพื่อป้องกันการฉ้อโกง บังคับใช้ข้อกำหนดการให้บริการ และปฏิบัติตามภาระผูกพันทางกฎหมาย</li>
+              <li>เพื่อทำการวิเคราะห์และวัดประสิทธิภาพเว็บไซต์</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">4. Cookies and Similar Technologies</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">4. คุกกี้และเทคโนโลยีที่คล้ายคลึงกัน</h2>
             <p className="text-gray-600 leading-relaxed mb-3">
-              Our website uses cookies and similar tracking technologies to enhance your browsing experience. Cookies are small text files stored on your device that help us:
+              เว็บไซต์ของเราใช้คุกกี้และเทคโนโลยีติดตามที่คล้ายคลึงกันเพื่อปรับปรุงประสบการณ์การเรียกดูของคุณ คุกกี้คือไฟล์ข้อความขนาดเล็กที่เก็บบนอุปกรณ์ของคุณซึ่งช่วยเราใน:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li><strong>Essential cookies:</strong> Required for core functionality such as the shopping cart, checkout process, and remembering your preferences.</li>
-              <li><strong>Analytics cookies:</strong> Google Analytics (and similar tools) collect anonymised data about how visitors use the site, which helps us improve performance and content.</li>
-              <li><strong>Marketing/advertising cookies:</strong> Used (with your consent) to deliver relevant ads and measure campaign effectiveness on platforms such as Google Ads, Meta, and TikTok.</li>
+              <li><strong>คุกกี้ที่จำเป็น:</strong> จำเป็นสำหรับฟังก์ชันหลัก เช่น ตะกร้าสินค้า กระบวนการชำระเงิน และการจดจำการตั้งค่าของคุณ</li>
+              <li><strong>คุกกี้วิเคราะห์:</strong> Google Analytics (และเครื่องมือที่คล้ายคลึงกัน) เก็บข้อมูลที่ไม่ระบุตัวตนเกี่ยวกับวิธีที่ผู้เยี่ยมชมใช้เว็บไซต์ ซึ่งช่วยเราปรับปรุงประสิทธิภาพและเนื้อหา</li>
+              <li><strong>คุกกี้การตลาด/โฆษณา:</strong> ใช้ (เมื่อได้รับความยินยอมจากคุณ) เพื่อนำเสนอโฆษณาที่เกี่ยวข้องและวัดประสิทธิภาพแคมเปญบนแพลตฟอร์มเช่น Google Ads, Meta และ TikTok</li>
             </ul>
             <p className="text-gray-600 leading-relaxed mt-3">
-              You can control or disable cookies through your browser settings. Please note that disabling essential cookies may affect the functionality of our shop (for example, you may not be able to add items to your cart or complete checkout).
+              คุณสามารถควบคุมหรือปิดคุกกี้ผ่านการตั้งค่าเบราว์เซอร์ของคุณ โปรดทราบว่าการปิดคุกกี้ที่จำเป็นอาจส่งผลต่อฟังก์ชันการทำงานของร้านค้าของเรา (เช่น คุณอาจไม่สามารถเพิมสินค้าลงตะกร้าหรือชำระเงินได้)
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">5. Third-Party Services We Use</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">5. บริการของบุคคลที่สามที่เราใช้</h2>
             <p className="text-gray-600 leading-relaxed mb-3">
-              We share limited information with trusted third-party service providers who help us operate our website and serve you:
+              เราแบ่งปันข้อมูลจำกัดกับผู้ให้บริการบุคคลที่สามที่เชื่อถือได้ซึ่งช่วยเราดำเนินการเว็บไซต์และให้บริการแก่คุณ:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li><strong>Vercel:</strong> Hosting and content delivery platform that serves our website. Processes IP address and technical data for security and performance.</li>
-              <li><strong>Google Analytics:</strong> Website traffic and usage analysis. Data is anonymised where possible. You can opt out via Google&rsquo;s browser add-on.</li>
-              <li><strong>PayPal:</strong> Payment processing provider that handles payment card data securely.</li>
-              <li><strong>Shipping carriers and fulfilment partners:</strong> To deliver your orders; they receive your name, shipping address, and contact details for delivery purposes only.</li>
-              <li><strong>Email service providers:</strong> To send transactional emails (order confirmations, shipping updates) and marketing emails (if you have subscribed).</li>
+              <li><strong>Vercel:</strong> แพลตฟอร์มโฮสติ้งและส่งมอบเนื้อหาที่ให้บริการเว็บไซต์ของเรา ประมวลผลที่อยู่ IP และข้อมูลทางเทคนิคเพื่อความปลอดภัยและประสิทธิภาพ</li>
+              <li><strong>Google Analytics:</strong> วิเคราะห์การเข้าชมและการใช้งานเว็บไซต์ ข้อมูลถูกทำให้ไม่ระบุตัวตนเท่าที่เป็นไปได้ คุณสามารถยกเลิกการเข้าร่วมผ่านส่วนเสริมเบราว์เซอร์ของ Google</li>
+              <li><strong>PayPal:</strong> ผู้ให้บริการประมวลผลการชำระเงินที่จัดการข้อมูลบัตรการชำระเงินอย่างปลอดภัย</li>
+              <li><strong>บริษัทขนส่งและพันธมิตรจัดส่ง:</strong> เพื่อจัดส่งคำสั่งซื้อของคุณ พวกเขาได้รับชื่อ ที่อยู่จัดส่ง และรายละเอียดการติดต่อของคุณเพื่อวัตถุประสงค์ในการจัดส่งเท่านั้น</li>
+              <li><strong>ผู้ให้บริการอีเมล:</strong> เพื่อส่งอีเมลธุรกรรม (ยืนยันคำสั่งซื้อ อัปเดตการจัดส่ง) และอีเมลการตลาด (หากคุณสมัครรับ)</li>
             </ul>
             <p className="text-gray-600 leading-relaxed mt-3">
-              We do <strong>not</strong> sell your personal information to any third party.
+              เรา <strong>ไม่</strong> ขายข้อมูลส่วนบุคคลของคุณให้กับบุคคลที่สามใดๆ
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">6. Data Sharing and Disclosure</h2>
-            <p className="text-gray-600 leading-relaxed mb-3">In addition to the service providers listed above, we may disclose your information:</p>
+            <h2 className="text-2xl font-bold text-primary mb-3">6. การแบ่งปันและการเปิดเผยข้อมูล</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">นอกจากผู้ให้บริการที่ระบุไว้ข้างต้น เราอาจเปิดเผยข้อมูลของคุณ:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li>When required by law, court order, or government request.</li>
-              <li>To protect our rights, property, or safety, or those of our customers or the public.</li>
-              <li>In connection with a merger, acquisition, financing, or sale of business assets, in which case customer information would be transferred subject to appropriate confidentiality protections.</li>
+              <li>เมื่อจำเป็นตามกฎหมาย คำสั่งศาล หรือคำขอของรัฐบาล</li>
+              <li>เพื่อปกป้องสิทธิ ทรัพย์สิน หรือความปลอดภัยของเรา หรือของลูกค้าหรือสาธารณชน</li>
+              <li>ในการควบรวมกิจการ การเข้าซื้อกิจการ การระดมทุน หรือการขายสินทรัพย์ทางธุรกิจ ซึ่งในกรณีนี้ข้อมูลลูกค้าจะถูกโอนภายใต้การคุ้มครองความลับที่เหมาะสม</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">7. Data Retention</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">7. การเก็บรักษาข้อมูล</h2>
             <p className="text-gray-600 leading-relaxed">
-              We retain personal information only for as long as necessary to fulfil the purposes for which it was collected, including order fulfilment, warranty support, legal and accounting requirements, and fraud prevention. Order records are generally retained for up to 7 years for tax and legal compliance. Marketing list data is retained until you unsubscribe.
+              เราเก็บรักษาข้อมูลส่วนบุคคลเฉพาะตราบเท่าที่จำเป็นเพื่อบรรลุวัตถุประสงค์ที่เก็บรวบรวม รวมถึงการจัดส่งคำสั่งซื้อ การสนับสนุนการรับประกัน ข้อกำหนดทางกฎหมายและบัญชี และการป้องกันการฉ้อโกง บันทึกคำสั่งซื้อมักถูกเก็บไว้ถึง 7 ปีเพื่อการปฏิบัติตามภาษีและกฎหมาย ข้อมูลรายการการตลาดจะถูกเก็บไว้จนกว่าคุณจะยกเลิกการสมัคร
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">8. Data Security</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">8. ความปลอดภัยของข้อมูล</h2>
             <p className="text-gray-600 leading-relaxed">
-              We implement industry-standard security measures including SSL/TLS encryption for all website traffic, secure payment processing through PCI-DSS compliant providers, restricted access to personal data, and regular security monitoring. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+              เราใช้มาตรการรักษาความปลอดภัยตามมาตรฐานอุตสาหกรรม รวมถึงการเข้ารหัส SSL/TLS สำหรับการรับส่งข้อมูลเว็บไซต์ทั้งหมด การประมวลผลการชำระเงินอย่างปลอดภัยผ่านผู้ให้บริการที่ได้รับการรับรอง PCI-DSS การจำกัดการเข้าถึงข้อมูลส่วนบุคคล และการตรวจสอบความปลอดภัยเป็นประจำ อย่างไรก็ตาม ไม่มีวิธีการส่งผ่านอินเทอร์เน็ตหรือการจัดเก็บอิเล็กทรอนิกส์ใดที่ปลอดภัย 100% และเราไม่สามารถรับประกันความปลอดภัยสัมบูรณ์ได้
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">9. International Data Transfers</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">9. การถ่ายโอนข้อมูลระหว่างประเทศ</h2>
             <p className="text-gray-600 leading-relaxed">
-              Some of our third-party service providers (such as cloud hosting, payment processing and analytics platforms) may process data in different jurisdictions, including the United States and other countries. We take steps to ensure such transfers comply with applicable law and that your information receives an adequate level of protection.
+              ผู้ให้บริการบุคคลที่สามบางรายของเรา (เช่น โฮสติ้งคลาวด์ การประมวลผลการชำระเงิน และแพลตฟอร์มวิเคราะห์) อาจประมวลผลข้อมูลในเขตอำนาจศาลที่แตกต่างกัน รวมถึงสหรัฐอเมริกาและประเทศอื่นๆ เราดำเนินการเพื่อให้แน่ใจว่าการถ่ายโอนดังกล่าวเป็นไปตามกฎหมายที่บังคับใช้และข้อมูลของคุณได้รับระดับการคุ้มครองที่เพียงพอ
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">10. Your Rights</h2>
-            <p className="text-gray-600 leading-relaxed mb-3">Depending on your location, you may have the right to:</p>
+            <h2 className="text-2xl font-bold text-primary mb-3">10. สิทธิของคุณ</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">ขึ้นอยู่กับสถานที่ของคุณ คุณอาจมีสิทธิในการ:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li>Access the personal information we hold about you.</li>
-              <li>Request correction of inaccurate or incomplete information.</li>
-              <li>Request deletion of your personal data (subject to legal retention obligations).</li>
-              <li>Object to or restrict certain types of processing.</li>
-              <li>Opt out of marketing communications at any time (use the &ldquo;unsubscribe&rdquo; link in any marketing email).</li>
-              <li>Lodge a complaint with your local data protection authority.</li>
+              <li>เข้าถึงข้อมูลส่วนบุคคลที่เราเก็บเกี่ยวกับคุณ</li>
+              <li>ขอแก้ไขข้อมูลที่ไม่ถูกต้องหรือไม่สมบูรณ์</li>
+              <li>ขอลบข้อมูลส่วนบุคคลของคุณ (ภายใต้ภาระผูกพันในการเก็บรักษาตามกฎหมาย)</li>
+              <li>คัดค้านหรือจำกัดการประมวลผลบางประเภท</li>
+              <li>ยกเลิกการรับการสื่อสารทางการตลาดได้ตลอดเวลา (ใช้ลิงก์ &ldquo;ยกเลิกการสมัคร&rdquo; ในอีเมลการตลาดใดๆ)</li>
+              <li>ยื่นเรื่องร้องเรียนต่อหน่วยงานคุ้มครองข้อมูลในพื้นที่ของคุณ</li>
             </ul>
             <p className="text-gray-600 leading-relaxed mt-3">
-              To exercise any of these rights, please contact us using the details below. We will respond within a reasonable timeframe, generally within 30 days.
+              ในการใช้สิทธิใดๆ เหล่านี้ โปรดติดต่อเราโดยใช้รายละเอียดด้านล่าง เราจะตอบกลับภายในระยะเวลาที่เหมาะสม โดยทั่วไปภายใน 30 วัน
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">11. Children&rsquo;s Privacy</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">11. ความเป็นส่วนตัวของเด็ก</h2>
             <p className="text-gray-600 leading-relaxed">
-              Our website is not directed to children under the age of 18, and we do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can remove it.
+              เว็บไซต์ของเราไม่ได้มุ่งเป้าไปที่เด็กอายุต่ำกว่า 18 ปี และเราไม่ได้เก็บข้อมูลส่วนบุคคลจากเด็กโดยเจตนา หากคุณเชื่อว่าเด็กได้ให้ข้อมูลส่วนบุคคลกับเรา โปรดติดต่อเราเพื่อให้เราลบออกได้
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">12. Changes to This Policy</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">12. การเปลี่ยนแปลงนโยบายนี้</h2>
             <p className="text-gray-600 leading-relaxed">
-              We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or service providers. Any changes will be posted on this page with an updated effective date. Your continued use of the site after changes take effect constitutes acceptance of the revised policy.
+              เราอาจอัปเดตนโยบายความเป็นส่วนตัวนี้เป็นครั้งคราวเพื่อสะท้อนการเปลี่ยนแปลงในแนวปฏิบัติ ข้อกำหนดทางกฎหมาย หรือผู้ให้บริการของเรา การเปลี่ยนแปลงใดๆ จะถูกโพสต์บนหน้านี้พร้อมวันที่มีผลบังคับใช้ที่อัปเดต การใช้เว็บไซต์ต่อไปของคุณหลังจากการเปลี่ยนแปลงมีผลบังคับใช้ถือว่าคุณยอมรับนโยบายที่แก้ไขแล้ว
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">13. Contact Us</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">13. ติดต่อเรา</h2>
             <p className="text-gray-600 leading-relaxed">
-              For privacy-related enquiries, to exercise your rights, or to raise a concern, please contact us at:
+              สำหรับคำถามที่เกี่ยวข้องกับความเป็นส่วนตัว การใช้สิทธิของคุณ หรือการร้องเรียน โปรดติดต่อเราที่:
             </p>
             <p className="text-gray-600 leading-relaxed mt-3">
-              <strong>Email:</strong> <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a><br />
-              <strong>Response time:</strong> Within 24 hours on business days
+              <strong>อีเมล:</strong> <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a><br />
+              <strong>เวลาตอบกลับ:</strong> ภายใน 24 ชั่วโมงในวันทำการ
             </p>
           </section>
 
           <p className="text-sm text-gray-500 mt-8 pt-6 border-t">
-            Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            อัปเดตล่าสุด: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
           </p>
         </div>
       </div>
