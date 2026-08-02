@@ -314,11 +314,11 @@ export default async function ProductPage({ params }: { params: Params }) {
               <div className="grid grid-cols-2 gap-2 text-xs text-green-900">
                 <div className="flex items-start gap-1.5">
                   <span className="text-green-600">✓</span>
-                  <span>เครื่องสูญญากาศแบบตั้งโต๊ะทั่วไปราคา <strong>$200–$400</strong> FreshLock ทำงานเดียวกันในราคาเศษเสี้ยว</span>
+                  <span>เครื่องสูญญากาศแบบตั้งโต๊ะทั่วไปราคา <strong>฿7,000–฿14,000</strong> FreshLock ทำงานเดียวกันในราคาเศษเสี้ยว</span>
                 </div>
                 <div className="flex items-start gap-1.5">
                   <span className="text-green-600">✓</span>
-                  <span>ครัวเรือนทั่วไปทิ้งอาหารไป <strong>$1,866/ปี</strong> สินค้านี้คุ้มทุนในไม่กี่สัปดาห์</span>
+                  <span>ครัวเรือนทั่วไปทิ้งอาหารไป <strong>฿65,310/ปี</strong> สินค้านี้คุ้มทุนในไม่กี่สัปดาห์</span>
                 </div>
                 <div className="flex items-start gap-1.5">
                   <span className="text-green-600">✓</span>
