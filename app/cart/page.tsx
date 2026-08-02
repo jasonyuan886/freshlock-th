@@ -42,7 +42,7 @@ function getFreeShipRecommendations(
       name: p.name,
       price: p.price,
       image: p.image,
-      reason: `Add it — unlocks FREE shipping (you save $${SHIPPING_FEE_UNDER.toFixed(2)})`,
+      reason: `เพิ่มเลย — ปลดล็อกจัดส่งฟรี (ประหยัด $${SHIPPING_FEE_UNDER.toFixed(2)})`,
     });
   }
 
@@ -60,8 +60,8 @@ function getFreeShipRecommendations(
       image: cheapestBag.image,
       reason:
         qty === 1
-          ? `Add 1 pack — only $${(gap - cheapestBag.price).toFixed(2)} away after`
-          : `Add ${qty} packs — ships FREE`,
+          ? `เพิ่ม 1 แพ็ค — เหลืออีก $${(gap - cheapestBag.price).toFixed(2)}`
+          : `เพิ่ม ${qty} แพ็ค — จัดส่งฟรี`,
     });
   }
 
@@ -69,11 +69,11 @@ function getFreeShipRecommendations(
   if (recs.length === 0 && cheapestBag) {
     recs.push({
       slug: cheapestBag.slug,
-      name: `More ${cheapestBag.name}`,
+      name: `เพิ่ม ${cheapestBag.name}`,
       price: cheapestBag.price,
       image: cheapestBag.image,
-      reason: `Add another pack — ${
-        cheapestBag.price >= gap ? 'unlocks FREE shipping' : `only $${(gap - cheapestBag.price).toFixed(2)} more after`
+      reason: `เพิ่มอีกแพ็ค — ${
+        cheapestBag.price >= gap ? 'ปลดล็อกจัดส่งฟรี' : `เหลืออีก $${(gap - cheapestBag.price).toFixed(2)}`
       }`,
     });
   }
@@ -96,13 +96,13 @@ function FreeShippingProgress({ total }: { total: number }) {
     >
       {isFree ? (
         <p className="text-sm font-semibold text-green-700 text-center">
-          🎉 You've unlocked FREE shipping!
+          🎉 คุณได้รับจัดส่งฟรีแล้ว!
         </p>
       ) : (
         <>
           <p className="text-sm font-semibold text-amber-800 mb-2">
-            🚚 Add <span className="text-accent">${away}</span> more for FREE shipping
-            <span className="text-xs text-amber-700 font-normal"> (save ${SHIPPING_FEE_UNDER.toFixed(2)})</span>
+            🚚 เพิ่ม <span className="text-accent">${away}</span> เพื่อรับจัดส่งฟรี
+            <span className="text-xs text-amber-700 font-normal"> (ประหยัด ${SHIPPING_FEE_UNDER.toFixed(2)})</span>
           </p>
           <div className="w-full bg-amber-200 rounded-full h-2.5 overflow-hidden">
             <div
@@ -130,16 +130,16 @@ export default function CartPage() {
     return (
       <div className="max-w-3xl mx-auto px-4 py-20 text-center">
         <div className="text-6xl mb-6">🛒</div>
-        <h1 className="text-3xl font-bold text-primary mb-4">Your Cart is Empty</h1>
-        <p className="text-gray-500 mb-8">Looks like you have not added anything yet.</p>
-        <Link href="/products" className="btn-primary">Browse Products</Link>
+        <h1 className="text-3xl font-bold text-primary mb-4">ตะกร้าสินค้าของคุณว่างเปล่า</h1>
+        <p className="text-gray-500 mb-8">ดูเหมือนว่าคุณยังไม่ได้เพิ่มสินค้าใดๆ</p>
+        <Link href="/products" className="btn-primary">เลือกซื้อสินค้า</Link>
       </div>
     );
   }
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-3xl font-bold text-primary mb-8">Shopping Cart</h1>
+      <h1 className="text-3xl font-bold text-primary mb-8">ตะกร้าสินค้า</h1>
 
       <div className="grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-4">
@@ -168,7 +168,7 @@ export default function CartPage() {
                     <button
                       onClick={() => updateQuantity(item.product.slug, item.quantity - 1)}
                       className="px-3 py-1.5 text-sm hover:bg-gray-100 transition"
-                      aria-label="Decrease quantity"
+                      aria-label="ลดจำนวน"
                     >
                       −
                     </button>
@@ -176,7 +176,7 @@ export default function CartPage() {
                     <button
                       onClick={() => updateQuantity(item.product.slug, item.quantity + 1)}
                       className="px-3 py-1.5 text-sm hover:bg-gray-100 transition"
-                      aria-label="Increase quantity"
+                      aria-label="เพิ่มจำนวน"
                     >
                       +
                     </button>
@@ -185,7 +185,7 @@ export default function CartPage() {
                     onClick={() => removeFromCart(item.product.slug)}
                     className="text-red-500 text-sm hover:underline"
                   >
-                    Remove
+                    ลบ
                   </button>
                 </div>
               </div>
@@ -199,21 +199,21 @@ export default function CartPage() {
         </div>
 
         <div className="bg-white rounded-xl p-6 shadow h-fit sticky top-24">
-          <h2 className="font-bold text-primary text-lg mb-4">Order Summary</h2>
+          <h2 className="font-bold text-primary text-lg mb-4">สรุปคำสั่งซื้อ</h2>
 
           {/* Free shipping progress bar */}
           <FreeShippingProgress total={totalPrice} />
 
           <div className="space-y-2 text-sm border-b pb-4 mb-4">
             <div className="flex justify-between">
-              <span className="text-gray-500">Subtotal</span>
+              <span className="text-gray-500">ยอดรวมย่อย</span>
               <span>${totalPrice.toFixed(2)} USD</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-500">Shipping</span>
+              <span className="text-gray-500">ค่าจัดส่ง</span>
               <span>
                 {shipping === 0 ? (
-                  <span className="text-green-600 font-medium">FREE</span>
+                  <span className="text-green-600 font-medium">ฟรี</span>
                 ) : (
                   `$${shipping.toFixed(2)} USD`
                 )}
@@ -221,28 +221,28 @@ export default function CartPage() {
             </div>
           </div>
           <div className="flex justify-between font-bold text-lg mb-6">
-            <span>Total</span>
+            <span>รวมทั้งหมด</span>
             <span>${total.toFixed(2)} USD</span>
           </div>
           <Link href="/checkout" className="btn-primary w-full block text-center">
-            Proceed to Checkout
+            ดำเนินการชำระเงิน
           </Link>
           <div className="flex items-center justify-center gap-2 mt-3 text-xs text-gray-500">
             <span className="inline-flex items-center font-bold text-[#003087] bg-[#ffc439] px-2 py-0.5 rounded text-xs tracking-wide">PayPal</span>
-            <span>🛡️ Buyer Protection included</span>
+            <span>🛡️ รวมการคุ้มครองผู้ซื้อ</span>
           </div>
           <Link
             href="/products"
             className="block text-center text-sm text-gray-500 hover:text-primary mt-2"
           >
-            ← Continue Shopping
+            ← กลับไปเลือกซื้อสินค้าต่อ
           </Link>
 
           {/* Smart bundle recommendations to reach free shipping */}
           {recs.length > 0 && (
             <div className="mt-6 pt-4 border-t">
               <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">
-                🎁 Add these to ship FREE
+                🎁 เพิ่มสิ่งเหล่านี้เพื่อรับจัดส่งฟรี
               </p>
               <div className="space-y-3">
                 {recs.map((rec) => {
@@ -266,7 +266,7 @@ export default function CartPage() {
                         }}
                         className="shrink-0 bg-accent text-white text-xs font-semibold px-3 py-1.5 rounded-lg hover:bg-accent/90 transition"
                       >
-                        + Add ${rec.price.toFixed(2)}
+                        + เพิ่ม ${rec.price.toFixed(2)}
                       </button>
                     </div>
                   );
@@ -276,7 +276,7 @@ export default function CartPage() {
           )}
 
           <p className="text-xs text-gray-400 mt-4 text-center">
-            🔒 Secure SSL checkout · 60-day returns · 2-year warranty
+            🔒 ชำระเงิน SSL ปลอดภัย · คืนสินค้า 7 วัน · รับประกัน 1 ปี
           </p>
         </div>
       </div>
