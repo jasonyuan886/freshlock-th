@@ -60,7 +60,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       />
       <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <Link href="/blog" className="text-primary-600 hover:text-primary-800 text-sm font-medium inline-flex items-center mb-6">
-          ← Back to all articles
+          ← กลับสู่บทความทั้งหมด
         </Link>
         <header className="mb-8 pb-6 border-b border-gray-200">
           <div className="flex flex-wrap items-center gap-3 text-sm text-gray-500 mb-4">
@@ -88,7 +88,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             {post.title}
           </h1>
           <p className="text-lg text-gray-600">{post.description}</p>
-          <p className="text-sm text-gray-500 mt-4">By {post.author}</p>
+          <p className="text-sm text-gray-500 mt-4">โดย {post.author}</p>
         </header>
         <div
           className="prose prose-lg max-w-none text-gray-700"
@@ -96,25 +96,25 @@ export default async function BlogPostPage({ params }: PageProps) {
         />
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="bg-primary-50 rounded-xl p-6 text-center">
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Ready to try vacuum sealing?</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">พร้อมลองการสูญญากาศหรือยัง?</h3>
             <p className="text-gray-600 mb-4">
-              The FreshLock handheld vacuum sealer keeps food fresh up to 5× longer with one-touch valve sealing.
+              เครื่องสูญญากาศแบบพกพา FreshLock รักษาอาหารให้สดนานขึ้นถึง 5 เท่าด้วยการซีลวาล์วแบบกดปุ่มเดียว
             </p>
             <Link
               href="/products/freshlock-starter-kit"
               className="inline-block bg-primary-600 hover:bg-primary-700 text-white font-semibold px-6 py-3 rounded-lg transition"
             >
-              Shop FreshLock Starter Kit →
+              ซื้อคิทเริ่มต้น FreshLock →
             </Link>
           </div>
         </div>
       </article>
 
       {relatedPosts.length > 0 && (
-        <section className="bg-gray-50 py-16" aria-labelledby="related-heading">
+        <section className="bg-[#FFF8F0] py-16" aria-labelledby="related-heading">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 id="related-heading" className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Related Articles
+              บทความที่เกี่ยวข้อง
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               {relatedPosts.map(rp => (
