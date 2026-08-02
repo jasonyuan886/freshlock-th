@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/10 rounded-xl p-8 shadow-sm mb-8">
           <h2 className="text-2xl font-bold text-primary mb-4">ออกแบบในเซินเจิ้น ได้รับความไว้วางใจทั่วโลก</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            FreshLock ถูกออกแบบ ผลิต และส่งโดย <strong>Shichiri Technology Co., Ltd. (深圳市七力科技有限公司)</strong> ทีมวิศวกรเครื่องใช้ในครัวที่ตั้งอยู่ในเซินเจิ้น — เมืองหลวงฮาร์ดแวร์ของโลก ที่ซัพพลายเชน นักออกแบบอุตสาหกรรม และวิศวกรอิเล็กทรอนิกส์ได้สร้างเครื่องมือที่ผู้คนใช้จริงทุกวันมาเป็นเวลาสี่ทศวรรษ
+            FreshLock ถูกออกแบบ ผลิต และส่งโดย <strong>Qili Technology Co., Ltd. (深圳市七力科技有限公司)</strong> ทีมวิศวกรเครื่องใช้ในครัวที่ตั้งอยู่ในเซินเจิ้น — เมืองหลวงฮาร์ดแวร์ของโลก ที่ซัพพลายเชน นักออกแบบอุตสาหกรรม และวิศวกรอิเล็กทรอนิกส์ได้สร้างเครื่องมือที่ผู้คนใช้จริงทุกวันมาเป็นเวลาสี่ทศวรรษ
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             เราไม่เช่าสำนักงานปลอมในสหรัฐฯ หรือแสร้งทำเป็นสตาร์ทอัพจากแคลิฟอร์เนีย เราเป็นโรงงานจริง: ทีมเดียวกันที่ผลิตเครื่องใช้ในครัวให้แบรนด์ระดับนานาชาติที่มีชื่อเสียง ตอนนี้นำ FreshLock มาส่งตรงถึงคุณ — ไม่มีคนกลางเพิ่มราคา ไม่มีการตลาด "ออกแบบในซิลิคอนแวลลีย์" แค่เครื่องมือที่สร้างมาดีในราคาที่ยุติธรรม
@@ -49,7 +49,7 @@ export default function AboutPage() {
           <div className="grid sm:grid-cols-2 gap-4 mt-6 text-sm">
             <div className="bg-white rounded-lg p-4 border border-gray-100">
               <p className="font-semibold text-primary mb-1">🏭 บริษัท</p>
-              <p className="text-gray-600">Shichiri Technology Co., Ltd.</p>
+              <p className="text-gray-600">Qili Technology Co., Ltd.</p>
               <p className="text-gray-500 text-xs mt-1">深圳市七力科技有限公司</p>
             </div>
             <div className="bg-white rounded-lg p-4 border border-gray-100">
