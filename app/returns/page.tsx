@@ -1,17 +1,17 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Returns & Refund Policy — 60-Day Money-Back Guarantee',
+  title: 'นโยบายการคืนสินค้าและคืนเงิน — รับประกันความพึงพอใจ 7 วัน',
   description:
-    'FreshLock offers a 60-day satisfaction guarantee. Return any unused item within 60 days for a refund or exchange. 2-year warranty on the sealer unit.',
+    'FreshLock มีการรับประกันความพึงพอใจ 7 วัน คืนสินค้าที่ยังไม่ได้ใช้ภายใน 7 วันเพื่อขอคืนเงินหรือเปลี่ยนสินค้า รับประกัน 1 ปีสำหรับตัวเครื่อง',
 };
 
 export default function ReturnsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-10">
-        <h1 className="section-title">Returns &amp; Refund Policy</h1>
-        <p className="section-subtitle">60-day satisfaction guarantee — backed by our 2-year warranty.</p>
+        <h1 className="section-title">นโยบายการคืนสินค้าและคืนเงิน</h1>
+        <p className="section-subtitle">รับประกันความพึงพอใจ 7 วัน — สนับสนุนโดยการรับประกัน 1 ปี</p>
       </div>
 
       <div className="prose prose-lg max-w-none">
@@ -19,100 +19,100 @@ export default function ReturnsPage() {
           <section>
             <div className="bg-accent/10 border-l-4 border-accent p-4 rounded">
               <p className="text-gray-900 font-semibold">
-                🎉 60-Day Satisfaction Guarantee — If you&apos;re not completely happy with your FreshLock purchase within 60 days of delivery, we&apos;ll make it right.
+                🎉 รับประกันความพึงพอใจ 7 วัน — หากคุณไม่พอใจอย่างยิ่งกับการซื้อ FreshLock ภายใน 7 วันหลังจากได้รับสินค้า เราจะแก้ไขให้
               </p>
             </div>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">1. Return Window (Change of Mind)</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">1. ระยะเวลาการคืนสินค้า (เปลี่ยนใจ)</h2>
             <p className="text-gray-600 leading-relaxed">
-              You may return most new, unused items within <strong>60 days of delivery</strong> for a full refund or exchange, no questions asked. Items must be in their original packaging, undamaged, and in resalable condition, with all accessories and documentation included.
+              คุณสามารถคืนสินค้าใหม่ที่ยังไม่ได้ใช้ภายใน <strong>7 วันหลังจากได้รับสินค้า</strong> เพื่อขอคืนเงินเต็มจำนวนหรือเปลี่ยนสินค้า โดยไม่ต้องอธิบายเหตุผล สินค้าต้องอยู่ในบรรจุภัณฑ์เดิม ไม่เสียหาย และอยู่ในสภาพที่ขายได้ พร้อมอุปกรณ์เสริมและเอกสารทั้งหมด
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">2. Eligibility</h2>
-            <p className="text-gray-600 leading-relaxed mb-3">To be eligible for a change-of-mind return:</p>
+            <h2 className="text-2xl font-bold text-primary mb-3">2. เงื่อนไขการคืนสินค้า</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">เพื่อมีสิทธิ์คืนสินค้ากรณีเปลี่ยนใจ:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li>Return request must be initiated within 60 days of delivery.</li>
-              <li>The item must be unused, undamaged, and in its original packaging.</li>
-              <li>All accessories (charging cable, user manual, included bags, etc.) must be included.</li>
-              <li>Proof of purchase (order number) is required.</li>
+              <li>คำขอคืนสินค้าต้องเริ่มภายใน 7 วันหลังจากได้รับสินค้า</li>
+              <li>สินค้าต้องไม่ได้ใช้ ไม่เสียหาย และอยู่ในบรรจุภัณฑ์เดิม</li>
+              <li>อุปกรณ์เสริมทั้งหมด (สายชาร์จ คู่มือ ถุงที่แถม ฯลฯ) ต้องรวมอยู่ด้วย</li>
+              <li>ต้องมีหลักฐานการซื้อ (หมายเลขคำสั่งซื้อ)</li>
             </ul>
             <p className="text-gray-600 leading-relaxed mt-3">
-              <strong>Non-returnable items:</strong> Vacuum seal bags that have been opened or used (for hygiene reasons), items marked as final sale, and products damaged by misuse, accident, or unauthorized modification.
+              <strong>สินค้าที่ไม่สามารถคืนได้:</strong> ถุงซีลสูญญากาศที่เปิดหรือใช้แล้ว (ด้วยเหตุผลด้านสุขอนามัย) สินค้าที่ระบุว่าขายครั้งสุดท้าย และสินค้าที่เสียหายจากการใช้ผิดวิธี อุบัติเหตุ หรือการดัดแปลงโดยไม่ได้รับอนุญาต
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">3. How to Initiate a Return</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">3. วิธีเริ่มการคืนสินค้า</h2>
             <ol className="list-decimal pl-6 space-y-3 text-gray-600">
-              <li><strong>Email us</strong> at <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a> with your order number, the item(s) you wish to return, and the reason.</li>
-              <li><strong>Receive approval:</strong> We will review your request and reply within 1–2 business days with a Return Merchandise Authorization (RMA) number and a US-based return address. Returns sent without an RMA may be delayed or refused.</li>
-              <li><strong>Ship the item back:</strong> Pack the item securely in its original packaging and send it to the address we provide. We recommend using a trackable shipping service.</li>
-              <li><strong>Inspection &amp; refund:</strong> Once we receive and inspect the returned item (typically within 5 business days), we will process your refund or exchange.</li>
+              <li><strong>ส่งอีเมลถึงเรา</strong> ที่ <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a> พร้อมหมายเลขคำสั่งซื้อ สินค้าที่ต้องการคืน และเหตุผล</li>
+              <li><strong>รับการอนุมัติ:</strong> เราจะตรวจสอบคำขอของคุณและตอบกลับภายใน 1–2 วันทำการ พร้อมหมายเลขอนุญาตคืนสินค้า (RMA) และที่อยู่สำหรับส่งคืน การส่งคืนโดยไม่มีหมายเลข RMA อาจล่าช้าหรือถูกปฏิเสธ</li>
+              <li><strong>ส่งสินค้ากลับ:</strong> บรรจุสินค้าให้แน่นหนาในบรรจุภัณฑ์เดิมและส่งไปยังที่อยู่ที่เราให้ เราแนะนำให้ใช้บริการจัดส่งที่ติดตามได้</li>
+              <li><strong>ตรวจสอบและคืนเงิน:</strong> เมื่อเราได้รับและตรวจสอบสินค้าที่คืน (ปกติภายใน 5 วันทำการ) เราจะดำเนินการคืนเงินหรือเปลี่ยนสินค้าให้</li>
             </ol>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">4. Return Shipping Costs</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">4. ค่าจัดส่งคืนสินค้า</h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li><strong>Change-of-mind returns:</strong> You are responsible for the cost of return shipping. Original outbound shipping costs are non-refundable unless the return is due to our error.</li>
-              <li><strong>Faulty, damaged, or incorrect items:</strong> If the item arrives defective, damaged, or is not what you ordered, we will cover all return shipping costs and provide a prepaid USPS return label — just contact us within 14 days of delivery with photos of the issue.</li>
+              <li><strong>การคืนกรณีเปลี่ยนใจ:</strong> คุณรับผิดชอบค่าจัดส่งคืน ค่าจัดส่งขาออกเดิมไม่สามารถคืนได้ เว้นแต่การคืนเกิดจากความผิดพลาดของเรา</li>
+              <li><strong>สินค้าที่ชำรุด เสียหาย หรือไม่ถูกต้อง:</strong> หากสินค้าที่ส่งมามีข้อบกพร่อง เสียหาย หรือไม่ใช่สิ่งที่คุณสั่ง เราจะรับผิดชอบค่าจัดส่งคืนทั้งหมดและให้ฉลากส่งคืนแบบชำระล่วงหน้า — เพียงติดต่อเราภายใน 14 วันหลังจากได้รับสินค้าพร้อมรูปภาพปัญหา</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">5. Refund Timing</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">5. ระยะเวลาคืนเงิน</h2>
             <p className="text-gray-600 leading-relaxed mb-3">
-              Once your return is approved and inspected, refunds are issued to your original payment method. Typical processing times:
+              เมื่อการคืนสินค้าของคุณได้รับการอนุมัติและตรวจสอบแล้ว เงินคืนจะถูกโอนไปยังวิธีการชำระเงินเดิมของคุณ เวลาดำเนินการโดยทั่วไป:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li><strong>Credit/Debit Cards:</strong> 5–10 business days to appear on your statement (depending on your card issuer).</li>
-              <li><strong>PayPal:</strong> 3–5 business days.</li>
+              <li><strong>บัตรเครดิต/เดบิต:</strong> 5–10 วันทำการเพื่อแสดงในรายการ (ขึ้นอยู่กับผู้ออกบัตร)</li>
+              <li><strong>PayPal:</strong> 3–5 วันทำการ</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">6. Exchanges</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">6. การเปลี่ยนสินค้า</h2>
             <p className="text-gray-600 leading-relaxed">
-              If you would like to exchange an item for a different product, colour, or bundle, please mention this in your email. Exchanges are subject to stock availability. If the replacement item is more expensive, you will be asked to pay the difference; if it is less expensive, we will refund the difference.
+              หากคุณต้องการเปลี่ยนสินค้าเป็นผลิตภัณฑ์ สี หรือชุดอื่น โปรดระบุในอีเมลของคุณ การเปลี่ยนสินค้าขึ้นอยู่กับความพร้อมของสต็อก หากสินค้าทดแทนมีราคาสูงกว่า คุณจะต้องจ่ายส่วนต่าง หากราคาต่ำกว่า เราจะคืนส่วนต่างให้
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">7. Defective, Damaged or Incorrect Items</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">7. สินค้าที่ชำรุด เสียหาย หรือไม่ถูกต้อง</h2>
             <p className="text-gray-600 leading-relaxed">
-              If you receive a defective, damaged, or incorrect item, please contact us within <strong>14 days of delivery</strong> at <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a> with your order number and clear photos of the issue. We will arrange a replacement, repair, or full refund at no additional cost to you, including return shipping.
+              หากคุณได้รับสินค้าที่ชำรุด เสียหาย หรือไม่ถูกต้อง โปรดติดต่อเราภายใน <strong>14 วันหลังจากได้รับสินค้า</strong> ที่ <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a> พร้อมหมายเลขคำสั่งซื้อและรูปภาพที่ชัดเจนของปัญหา เราจะจัดการเปลี่ยน ซ่อม หรือคืนเงินเต็มจำนวนโดยไม่มีค่าใช้จ่ายเพิ่มเติม รวมถึงค่าจัดส่งคืน
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">8. Warranty Claims</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">8. การเคลมการรับประกัน</h2>
             <p className="text-gray-600 leading-relaxed">
-              The FreshLock Pro handheld vacuum sealer is backed by a <strong>2-year warranty on the main unit</strong> and <strong>6-month warranty on accessories</strong> (USB-C cable, starter bags) against defects in materials and workmanship. Warranty claims outside the 60-day return window are handled separately — simply email us with your order number, a description of the issue, and photos or video if possible, and we will arrange repair or replacement under warranty.
+              เครื่องสูญญากาศแบบพกพา FreshLock Pro มี <strong>รับประกัน 1 ปีสำหรับตัวเครื่อง</strong> และ <strong>รับประกัน 6 เดือนสำหรับอุปกรณ์เสริม</strong> (สาย USB-C ถุงเริ่มต้น) ต่อข้อบกพร่องในวัสดุและการผลิต การเคลมการรับประกันนอกระยะเวลาคืนสินค้า 7 วัน จะดำเนินการแยกต่างหาก — เพียงส่งอีเมลถึงเราพร้อมหมายเลขคำสั่งซื้อ คำอธิบายปัญหา และรูปภาพหรือวิดีโอถ้าเป็นไปได้ เราจะจัดการซ่อมหรือเปลี่ยนภายใต้การรับประกัน
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">9. Your Statutory Rights</h2>
+            <h2 className="text-2xl font-bold text-primary mb-3">9. สิทธิตามกฎหมายของคุณ</h2>
             <p className="text-gray-600 leading-relaxed">
-              Our returns policy does not exclude, restrict, or modify any non-excludable statutory rights or remedies you may have under applicable consumer protection laws, including your right to a repair, replacement, or refund for a major failure and compensation for any other reasonably foreseeable loss or damage.
+              นโยบายการคืนสินค้าของเราไม่ได้ยกเว้น จำกัด หรือแก้ไขสิทธิตามกฎหมายที่ไม่อาจยกเว้นได้หรือวิธีการแก้ไขใดๆ ที่คุณอาจมีภายใต้กฎหมายคุ้มครองผู้บริโภคที่บังคับใช้ รวมถึงสิทธิของคุณในการซ่อม เปลี่ยน หรือคืนเงินสำหรับความล้มเหลวครั้งใหญ่และค่าชดเชยสำหรับความสูญเสียหรือความเสียหายอื่นๆ ที่สามารถคาดเดาได้อย่างสมเหตุสมผล
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-primary mb-3">10. Contact Us</h2>
-            <p className="text-gray-600 leading-relaxed">To start a return or ask a question about our policy:</p>
+            <h2 className="text-2xl font-bold text-primary mb-3">10. ติดต่อเรา</h2>
+            <p className="text-gray-600 leading-relaxed">เพื่อเริ่มการคืนสินค้าหรือสอบถามเกี่ยวกับนโยบายของเรา:</p>
             <p className="text-gray-600 leading-relaxed mt-3">
-              <strong>Email:</strong> <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a><br />
-              <strong>Response time:</strong> Within 24 hours on business days (Mon–Fri, 9am–5pm ET)
+              <strong>อีเมล:</strong> <a href="mailto:support@freshlocksealer.com" className="text-accent hover:underline">support@freshlocksealer.com</a><br />
+              <strong>เวลาตอบกลับ:</strong> ภายใน 24 ชั่วโมงในวันทำการ (จันทร์–ศุกร์, 9โมง–5โมงเย็น ICT)
             </p>
           </section>
 
           <p className="text-sm text-gray-500 mt-8 pt-6 border-t">
-            Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            อัปเดตล่าสุด: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
           </p>
         </div>
       </div>
