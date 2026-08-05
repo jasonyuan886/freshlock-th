@@ -141,7 +141,7 @@ export default function FrequentlyBoughtTogether({
               {added ? '✓ Added to cart!' : adding ? 'Adding...' : `Add all ${1 + selectedItems.length} to cart`}
             </button>
             <p className="text-[11px] text-gray-500 text-center leading-tight">
-              Ships free if total over $89 · 60-day returns
+              Ships free if total over $89 · 7-day returns
             </p>
           </div>
         </div>
