@@ -257,7 +257,7 @@ export default async function ProductPage({ params }: { params: Params }) {
         {/* ATF Trust badges */}
         <div className="flex flex-wrap gap-3 mb-6 text-sm" aria-label="Trust badges">
           <span className="bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full text-xs font-semibold">🚚 จัดส่งฟรี ${FREE_SHIPPING_THRESHOLD}+</span>
-          {product.badge === 'Best Value' || product.slug.includes('kit') ? (
+          {product.badge === 'Top Value' || product.slug.includes('kit') ? (
             <span className="bg-red-50 text-red-600 border border-red-200 px-3 py-1 rounded-full text-xs font-semibold">🎁 จัดส่งฟรี</span>
           ) : null}
           <span className="bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full text-xs font-semibold">↩️ คืนสินค้า 7 วัน</span>
