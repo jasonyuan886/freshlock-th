@@ -35,7 +35,7 @@ export default function AddToCartClient({ product }: { product: Product }) {
         </button>
       </div>
       <button onClick={handleAddToCart} className="btn-primary flex-1" aria-live="polite">
-        {added ? '✓ Added to Cart!' : 'Add to Cart'}
+        {added ? '✓ เพิ่มแล้ว!' : 'เพิ่มลงตะกร้า'}
       </button>
     </div>
   );
