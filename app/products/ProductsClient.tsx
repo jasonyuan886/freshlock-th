@@ -113,7 +113,7 @@ export default function ProductsPage() {
                   size="sm"
                   showCurrencyLabel={false}
                 />
-                <span className="text-sm text-gray-400">USD</span>
+                <span className="text-sm text-gray-400">THB</span>
               </div>
             </div>
           </Link>
