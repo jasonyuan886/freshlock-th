@@ -24,7 +24,7 @@ export default function Header() {
               สินค้า
             </Link>
             <Link href="/food-waste-calculator" className="text-accent hover:text-accent/80 font-semibold transition">
-              💰 ประหยัด $1,866
+              💰 ประหยัด ฿65,310
             </Link>
             <Link href="/blog" className="text-gray-700 hover:text-primary transition">
               บล็อก
@@ -112,7 +112,7 @@ export default function Header() {
               className="block py-2 text-accent font-semibold hover:text-accent/80"
               onClick={() => setMobileMenuOpen(false)}
             >
-              💰 ประหยัด $1,866/ปี
+              💰 ประหยัด ฿65,310/ปี
             </Link>
             <Link
               href="/blog"
