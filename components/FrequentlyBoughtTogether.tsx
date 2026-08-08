@@ -76,7 +76,7 @@ export default function FrequentlyBoughtTogether({
                 <Link href={`/products/${mainProduct.slug}`} className="font-semibold text-sm text-primary hover:underline line-clamp-2">
                   {mainProduct.name}
                 </Link>
-                <p className="text-accent font-bold text-sm mt-1">${mainProduct.price.toFixed(2)}</p>
+                <p className="text-accent font-bold text-sm mt-1">฿{mainProduct.price.toLocaleString()}</p>
               </div>
             </div>
 
@@ -105,7 +105,7 @@ export default function FrequentlyBoughtTogether({
                       {it.product.name}
                     </Link>
                     <div className="flex items-center gap-2 mt-1">
-                      <span className="text-accent font-bold text-sm">${it.product.price.toFixed(2)}</span>
+                      <span className="text-accent font-bold text-sm">฿{it.product.price.toLocaleString()}</span>
                       {it.discount ? (
                         <span className="text-xs bg-red-100 text-red-700 px-1.5 py-0.5 rounded font-semibold">
                           -{it.discount}% bundle
@@ -123,14 +123,14 @@ export default function FrequentlyBoughtTogether({
             <div>
               {savings > 0 ? (
                 <p className="text-xs text-green-700 font-semibold mb-1">
-                  💰 Bundle price: <span className="line-through text-gray-400 font-normal">${bundleTotal.toFixed(2)}</span>
+                  💰 Bundle price: <span className="line-through text-gray-400 font-normal">฿{bundleTotal.toLocaleString()}</span>
                 </p>
               ) : null}
               <p className="text-2xl font-bold text-primary">
-                ${finalPrice.toFixed(2)}
+                ฿{finalPrice.toLocaleString()}
               </p>
               {savings > 0 ? (
-                <p className="text-xs text-green-700 mt-0.5">You save ${savings.toFixed(2)}</p>
+                <p className="text-xs text-green-700 mt-0.5">ประหยัด ฿{savings.toLocaleString()}</p>
               ) : null}
             </div>
             <button
