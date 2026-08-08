@@ -31,7 +31,7 @@ export async function GET() {
 
   const urlEntry = (loc: string, changefreq: string, priority: string, lastmod?: string) => `
   <url>
-    <loc>https://www.freshlocksealer.com${loc}</loc>
+    <loc>https://th.freshlocksealer.com${loc}</loc>
     <lastmod>${lastmod || today}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
