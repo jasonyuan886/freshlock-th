@@ -38,9 +38,9 @@ function StickyMobileATC({ product }: { product: { name: string; price: number; 
         <div className="text-xs text-gray-500 truncate">{product.name}</div>
         <div className="flex items-baseline gap-2">
           {product.compareAtPrice && product.compareAtPrice > product.price && (
-            <span className="text-xs text-gray-400 line-through">${product.compareAtPrice.toFixed(2)}</span>
+            <span className="text-xs text-gray-400 line-through">฿{product.compareAtPrice.toLocaleString()}</span>
           )}
-          <span className="text-accent font-bold">${product.price.toFixed(2)}</span>
+          <span className="text-accent font-bold">฿{product.price.toLocaleString()}</span>
           {product.discountBadge && (
             <span className="text-[10px] bg-red-50 text-red-600 font-bold px-1.5 py-0.5 rounded-full border border-red-200">
               {product.discountBadge}
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!product) return {};
   const title = `${product.name} — ป้องกันฟรีเซอร์เบิร์น ปลอด BPA`;
   const description =
-    `${product.shortDescription} จัดส่งฟรีเมื่อสั่งเกิน $${FREE_SHIPPING_THRESHOLD} คืนสินค้า 7 วัน รับประกัน 1 ปีสำหรับตัวเครื่อง`;
+    `${product.shortDescription} จัดส่งฟรีเมื่อสั่งเกิน ฿${FREE_SHIPPING_THRESHOLD.toLocaleString()} คืนสินค้า 7 วัน รับประกัน 1 ปีสำหรับตัวเครื่อง`;
   return {
     title,
     description,
@@ -256,7 +256,7 @@ export default async function ProductPage({ params }: { params: Params }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* ATF Trust badges */}
         <div className="flex flex-wrap gap-3 mb-6 text-sm" aria-label="Trust badges">
-          <span className="bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full text-xs font-semibold">🚚 จัดส่งฟรี ${FREE_SHIPPING_THRESHOLD}+</span>
+          <span className="bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full text-xs font-semibold">🚚 จัดส่งฟรี ฿{FREE_SHIPPING_THRESHOLD.toLocaleString()}+</span>
           {product.badge === 'Top Value' || product.slug.includes('kit') ? (
             <span className="bg-red-50 text-red-600 border border-red-200 px-3 py-1 rounded-full text-xs font-semibold">🎁 จัดส่งฟรี</span>
           ) : null}
@@ -310,7 +310,7 @@ export default async function ProductPage({ params }: { params: Params }) {
 
             {/* Value breakdown — anchor high perceived value */}
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-xl p-4 mb-5">
-              <p className="text-sm font-bold text-green-800 mb-2">💡 ทำไมถึงคุ้มค่ามากกว่า $${product.price.toFixed(2)}</p>
+              <p className="text-sm font-bold text-green-800 mb-2">💡 ทำไมถึงคุ้มค่ามากกว่า ฿${product.price.toLocaleString()}</p>
               <div className="grid grid-cols-2 gap-2 text-xs text-green-900">
                 <div className="flex items-start gap-1.5">
                   <span className="text-green-600">✓</span>
@@ -338,7 +338,7 @@ export default async function ProductPage({ params }: { params: Params }) {
                 </div>
               </div>
               <p className="text-xs text-green-700 mt-3 font-medium border-t border-green-200 pt-2">
-                มูลค่ารวม: <span className="line-through text-green-500">฿11,200+</span> — ของคุณในราคา <span className="font-bold">${product.price.toFixed(2)}</span>
+                มูลค่ารวม: <span className="line-through text-green-500">฿11,200+</span> — ของคุณในราคา <span className="font-bold">฿{product.price.toLocaleString()}</span>
               </p>
             </div>
 
@@ -379,7 +379,7 @@ export default async function ProductPage({ params }: { params: Params }) {
             <First100ReviewersBlock compact />
 
             <div className="flex flex-wrap gap-4 mt-4 text-xs text-gray-500">
-              <span>🚚 จัดส่งฟรีเมื่อสั่งเกิน ${FREE_SHIPPING_THRESHOLD}</span>
+              <span>🚚 จัดส่งฟรีเมื่อสั่งเกิน ฿{FREE_SHIPPING_THRESHOLD.toLocaleString()}</span>
               <span>↩️ คืนสินค้า 7 วันไม่ยุ่งยาก</span>
               <span>🛡️ รับประกัน 1 ปี</span>
               <span>🔒 ชำระเงิน SSL ปลอดภัย</span>
