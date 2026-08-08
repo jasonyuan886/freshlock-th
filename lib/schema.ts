@@ -60,7 +60,7 @@ export function generateProductSchema(product: Product, reviews?: Review[]) {
     offers: {
       '@type': 'Offer',
       url: `${SITE_URL}/products/${product.slug}`,
-      priceCurrency: 'USD',
+      priceCurrency: 'THB',
       price: product.price,
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
@@ -69,11 +69,11 @@ export function generateProductSchema(product: Product, reviews?: Review[]) {
         shippingRate: {
           '@type': 'MonetaryAmount',
           value: product.price >= 50 ? '0.00' : '5.99',
-          currency: 'USD',
+          currency: 'THB',
         },
         shippingDestination: {
           '@type': 'DefinedRegion',
-          addressCountry: 'US',
+          addressCountry: 'TH',
         },
         deliveryTime: {
           '@type': 'ShippingDeliveryTime',
@@ -93,7 +93,7 @@ export function generateProductSchema(product: Product, reviews?: Review[]) {
       },
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
-        applicableCountry: 'US',
+        applicableCountry: 'TH',
         returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
         merchantReturnDays: 60,
         returnMethod: 'https://schema.org/ReturnByMail',
@@ -128,12 +128,12 @@ export function generateOrganizationSchema() {
     description:
       'FreshLock is a handheld cordless vacuum sealer that prevents freezer burn and keeps food fresh up to 5× longer. BPA-free bags, USB-C rechargeable, compatible with most embossed valve bags.',
     email: 'support@freshlocksealer.com',
-    areaServed: ['US', 'CA', 'GB', 'AU', 'NZ', 'Worldwide'],
+    areaServed: ['TH', 'Worldwide'],
     contactPoint: {
       '@type': 'ContactPoint',
       email: 'support@freshlocksealer.com',
       contactType: 'customer support',
-      availableLanguage: ['English', 'Japanese'],
+      availableLanguage: ['Thai', 'English'],
       areaServed: ['Worldwide'],
     },
   };
