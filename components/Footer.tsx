@@ -56,7 +56,7 @@ export default function Footer() {
               <li><Link href="/terms" className="text-gray-300 hover:text-white transition">ข้อกำหนดการให้บริการ</Link></li>
             </ul>
             <div className="mt-4 text-xs text-gray-300 space-y-1">
-              <p>🚚 จัดส่งฟรีเมื่อสั่งเกิน $69</p>
+              <p>🚚 จัดส่งฟรีเมื่อสั่งเกิน ฿2,450</p>
               <p>🎁 ชุดเริ่มต้นจัดส่งฟรี</p>
               <p>↩️ คืนสินค้าภายใน 7 วัน</p>
               <p>🛡️ รับประกัน 1 ปี</p>
