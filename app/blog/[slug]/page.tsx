@@ -19,7 +19,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${post.title} `,
     description: post.description,
-    alternates: { canonical: `/blog/${slug}` },
+    alternates: {
+      canonical: `/blog/${slug}`,
+      languages: {
+        'en-US': `https://www.freshlocksealer.com/blog/${slug}`,
+        'ja-JP': `https://jp.freshlocksealer.com/blog/${slug}`,
+        'th-TH': `https://th.freshlocksealer.com/blog/${slug}`,
+        'x-default': `https://th.freshlocksealer.com/blog/${slug}`,
+      },
+    },
     openGraph: {
       title: post.title,
       description: post.description,
