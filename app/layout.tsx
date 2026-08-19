@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   alternates: {
-    canonical: '/',
     languages: {
       'en-US': 'https://www.freshlocksealer.com',
       'ja-JP': 'https://jp.freshlocksealer.com',
