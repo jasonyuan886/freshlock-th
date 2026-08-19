@@ -1,14 +1,9 @@
 import { Metadata } from 'next';
-import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   alternates: {
     canonical: 'https://th.freshlocksealer.com/shipping',
   },
-};
-
-
-export const metadata: Metadata = {
   title: 'นโยบายการจัดส่ง — เวลาจัดส่ง ค่าใช้จ่ายและการติดตามพัสดุ',
   description:
     'นโยบายการจัดส่ง FreshLock: จัดส่งฟรีสำหรับคำสั่งซื้อในไทยที่มียอดเกิน ฿2,450 คิทเริ่มต้นจัดส่งฟรีทั่วโลก จัดส่งผ่าน DHL Express 2–3 วันถึงประเทศไทย พร้อมการติดตามพัสดุ',
