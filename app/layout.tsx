@@ -26,14 +26,7 @@ export const metadata: Metadata = {
     icon: '/favicon-32.png',
     apple: '/apple-touch-icon.png',
   },
-  alternates: {
-    languages: {
-      'en-US': 'https://www.freshlocksealer.com',
-      'ja-JP': 'https://jp.freshlocksealer.com',
-      'th-TH': 'https://th.freshlocksealer.com',
-      'x-default': 'https://www.freshlocksealer.com',
-    },
-  },
+  alternates: {},
   openGraph: {
     type: 'website',
     url: SITE_URL,
@@ -81,6 +74,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="alternate" hrefLang="en-US" href="https://www.freshlocksealer.com" />
+        <link rel="alternate" hrefLang="ja-JP" href="https://jp.freshlocksealer.com" />
+        <link rel="alternate" hrefLang="th-TH" href="https://th.freshlocksealer.com" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.freshlocksealer.com" />
                                         <meta name="p:domain_verify" content="35f8877a03378002c70a19e5750a86c4" />
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-N16R0F2B1Y" strategy="afterInteractive" />
         <Script id="ga4-init" strategy="afterInteractive">
