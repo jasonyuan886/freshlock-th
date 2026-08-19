@@ -1,6 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://th.freshlocksealer.com/contact',
+  },
+};
+
 
 type Status = 'idle' | 'submitting' | 'success' | 'error';
 
