@@ -1,4 +1,12 @@
 import { Metadata } from 'next';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://th.freshlocksealer.com/shipping',
+  },
+};
+
 
 export const metadata: Metadata = {
   title: 'นโยบายการจัดส่ง — เวลาจัดส่ง ค่าใช้จ่ายและการติดตามพัสดุ',
