@@ -1,4 +1,12 @@
 import { Metadata } from 'next';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://th.freshlocksealer.com/returns',
+  },
+};
+
 
 export const metadata: Metadata = {
   title: 'นโยบายการคืนสินค้าและคืนเงิน — รับประกันความพึงพอใจ 7 วัน',
