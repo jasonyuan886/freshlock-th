@@ -3,43 +3,48 @@ import type { NextRequest } from 'next/server'
 
 const SITE_URL = 'https://th.freshlocksealer.com'
 
+class CanonicalRewriter {
+  element(el) {
+    const url = new URL(el.getAttribute('href') || '')
+    // Only rewrite if it's the root canonical (from layout)
+    // Page-level canonical should already be correct
+  }
+}
+
 export async function middleware(request: NextRequest) {
-  if (request.headers.get('x-middleware-subrequest')) {
+  const url = request.nextUrl
+  
+  // Skip static assets, API routes, etc.
+  if (url.pathname.startsWith('/_next') || 
+      url.pathname.includes('.') ||
+      url.pathname.startsWith('/api')) {
     return NextResponse.next()
   }
 
+  // Calculate canonical URL
+  const path = url.pathname === '/' ? '' : url.pathname
+  const canonical = `${SITE_URL}${path}`
+
+  // Get the response
   const response = NextResponse.next()
 
-  const accept = request.headers.get('accept') || ''
-  if (!accept.includes('text/html')) {
-    return response
-  }
+  // Use HTMLRewriter to inject canonical link tag into <head>
+  const rewriter = new HTMLRewriter()
+    .on('head', {
+      element(el) {
+        el.append(`<link rel="canonical" href="${canonical}" />`, { html: true })
+      }
+    })
 
-  const innerHeaders = new Headers(request.headers)
-  innerHeaders.set('x-middleware-subrequest', 'canonical')
+  const rewritten = rewriter.transform(response)
   
-  const url = request.nextUrl.clone()
-  const res = await fetch(url, { headers: innerHeaders })
-  const html = await res.text()
+  // Add debug headers
+  rewritten.headers.set('x-canonical-url', canonical)
+  rewritten.headers.set('x-middleware-ran', 'true')
 
-  const path = request.nextUrl.pathname
-  const canonical = path === '/' ? SITE_URL : `${SITE_URL}${path}`
-  const tag = `<link rel="canonical" href="${canonical}" />`
-
-  let newHtml: string
-  if (html.includes('rel="canonical"')) {
-    newHtml = html.replace(/<link rel="canonical" href="[^"]*" ?\/?>/, tag)
-  } else {
-    newHtml = html.replace('<head>', `<head>${tag}`)
-  }
-
-  return new NextResponse(newHtml, {
-    status: res.status,
-    statusText: res.statusText,
-    headers: res.headers,
-  })
+  return rewritten
 }
 
 export const config = {
-  matcher: ['/((?!_next|api|favicon|images|logo).*)'],
+  matcher: ['/((?!_next|favicon|images|logo|api).*)'],
 }
