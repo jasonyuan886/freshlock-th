@@ -5,6 +5,14 @@ import FomoCountdownTimer from '@/components/FomoCountdownTimer';
 import { getAllPosts } from '@/lib/blog';
 import { generateFAQSchema } from '@/lib/schema';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://th.freshlocksealer.com/',
+  },
+};
+
 
 const faqSchema = generateFAQSchema(faqs.slice(0, 3));
 
