@@ -19,6 +19,11 @@ export async function middleware(request: NextRequest) {
   response.headers.set('x-canonical-url', canonical)
   response.headers.set('x-middleware-ran', 'true')
 
+  // Noindex utility pages (checkout, cart, success)
+  if (url.pathname.startsWith('/checkout') || url.pathname.startsWith('/cart')) {
+    response.headers.set('X-Robots-Tag', 'noindex, nofollow')
+  }
+
   return response
 }
 
