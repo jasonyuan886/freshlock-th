@@ -125,6 +125,13 @@ export function generateOrganizationSchema() {
     name: 'FreshLock',
     url: SITE_URL,
     logo: `${SITE_URL}/logo.svg`,
+    sameAs: [
+      'https://www.youtube.com/@FreshLocksealer',
+      'https://www.tiktok.com/@freshlocksealer',
+      'https://www.instagram.com/freshlocksea',
+      'https://www.pinterest.com/freshlocksealer/',
+      'https://www.facebook.com/people/FreshLock/1000',
+    ],
     description:
       'FreshLock is a handheld cordless vacuum sealer that prevents freezer burn and keeps food fresh up to 5× longer. BPA-free bags, USB-C rechargeable, compatible with most embossed valve bags.',
     email: 'support@freshlocksealer.com',
