@@ -14,6 +14,10 @@ const FROM_EMAIL_ADDRESS = SMTP_USER;
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+function escapeHtml(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
 export async function POST(request: Request) {
   try {
     if (!SMTP_PASS) {
@@ -44,7 +48,7 @@ export async function POST(request: Request) {
       <div style="font-family: Arial, Helvetica, sans-serif; max-width: 640px; margin: 0 auto; color: #222;">
         <h2 style="color:#0f4c3a; border-bottom:2px solid #0f4c3a; padding-bottom:8px;">New Newsletter Subscription</h2>
         <p>A new visitor has subscribed to the FreshLock newsletter:</p>
-        <p style="font-size:18px; font-weight:bold;"><a href="mailto:${email}">${email}</a></p>
+        <p style="font-size:18px; font-weight:bold;"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></p>
         <p style="color:#888; font-size:12px;">Source: Footer signup form on www.freshlocksealer.com</p>
       </div>
     `;

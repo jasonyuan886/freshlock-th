@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const CLIENT_ID = 'Ov23liOhWk7DLu1KMZwe';
-const CLIENT_SECRET = '64f8f56974bdf6a5b8a789c6c80b887955859822';
+const CLIENT_ID = process.env.GITHUB_OAUTH_CLIENT_ID!;
+const CLIENT_SECRET = process.env.GITHUB_OAUTH_CLIENT_SECRET!;
 const ORIGIN = 'https://www.freshlocksealer.com';
 const REDIRECT_URI = `${ORIGIN}/api/auth`;
 
