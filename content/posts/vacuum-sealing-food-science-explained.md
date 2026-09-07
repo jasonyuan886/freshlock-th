@@ -48,7 +48,7 @@ Vacuum suction power is measured in kilopascals (kPa), with higher negative valu
 
 A -60kPa rating means the sealer removes the majority of air from compatible bags, creating a low-oxygen environment sufficient to dramatically slow spoilage for typical household use — from meal prep and bulk buying to sous vide cooking and freezer storage. While commercial chamber vacuum sealers operating at higher suction levels achieve near-complete air removal, they typically cost $500–$2,000 and require significant counter space. The FreshLock Pro delivers practical household-grade performance at a fraction of the cost, in a portable, USB-C rechargeable form factor with no thermal seal required.
 
-For a deeper comparison of vacuum levels and their practical impact, see our guide: [Is Vacuum Sealing Worth It?](/blog/is-vacuum-sealing-worth-it)
+For a deeper comparison of vacuum levels and their practical impact, see our guide: Is Vacuum Sealing Worth It?
 
 ---
 
@@ -91,7 +91,7 @@ The financial impact on individual families is significant:
 
 Put another way: the average American family throws away roughly **$56 every week** in uneaten food. That is more than many households spend annually on electricity, and comparable to a car insurance premium.
 
-For a detailed breakdown, see: [Food Waste Statistics: The Full Picture](/blog/food-waste-statistics)
+For a detailed breakdown, see: Food Waste Statistics: The Full Picture
 
 ### Environmental Impact: Landfills and Methane
 
@@ -191,7 +191,7 @@ Different food preservation methods work through different mechanisms, each with
 
 Vacuum sealing and freezing are not competing methods — they are complementary. Vacuum sealing prevents freezer burn by eliminating air contact, while freezing halts virtually all microbial activity. Together, they can extend meat shelf life from 6 months to 2–3 years.
 
-Learn more: [Vacuum Sealing vs. Freezing: Which Is Better?](/blog/vacuum-sealing-vs-freezing)
+Learn more: Vacuum Sealing vs. Freezing: Which Is Better?
 
 ### When to Use Each Method
 
@@ -351,9 +351,9 @@ FreshLock Pro is designed to make vacuum sealing practical for everyday use:
 
 ### Explore More Food Preservation Guides
 
-- [Is Vacuum Sealing Worth It?](/blog/is-vacuum-sealing-worth-it) — Detailed cost-benefit analysis
-- [Food Waste Statistics](/blog/food-waste-statistics) — The full data picture
-- [Vacuum Sealing vs. Freezing](/blog/vacuum-sealing-vs-freezing) — Which method is better?
+- Is Vacuum Sealing Worth It? — Detailed cost-benefit analysis
+- Food Waste Statistics — The full data picture
+- Vacuum Sealing vs. Freezing — Which method is better?
 - [How Long Does Vacuum-Sealed Food Last?](/blog/how-long-does-vacuum-sealed-food-last) — Shelf life charts by food type
 - [Best Foods to Vacuum Seal](/blog/best-foods-to-vacuum-seal) — What to seal and what to avoid
 

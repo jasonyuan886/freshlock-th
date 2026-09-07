@@ -304,7 +304,7 @@ Handheld and countertop vacuum sealers share some common problems, but their dif
 
 Key takeaway: Handheld sealers have fewer moving parts and no thermal seal element, which eliminates an entire category of problems (melted bags, burned seal strips, thermal protection lockouts). However, they require attention to battery charging and valve cleanliness that countertop models don't need.
 
-For a deeper comparison, see our guide on [handheld vs countertop vacuum sealers](/tips/handheld-vs-countertop-vacuum-sealer).
+For a deeper comparison, see our guide on handheld vs countertop vacuum sealers.
 
 ---
 
@@ -420,9 +420,9 @@ Explore the [FreshLock Pro handheld vacuum sealer](https://www.freshlocksealer.c
 Browse [all FreshLock accessories](https://www.freshlocksealer.com/collections/accessories) for replacement bags in every size.
 
 For more troubleshooting tips, check out our detailed guides:
-- [Vacuum Sealer Not Working: Complete Troubleshooting Guide](/tips/vacuum-sealer-not-working-troubleshooting)
-- [FoodSaver Not Sealing Properly: Causes & Fixes](/tips/foodsaver-not-sealing-properly)
-- [Handheld vs Countertop Vacuum Sealer: Which Is Right for You?](/tips/handheld-vs-countertop-vacuum-sealer)
+- Vacuum Sealer Not Working: Complete Troubleshooting Guide
+- FoodSaver Not Sealing Properly: Causes & Fixes
+- Handheld vs Countertop Vacuum Sealer: Which Is Right for You?
 
 ---
 

@@ -92,7 +92,7 @@ All times assume:
 | Soft cheese (brie, camembert) | 1–2 weeks | Not recommended (anaerobic risk) | Not recommended | Not recommended |
 | Butter | 1–2 months | 6–8 months | 6–9 months | 1–2 years |
 
-**Important:** Do **not** vacuum seal soft cheeses like brie or camembert for long-term storage. They can support anaerobic bacteria (including botulism risk in rare cases) when deprived of oxygen. Wrap them normally and eat within the standard fridge window. For more detail, see our full [cheese vacuum sealing guide](/posts/vacuum-sealing-cheese-guide).
+**Important:** Do **not** vacuum seal soft cheeses like brie or camembert for long-term storage. They can support anaerobic bacteria (including botulism risk in rare cases) when deprived of oxygen. Wrap them normally and eat within the standard fridge window. For more detail, see our full [cheese vacuum sealing guide](/blog/vacuum-sealing-cheese-guide).
 
 ### Vegetables
 
@@ -226,6 +226,6 @@ And always remember: vacuum sealing is a tool, not a time machine. When in doubt
 
 If there's one thing we want you to take away from this guide, it's this: vacuum sealing doesn't change how food *behaves* — it just removes the air that makes it spoil faster. The same food-safety rules apply (keep cold food cold, cool leftovers fast, don't eat food that looks or smells wrong), but the clock runs 3–5 times slower. In an Australian summer, that is a genuine upgrade.
 
-If you're ready to start extending the life of your groceries — especially as we head into another hot summer — a handheld pump sealer is the easiest way in. For help getting started, our [beginner's guide to using a handheld vacuum sealer](/posts/how-to-use-handheld-vacuum-sealer) walks through the first seal step by step.
+If you're ready to start extending the life of your groceries — especially as we head into another hot summer — a handheld pump sealer is the easiest way in. For help getting started, our [beginner's guide to using a handheld vacuum sealer](/blog/how-to-use-handheld-vacuum-sealer) walks through the first seal step by step.
 
 Ready to try vacuum sealing? Check out the [FreshLock Pro Handheld Vacuum Sealer](/products/freshlock-pro) and pick up a starter pack of BPA-free reusable zipper bags.
