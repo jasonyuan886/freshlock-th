@@ -12,7 +12,7 @@ We've all been there. You pack the esky Friday night with snags, steaks, a bag o
 
 A vacuum sealer fixes an embarrassing number of these problems — and once you start using one for BBQs and camping, you won't go back. It [marinates](/blog/vacuum-sealer-for-marinating-meat-faster) meat faster, it shrinks everything down to half the size, it stops raw meat leaking onto everything else, and it keeps food fresh for days longer than cling wrap or zip-lock bags.
 
-We put this guide together specifically for [Australian](/blog/best-handheld-vacuum-sealer-australia-2026) conditions: hot days, long drives, dodgy camp fridges, beach trips, four-wheel-drive weekends, fishing trips, and the classic backyard BBQ for ten mates. There's a more general [camping & outdoor sealing guide](/posts/vacuum-sealing-camping-outdoor) on the blog already, but this one is all about the BBQ and camping scenarios we actually live here.
+We put this guide together specifically for [Australian](/blog/best-handheld-vacuum-sealer-australia-2026) conditions: hot days, long drives, dodgy camp fridges, beach trips, four-wheel-drive weekends, fishing trips, and the classic backyard BBQ for ten mates. There's a more general [camping & outdoor sealing guide](/blog/vacuum-sealing-camping-outdoor) on the blog already, but this one is all about the BBQ and camping scenarios we actually live here.
 
 ---
 
@@ -30,7 +30,7 @@ Practical examples:
 - Lamb chops with mint and red wine vinegar — sealed and on the barbie in 40 minutes
 - Tofu or halloumi in soy, chilli and lime — takes on flavour in 15 minutes
 
-For a deeper dive on the technique, our [marinades guide](/posts/vacuum-sealing-marinades-guide) walks through the exact process. The short version: put meat + marinade in a zipper vacuum bag, zip, pump with a handheld sealer for 20 seconds, rest in the fridge for 30 minutes, done.
+For a deeper dive on the technique, our [marinades guide](/blog/vacuum-sealing-marinades-guide) walks through the exact process. The short version: put meat + marinade in a zipper vacuum bag, zip, pump with a handheld sealer for 20 seconds, rest in the fridge for 30 minutes, done.
 
 ### 2. Dramatic esky space savings
 
@@ -258,6 +258,6 @@ Australians do BBQs and camping differently to most of the world. We do it in 35
 
 A vacuum sealer is one of the few pieces of camping/BBQ gear that punches well above its weight. It's small, it's cheap, it doesn't need power, and it changes three things all at once: your food lasts longer, your esky is twice as organised, and your marinades taste better. If you've been doing it the old way with cling wrap and zip-lock bags for years, you'll be surprised how much of a difference it makes on your first trip.
 
-For a deeper dive into all things camping with a sealer (including backpacking, kayaking, hunting and van life), check out our full [camping & outdoor vacuum sealing guide](/posts/vacuum-sealing-camping-outdoor). And if you want a step-by-step walkthrough of your first time using a handheld, the [beginner's how-to guide](/posts/how-to-use-handheld-vacuum-sealer) covers every step.
+For a deeper dive into all things camping with a sealer (including backpacking, kayaking, hunting and van life), check out our full [camping & outdoor vacuum sealing guide](/blog/vacuum-sealing-camping-outdoor). And if you want a step-by-step walkthrough of your first time using a handheld, the [beginner's how-to guide](/blog/how-to-use-handheld-vacuum-sealer) covers every step.
 
 Ready to try vacuum sealing? Check out the [FreshLock Pro Handheld Vacuum Sealer](/products/freshlock-pro) — cordless, USB-C rechargeable, 60 kPa suction, and small enough to live in your camping box all summer.
