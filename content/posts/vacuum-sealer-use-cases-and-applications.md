@@ -41,7 +41,7 @@ When you remove air from food storage bags, you dramatically slow down oxidation
 
 FreshLock Pro's valve-bag system means no thermal seal is required — you simply extract the air and the one-way valve maintains the vacuum. This makes meal prep faster and safer, with no risk of melting bags or burning food.
 
-> **Learn more**: Read our detailed guide on [Vacuum Sealer for Meal Prep Sunday](/scenarios/vacuum-sealer-for-meal-prep-sunday) for step-by-step recipes and storage charts.
+> **Learn more**: Read our detailed guide on Vacuum Sealer for Meal Prep Sunday for step-by-step recipes and storage charts.
 
 ---
 
@@ -83,7 +83,7 @@ For hunters processing deer, elk, or other large game, vacuum sealing is the gol
 
 FreshLock Pro's **-60kPa vacuum suction** removes air effectively from valve bags, creating a tight seal that protects your harvest for months or even years. The **USB-C rechargeable** design means you can charge it from a power bank, car charger, or wall outlet — perfect for processing stations at hunting camps.
 
-> **Explore more**: See our guide on [Vacuum Sealer for Camping](/scenarios/vacuum-sealer-for-camping) for packing lists, meal ideas, and pro tips.
+> **Explore more**: See our guide on Vacuum Sealer for Camping for packing lists, meal ideas, and pro tips.
 
 ---
 
@@ -204,7 +204,7 @@ Vacuum sealing can also support fermentation processes:
 - **Vacuum-compress fruits** for infused flavor extraction (a technique used by modernist chefs)
 - Seal fermented foods for long-term cold storage after initial fermentation is complete
 
-> **Deep dive**: Learn everything about [Vacuum Sealer for Sous Vide](/scenarios/vacuum-sealer-for-sous-vide) cooking, including temperature guides and recipe ideas.
+> **Deep dive**: Learn everything about Vacuum Sealer for Sous Vide cooking, including temperature guides and recipe ideas.
 
 ---
 
@@ -334,9 +334,9 @@ The FreshLock Pro handheld vacuum sealer combines **-60kPa suction power**, **US
 
 ### Explore More Use Cases
 
-- [Vacuum Sealer for Meal Prep Sunday](/scenarios/vacuum-sealer-for-meal-prep-sunday) — Complete guide to weekly meal prep with vacuum sealing
-- [Vacuum Sealer for Camping](/scenarios/vacuum-sealer-for-camping) — Packing, prepping, and cooking outdoors
-- [Vacuum Sealer for Sous Vide](/scenarios/vacuum-sealer-for-sous-vide) — Temperature guides, recipes, and technique tips
+- Vacuum Sealer for Meal Prep Sunday — Complete guide to weekly meal prep with vacuum sealing
+- Vacuum Sealer for Camping — Packing, prepping, and cooking outdoors
+- Vacuum Sealer for Sous Vide — Temperature guides, recipes, and technique tips
 
 ---
 
