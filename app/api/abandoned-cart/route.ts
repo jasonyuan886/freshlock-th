@@ -18,10 +18,43 @@ function escapeHtml(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// This endpoint sends real email through our SMTP relay to an address taken
+// straight from the request body, with no session/cart binding. Two cheap,
+// zero-infra guards keep it from being used as an open spam relay:
+//  1. Same-origin check — a browser always sends Origin on a POST, so a
+//     missing/mismatched Origin means the call didn't come from our own site.
+//  2. Best-effort in-memory rate limit per email address (per warm function
+//     instance — not a durable store, but it blocks rapid bursts).
+function isSameOrigin(request: Request): boolean {
+  const origin = request.headers.get('origin');
+  if (!origin) return false;
+  try {
+    return new URL(origin).hostname === new URL(request.url).hostname;
+  } catch {
+    return false;
+  }
+}
+
+const recoveryHits = new Map<string, number[]>();
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+const RATE_LIMIT_MAX = 3; // max recovery emails per address per hour
+
+function isRateLimited(key: string): boolean {
+  const now = Date.now();
+  const hits = (recoveryHits.get(key) || []).filter((t) => now - t < RATE_LIMIT_WINDOW_MS);
+  hits.push(now);
+  recoveryHits.set(key, hits);
+  return hits.length > RATE_LIMIT_MAX;
+}
+
 export async function POST(request: Request) {
   try {
     if (!SMTP_PASS) {
       return NextResponse.json({ error: 'Server not configured' }, { status: 500 });
+    }
+
+    if (!isSameOrigin(request)) {
+      return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
     }
 
     let body: any;
@@ -38,11 +71,15 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Invalid email' }, { status: 400 });
     }
 
+    if (isRateLimited(`${action}:${email}`)) {
+      return NextResponse.json({ error: 'Too many requests' }, { status: 429 });
+    }
+
     const fromHeader = `${FROM_EMAIL_NAME} <${FROM_EMAIL_ADDRESS}>`;
 
     if (action === 'recovery') {
       // Send recovery email to customer
-      const cartItems = body.cartItems || [];
+      const cartItems = (body.cartItems || []).slice(0, 20);
       const cartTotal = body.cartTotal || 0;
       
       const itemsHtml = cartItems.map((item: any) => 
@@ -98,7 +135,7 @@ export async function POST(request: Request) {
     }
 
     // Default action: capture - notify support
-    const cartItems = body.cartItems || [];
+    const cartItems = (body.cartItems || []).slice(0, 20);
     const cartTotal = body.cartTotal || 0;
     
     const itemsHtml = cartItems.map((item: any) => 
