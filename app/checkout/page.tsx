@@ -103,6 +103,7 @@ export default function CheckoutPage() {
               name: item.product.name,
               price: item.product.price,
               quantity: item.quantity,
+              slug: item.product.slug,
             })),
             shippingAddress: {
               name: `${form.firstName} ${form.lastName}`,
